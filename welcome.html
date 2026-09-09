@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome — Fire Tracker</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon32.png" />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: #0f2744;
+        background:
+          radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.85) 0%, transparent 45%),
+          radial-gradient(circle at 80% 100%, rgba(255, 255, 255, 0.6) 0%, transparent 40%),
+          linear-gradient(180deg, #d9ecff 0%, #b8d9f5 45%, #9ec8ef 100%);
+      }
+
+      .welcome {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 20px 40px;
+        gap: 28px;
+      }
+
+      .welcome__hero {
+        width: min(960px, 100%);
+      }
+
+      .welcome__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 18px 48px rgba(15, 39, 68, 0.18);
+      }
+
+      .welcome__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .welcome__hint {
+        margin: 0;
+        max-width: 36rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #27435f;
+      }
+
+      @media (max-width: 640px) {
+        .welcome {
+          padding: 20px 14px 28px;
+          gap: 20px;
+        }
+
+        .welcome__image {
+          border-radius: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="welcome">
+      <div class="welcome__hero">
+        <img
+          class="welcome__image"
+          src="./welcome.png"
+          width="1200"
+          height="675"
+          alt="Pin the extension for easy access. Step 1: click the Extensions icon in the Chrome toolbar. Step 2: click the pin next to Fire Tracker."
+        />
+      </div>
+
+      <div class="welcome__actions">
+        <p class="welcome__hint">
+          After pinning Fire Tracker, click the extension icon anytime to open the wildfire map in the side panel.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
