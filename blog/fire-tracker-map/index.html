@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026) | US Wildfire Tracker</title>
+<meta name="description" content="A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.">
+<meta name="keywords" content="fire tracker map, fire map tracker, fire tracking map, fire map, live fire tracker map, fire perimeter map, wildfire map layers, satellite hotspot map">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://wildfire-map.org/blog/fire-tracker-map/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="US Wildfire Tracker">
+<meta property="og:title" content="Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026) | US Wildfire Tracker">
+<meta property="og:description" content="A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.">
+<meta property="og:url" content="https://wildfire-map.org/blog/fire-tracker-map/">
+<meta property="og:image" content="https://wildfire-map.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-09-10">
+<meta property="article:modified_time" content="2026-09-10">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026) | US Wildfire Tracker">
+<meta name="twitter:description" content="A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.">
+<meta name="twitter:image" content="https://wildfire-map.org/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://wildfire-map.org/#organization",
+   "name": "US Wildfire Tracker",
+   "url": "https://wildfire-map.org/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://wildfire-map.org/logo512.png",
+    "width": 512,
+    "height": 512
+   },
+   "sameAs": [
+    "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://wildfire-map.org/#website",
+   "url": "https://wildfire-map.org/",
+   "name": "US Wildfire Tracker",
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://wildfire-map.org/blog/fire-tracker-map/#article",
+   "headline": "Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026)",
+   "description": "A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.",
+   "url": "https://wildfire-map.org/blog/fire-tracker-map/",
+   "mainEntityOfPage": "https://wildfire-map.org/blog/fire-tracker-map/",
+   "inLanguage": "en-US",
+   "wordCount": 11413,
+   "image": "https://wildfire-map.org/og-image.png",
+   "keywords": "fire tracker map, fire map tracker, fire tracking map, fire map, live fire tracker map, fire perimeter map, wildfire map layers, satellite hotspot map",
+   "author": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "datePublished": "2026-09-10",
+   "dateModified": "2026-09-10",
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Fire tracker map"
+    },
+    {
+     "@type": "Thing",
+     "name": "Wildfire perimeters"
+    },
+    {
+     "@type": "Thing",
+     "name": "Satellite fire detection"
+    },
+    {
+     "@type": "Thing",
+     "name": "NWS fire weather alerts"
+    },
+    {
+     "@type": "Thing",
+     "name": "Wildfire containment"
+    }
+   ],
+   "mentions": [
+    {
+     "@type": "Thing",
+     "name": "NIFC"
+    },
+    {
+     "@type": "Thing",
+     "name": "WFIGS"
+    },
+    {
+     "@type": "Thing",
+     "name": "NASA FIRMS"
+    },
+    {
+     "@type": "Thing",
+     "name": "MODIS"
+    },
+    {
+     "@type": "Thing",
+     "name": "VIIRS"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA"
+    },
+    {
+     "@type": "Thing",
+     "name": "GOES"
+    },
+    {
+     "@type": "Thing",
+     "name": "Hazard Mapping System"
+    },
+    {
+     "@type": "Thing",
+     "name": "National Weather Service"
+    },
+    {
+     "@type": "Thing",
+     "name": "OpenStreetMap"
+    },
+    {
+     "@type": "Thing",
+     "name": "NWCG"
+    }
+   ],
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     ".lead",
+     ".faq-a"
+    ]
+   },
+   "isPartOf": {
+    "@id": "https://wildfire-map.org/#website"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://wildfire-map.org/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Wildfire guides",
+     "item": "https://wildfire-map.org/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026)",
+     "item": "https://wildfire-map.org/blog/fire-tracker-map/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://wildfire-map.org/blog/fire-tracker-map/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the difference between a hotspot and a fire perimeter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A hotspot is a satellite detection: the center point of a pixel where an algorithm found a thermal anomaly. On a fire perimeter map, the perimeter is a polygon drawn by an agency, usually interpreted from infrared imagery flown at night, showing the outer boundary of ground the fire has burned. Hotspots tell you where heat is now. Perimeters tell you where the fire has already been, as of a stated time."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often does a fire tracker map update?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each layer has its own clock. NOAA reports GOES CONUS imagery reaching users 10 to 15 minutes after observation, with 5 to 15 minutes of fire processing added. MODIS and VIIRS Level 1 data take 1 hour 30 minutes to 2 hours 30 minutes. Official perimeters update after each mapping mission, often once a day. US Wildfire Tracker itself refreshes automatically every few minutes while open."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does one fire show dozens of separate dots?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Each dot is one satellite pixel that met the detection threshold, drawn at its center. At 375 meters for VIIRS or 1 kilometer for MODIS, a large fire covers many pixels, so it produces many markers. The spacing between markers reflects the sensor grid, not gaps in the fire. Read burned area from the official perimeter and use the dots only for direction and recency."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does 100 percent contained mean the fire is out?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. NWCG defines containment as a completed control line around the fire and any spot fires that can reasonably be expected to stop its spread. Fuel inside the boundary keeps burning, sometimes for weeks. Controlled is a later state, meaning the interior along the line has been extinguished and hotspots cooled. Out is later still. Containment describes the boundary only."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a satellite miss a fire completely?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, routinely. The MODIS user guide lists the reasons: the fire started and ended between overpasses, it was too small or too cool for the pixel footprint, or cloud cover, heavy smoke or tree canopy obscured it. Detection of understory burns beneath a canopy is described as very unlikely. An empty map is provisional evidence, never proof that nothing is burning."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the smallest fire a satellite can see?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The MODIS user guide says the sensor routinely detects flaming and smoldering fires around 1,000 square meters, and around 100 square meters under very good conditions. NOAA frames it differently: detection algorithms begin to respond when an active fire occupies at least 0.01 percent of a pixel at roughly 800 K, meaning about 100 square meters of active flame inside a 1 kilometer pixel."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do some detections sit in the middle of a city?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because the sensors detect heat, not vegetation fires. NOAA lists thermal anomalies from industrial activity such as steel mills and gas flaring, structural fires in urban environments, and sun glint from large solar panel clusters or metallic rooftops as known causes of false alarms. Fresh burn scars and sandy soils can also raise the mid-infrared signal enough to trigger a detection."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is a Red Flag Warning area shaped like counties?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Fire-weather alerts are issued for fire weather zones, which are administrative areas that often follow county lines. Many carry no polygon geometry at all. When we queried the National Weather Service API for active Red Flag Warnings on September 9, 2026, all 10 returned alerts were zone-defined with no polygon. The shading you see is a zone boundary, not a fire boundary."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does the fire probability score actually measure?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In US Wildfire Tracker it fuses three things: whether an official NIFC record is linked to the detection, how fresh that NIFC perimeter is, and how recent the satellite heat is. It is a ranking aid rather than a physical measurement. Detections below 25 percent probability are hidden by default because that band is dominated by industrial heat and marginal signals."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which layer should I trust when two disagree?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Trust the layer whose timestamp is closest to now for the question you are asking. For burned area, the official perimeter wins even if it is older, because satellite dots overstate footprint. For current activity, the newest satellite heat wins even if no incident record exists. For what to do, an official evacuation order overrides every layer on the map."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a fire tracker map free to use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The US Wildfire Tracker map at wildfire-map.org is free in any browser, with no account required. The Fire Tracker Chrome extension is also free, rated 5 stars in the Chrome Web Store, and carries no ads or third-party ad trackers. The underlying government feeds are open data too: the National Weather Service states its API is free to use for any purpose."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why did the perimeter get smaller since yesterday?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually because the mapping improved rather than because the fire shrank. An early estimate from a coarse source gets replaced by a precise infrared trace, and the corrected polygon is smaller. Perimeters also change when a complex is split into separate incidents or an incident is renamed. Check the map method and incident name fields before assuming the fire retreated."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How far away should I care about a fire?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Distance alone is the wrong test. Bearing relative to forecast wind, terrain between you and the fire, fuel type and current containment all matter more. A practical default is a 25 mile radius in flat open country and 50 miles or more in mountains, then adjust based on which direction the newest heat is moving relative to your position."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the map store my location?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. In US Wildfire Tracker, browser geolocation is used only to find fires near you and to calculate distances in miles. It is never stored, sold or shared. If you would rather not share a position at all, filter by state instead: the map covers all 50 states plus the District of Columbia, and state filtering needs no location permission."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I check first when a new fire starts nearby?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On the fire tracker map, check whether any satellite heat sits between the fire and you, then check the forecast wind direction in the active fire-weather alert, then check the incident record for containment and personnel. In the first hours there may be no record at all, in which case repetition across successive satellite passes is your best available signal that the fire is establishing."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "US Wildfire Tracker",
+   "operatingSystem": "Chrome, any modern browser",
+   "applicationCategory": "UtilitiesApplication",
+   "url": "https://wildfire-map.org/",
+   "installUrl": "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="inner">
+<a class="site-brand" href="/"><img src="/icon48.png" width="32" height="32" alt="US Wildfire Tracker logo">US Wildfire Tracker</a>
+<nav class="site-nav" aria-label="Site"><a href="/">Live fire map</a><a href="/blog/">Wildfire guides</a><a class="primary" href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Add to Chrome</a></nav>
+</div></header>
+<main class="wmt-article">
+<div class="container">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Wildfire guides</a> &rsaquo; Fire Maps</nav>
+<header class="article-header">
+  <span class="article-tag">Fire Maps</span>
+  <h1>Fire Tracker Map Explained: How to Read Every Layer on a Live Fire Map</h1>
+  <div class="article-meta">
+    <span>📅 <time datetime="2026-09">September 2026</time></span>
+    <span>⏱ 50 min read</span>
+    <span>✍ <a href="https://wildfire-map.org/">US Wildfire Tracker team</a></span>
+  </div>
+</header>
+
+<p class="lead">A fire tracker map layers four independent data streams on one screen: official NIFC incident records, agency fire perimeters, satellite heat detections from NASA and NOAA, and National Weather Service fire-weather alerts. Read the layers of a fire tracking map in the right order and you can judge any US wildfire in about ninety seconds.</p>
+
+<div class="trust-badge">
+  <span class="trust-badge-icon" aria-hidden="true">🏆</span>
+  <div class="trust-badge-text">
+    <div class="trust-badge-title">US Wildfire Tracker — <span>rated 5 stars in the Chrome Web Store</span></div>
+    <div class="trust-badge-sub">2026 — free live wildfire map built on official NIFC, NASA and NOAA data</div>
+  </div>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#what-is-it">What is a fire tracker map and what does it show?</a></li>
+    <li><a href="#layers">Which layers does a live fire tracker map combine?</a></li>
+    <li><a href="#nifc">How do NIFC incident records feed a fire map?</a></li>
+    <li><a href="#perimeters">How to read a fire perimeter map without guessing</a></li>
+    <li><a href="#modis">What do MODIS hotspots mean on a fire map?</a></li>
+    <li><a href="#viirs">Why do VIIRS pixels dominate a fire tracking map?</a></li>
+    <li><a href="#goes">How does GOES heat appear on a fire tracker map?</a></li>
+    <li><a href="#probability">What does a probability score add to a fire map?</a></li>
+    <li><a href="#alerts">How do NWS fire-weather alerts sit on a fire map?</a></li>
+    <li><a href="#acres">What do acres and containment mean on a fire map?</a></li>
+    <li><a href="#history">How do historical perimeters change a fire map?</a></li>
+    <li><a href="#basemap">Which basemap works best on a fire map tracker?</a></li>
+    <li><a href="#near-me">How do you find fires near you on a fire map?</a></li>
+    <li><a href="#worked">How would you read one real fire on a fire map?</a></li>
+    <li><a href="#misreadings">Which fire tracker map misreadings cause bad calls?</a></li>
+    <li><a href="#mobile">Does a fire map tracker work the same on mobile?</a></li>
+    <li><a href="#share">How do you print or share a live fire tracker map?</a></li>
+    <li><a href="#glossary">Which fire map terms should you know in advance?</a></li>
+    <li><a href="#faq">Frequently Asked Questions About Fire Tracker Map Layers</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-it">What is a fire tracker map and what does it show?</h2>
+
+<p>A fire tracker map is a single interactive view that fuses government incident records, agency-drawn fire perimeters, satellite heat detections and weather-service fire alerts. It is not one dataset. It is four or five feeds with different update clocks, different accuracy limits, and different meanings, drawn on top of one another.</p>
+
+<p>That fusion is the whole point of a fire tracker map. The National Interagency Fire Center knows the name, size and containment of a reported incident, but only after a human files a report. NASA and NOAA satellites see heat within minutes to hours of an overpass, but they do not know a fire's name. Putting both on one screen closes the gap between the two.</p>
+
+<p>The scale of the problem justifies the effort. NIFC counted 77,850 wildland fires and 5,131,474 acres burned across the United States in 2025, and 64,897 fires burning 8,924,884 acres in 2024, according to its <a href="https://www.nifc.gov/fire-information/statistics/wildfires" rel="noopener">national wildfire statistics table</a>.</p>
+
+<p>Averaging the ten years from 2016 through 2025 in that same NIFC table gives roughly 63,200 fires and about 7.05 million acres per year. That is our own calculation from the published rows, and it is the baseline against which any single season should be judged.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">77,850</span><span class="stat-label">US wildland fires recorded by NIFC in 2025</span></div>
+  <div class="stat-card"><span class="stat-number">5.13M</span><span class="stat-label">Acres burned nationally in 2025 per NIFC</span></div>
+  <div class="stat-card"><span class="stat-number">63,200</span><span class="stat-label">Average annual fires, 2016-2025 NIFC table</span></div>
+  <div class="stat-card"><span class="stat-number">7.05M</span><span class="stat-label">Average annual acres, 2016-2025 NIFC table</span></div>
+</div>
+
+<h3>The three questions a fire map has to answer</h3>
+
+<p>Every practical use of a fire map reduces to three questions. Is there a fire near me? Is it moving toward me? And how confident should I be in what I am looking at? A well-built fire tracker map answers all three without you leaving the page.</p>
+
+<p>The first question is geometric: distance and direction. The second is temporal: compare the perimeter timestamp with the newest satellite heat. The third is about provenance: which agency supplied the shape, and how old is it. Most bad decisions come from skipping question three.</p>
+
+<p>The <a href="https://wildfire-map.org/">US Wildfire Tracker live map</a> is built around that sequence. It shows national coverage by default, lets you filter to any of the 50 states plus the District of Columbia, and exposes the timestamps behind every layer instead of hiding them.</p>
+
+<h3>Why a fire map is not an emergency notification</h3>
+
+<p>No public fire tracker map replaces an evacuation order. Orders come from county sheriffs, emergency managers and state agencies, and they are issued on ground truth that no satellite can see. A map tells you what is burning; an order tells you what to do.</p>
+
+<p>Treat the fire tracker map as the situational-awareness layer that sits underneath official instructions. If the two disagree, the official instruction wins every time. That is not a limitation of any particular product; it is how wildland fire information is legally structured in the United States.</p>
+
+<div class="callout callout-warn"><strong>Always defer to local orders</strong>US Wildfire Tracker is not an official emergency service. Satellite detections can lag by minutes to hours and can miss small or smouldering fires under cloud, and official perimeters update on agency schedules. Follow evacuation orders from your county or state authorities without waiting for a map to agree.</div>
+
+<h2 id="layers">Which layers does a live fire tracker map combine?</h2>
+
+<p>A live fire tracker map combines five kinds of layer: incident records from NIFC, perimeter polygons from the interagency WFIGS services, thermal detections from NASA MODIS and VIIRS, geostationary heat detections from NOAA GOES, and fire-weather alert areas from the National Weather Service. Each has its own clock.</p>
+
+<p>Understanding the clocks matters more than understanding the pixels. A perimeter drawn from an infrared aircraft flight at 03:15 UTC is authoritative but eight hours stale by mid-morning. A VIIRS detection from forty minutes ago is fresh but tells you only that something hot occupied part of a 375-meter pixel.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>The five core layers on a fire tracker map and what each one is good for</caption>
+    <thead>
+      <tr><th scope="col">Layer</th><th scope="col">Source</th><th scope="col">Typical refresh</th><th scope="col">Best used for</th><th scope="col">Main weakness</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Incident records</th><td>NIFC / WFIGS interagency data</td><td>Agency reporting schedule, often daily</td><td>Name, acres, containment, personnel</td><td>Lags reality by hours to a day</td></tr>
+      <tr><th scope="row">Fire perimeters</th><td>WFIGS interagency perimeter services</td><td>After each mapping flight or GPS run</td><td>Actual burned footprint</td><td>Stale between mapping missions</td></tr>
+      <tr><th scope="row">Polar satellite heat</th><td>NASA MODIS and VIIRS</td><td>Several passes per day per sensor</td><td>Finding new or unreported heat</td><td>Coarse pixels, cloud blocking</td></tr>
+      <tr><th scope="row">Geostationary heat</th><td>NOAA GOES East and GOES West</td><td>Every 5-10 minutes over the US</td><td>Watching change through the day</td><td>2 km pixels, poor at high latitude</td></tr>
+      <tr><th scope="row">Fire-weather alerts</th><td>National Weather Service api.weather.gov</td><td>As issued and updated</td><td>Judging how dangerous today is</td><td>Zone-shaped, not fire-shaped</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why layer order changes the answer</h3>
+
+<p>Read the layers in the wrong order and you will draw the wrong conclusion. Satellite heat alone exaggerates a fire's footprint. A perimeter alone hides overnight growth. An alert polygon alone says nothing about whether anything is burning at all.</p>
+
+<p>The reliable order is: perimeter first for the footprint, satellite heat second for the active edge, incident record third for the official numbers, and fire-weather alert last for today's risk. That sequence takes under two minutes once it becomes habit.</p>
+
+<ol class="step-list">
+  <li>Open the perimeter and note its timestamp. Everything else is judged relative to that moment.</li>
+  <li>Look for satellite heat outside the perimeter. That is where the fire has grown since the polygon was drawn.</li>
+  <li>Open the incident record for acres, percent contained, personnel and the managing organization.</li>
+  <li>Check whether a Red Flag Warning or Fire Weather Watch covers the area today.</li>
+  <li>Measure the distance and bearing from your own location, then decide what action, if any, is warranted.</li>
+</ol>
+
+<h3>What each layer costs you in attention</h3>
+
+<p>Layers are not free. Every extra overlay adds clutter and slows the map on older hardware. The practical answer is to keep perimeters and satellite heat on permanently, and toggle alerts, smoke and historical footprints only when a specific question needs them.</p>
+
+<p>Our own default in US Wildfire Tracker is to hide weak signals below a 25 percent probability tier, because those pixels are dominated by industrial heat and marginal detections. You can switch them on in one click when you are hunting for an unreported ignition rather than tracking a known incident.</p>
+
+<p>For a broader tour of how these pieces fit together across the whole product, the <a href="/blog/fire-tracker/">complete fire tracker guide</a> works through setup, alerts and state-by-state notes in one place.</p>
+<h2 id="nifc">How do NIFC incident records feed a fire map?</h2>
+
+<p>NIFC incident records are the authoritative text behind every named fire. They carry the incident name, discovery date and time, acreage, percent contained, incident type, managing organization and, when reported, total personnel assigned. A fire tracker map reads them from the interagency WFIGS services and attaches them to the map marker.</p>
+
+<p>The record originates with the responding agency, flows through the interagency IRWIN exchange, and lands in the Wildland Fire Interagency Geospatial Services layers that NIFC publishes as open data. Nothing on the public side is invented; it is a mirror of what dispatch and incident management teams filed.</p>
+
+<p>That provenance explains the record's rhythm. Numbers change when a situation report is filed, not when the fire moves. A morning briefing on a large incident typically refreshes acres and containment once, sometimes twice, in twenty-four hours.</p>
+
+<h3>The fields that actually matter</h3>
+
+<p>The current interagency perimeter service exposes 119 fields. We queried the layer metadata on September 10, 2026 and counted them. Most are administrative. Roughly a dozen carry the operational meaning that a reader needs.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Interagency incident fields worth reading, with the underlying WFIGS field name</caption>
+    <thead>
+      <tr><th scope="col">What you see</th><th scope="col">WFIGS field</th><th scope="col">How to interpret it</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Incident name</th><td>attr_IncidentName</td><td>Agency-assigned name; not unique nationally, so pair it with the state</td></tr>
+      <tr><th scope="row">Acres</th><td>poly_GISAcres and attr_IncidentSize</td><td>GIS acres come from the polygon; incident size comes from the report and the two can differ</td></tr>
+      <tr><th scope="row">Percent contained</th><td>attr_PercentContained</td><td>Share of the control line completed, not the share extinguished</td></tr>
+      <tr><th scope="row">Discovery time</th><td>attr_FireDiscoveryDateTime</td><td>When the fire was reported, which sets the incident's age</td></tr>
+      <tr><th scope="row">Personnel</th><td>attr_TotalIncidentPersonnel</td><td>A proxy for how seriously the incident is being resourced right now</td></tr>
+      <tr><th scope="row">Perimeter time</th><td>poly_PolygonDateTime</td><td>When the polygon itself was captured; the single most important timestamp</td></tr>
+      <tr><th scope="row">Map method</th><td>poly_MapMethod</td><td>How the shape was produced, for example IR Image Interpretation or Mixed Methods</td></tr>
+      <tr><th scope="row">Incident type</th><td>attr_IncidentTypeCategory</td><td>Separates wildfires from prescribed fire and other incident categories</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why the same fire can carry two acreages</h3>
+
+<p>Polygon acres and reported acres are calculated differently. The polygon figure is measured from geometry after a mapping mission. The reported figure comes from the incident commander's estimate, which may be older, newer or deliberately conservative.</p>
+
+<p>Neither number is wrong. When they disagree by more than a few percent, the usual explanation is that one of them predates the most recent mapping flight. Check the perimeter timestamp before you assume an error.</p>
+
+<div class="callout callout-info"><strong>What incident data is for</strong>Mike Pavolonis, Wildland Fire Program Manager at NOAA NESDIS's Center for Satellite Applications and Research, said of NOAA's wildland fire data portal that "Having minute-by-minute access to wildfire data is critical during an active fire. It provides the situational awareness wildfire response teams need to protect lives and property." The same logic applies to the public view: <a href="https://www.nesdis.noaa.gov/news/noaa-launches-wildfire-data-portal-expanding-public-access-satellite-fire-information" rel="noopener">timeliness is the product</a>.</div>
+
+<h3>What a missing record actually means</h3>
+
+<p>Plenty of satellite heat on a fire tracker map has no incident record attached. That is normal. Small fires are handled locally and never generate a national record, agricultural burning is routine in several states, and industrial heat sources fire the same detection algorithms as vegetation.</p>
+
+<p>An unmatched hotspot is therefore a question, not an answer. It deserves attention when several detections cluster, when they repeat across successive satellite passes, and when they sit in wildland fuels rather than an industrial corridor.</p>
+
+<p>US Wildfire Tracker shows the linkage explicitly. Each detection reports whether an official NIFC record is attached, how fresh that record's perimeter is, and how recent the satellite heat is. If you want the deeper treatment of the timing side, the <a href="/blog/live-fire-tracker/">live fire tracker latency guide</a> works through every clock in the chain.</p>
+
+<h2 id="perimeters">How to read a fire perimeter map without guessing</h2>
+
+<p>A fire perimeter map on any fire map tracker draws the outer boundary of the area a fire has burned, as mapped by an agency. It is a snapshot, not a live outline. The polygon is only as current as the flight, drone mission or GPS track that produced it, and that timestamp travels with the shape.</p>
+
+<p>On September 10, 2026 we queried the WFIGS Current Interagency Fire Perimeters service and it held 198 perimeter records nationally. That number moves through the season, but it illustrates the scale: a few hundred fires carry mapped polygons at any moment, out of tens of thousands of annual ignitions.</p>
+
+<h3>How agencies actually draw a perimeter</h3>
+
+<p>Most large-fire perimeters come from infrared imagery flown at night, when the contrast between burning fuel and cooled ground is greatest. An interpreter traces the heat perimeter from that imagery. Other polygons come from GPS tracks walked or driven by crews, or from a combination of methods.</p>
+
+<p>The map method field records which approach was used. In our September 10, 2026 query the two most common values on large fires were "IR Image Interpretation" and "Mixed Methods". Both are credible; mixed methods simply means more than one technique contributed to the final shape.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">198</span><span class="stat-label">Current interagency perimeters on Sept 10, 2026</span></div>
+  <div class="stat-card"><span class="stat-number">119</span><span class="stat-label">Fields published on the WFIGS perimeter layer</span></div>
+  <div class="stat-card"><span class="stat-number">575,163</span><span class="stat-label">Acres in the largest perimeter that day (Oregon)</span></div>
+  <div class="stat-card"><span class="stat-number">1,145</span><span class="stat-label">Personnel on the Sinlahekin fire, Washington</span></div>
+</div>
+
+<h3>What the shape does and does not tell you</h3>
+
+<p>A perimeter tells you where fire has already been. It does not tell you where the fire is burning now, which parts of the edge are open, or where the head of the fire is pointed. Interior islands of unburned fuel are common and are rarely shown.</p>
+
+<p>Reading direction of travel requires two perimeters, or one perimeter plus fresh satellite heat. If new detections cluster along the northeast edge and nowhere else, that edge is the active front, regardless of how neat the polygon looks.</p>
+
+<div class="callout callout-info"><strong>Perimeters and the active edge</strong>Douglas Morton of the Biospheric Sciences Laboratory at NASA's Goddard Space Flight Center described the value of frequent perimeter tracking this way: "The FEDS system could help fire crews pinpoint the parts of a fire perimeter that are actively burning and might need attention-especially in remote areas where monitoring by aircraft or other means is limited." The public version of that idea is comparing a perimeter against the newest heat, as reported by <a href="https://science.nasa.gov/earth/earth-observatory/tracking-canadas-extreme-2023-fire-season-151985/" rel="noopener">NASA Earth Observatory</a>.</div>
+
+<h3>Why perimeters sometimes shrink</h3>
+
+<p>A polygon occasionally gets smaller between updates. That usually reflects better mapping rather than a shrinking fire. An early estimate drawn from a coarse source is replaced by a precise infrared trace, and the corrected shape is smaller.</p>
+
+<p>The same happens when a complex of fires is split into separate incidents, or when an incident is renamed after a merge. If acreage falls sharply, look for a change in the incident name or a new map method before assuming the fire is retreating.</p>
+
+<p>Perimeter behavior is one of the strongest arguments for reading a <a href="/blog/wildfire-map/">wildfire map</a> with the timestamps visible. On any fire perimeter map, a shape with no time attached is a decoration, not data.</p>
+<h2 id="modis">What do MODIS hotspots mean on a fire map?</h2>
+
+<p>A MODIS hotspot on a fire tracker map marks the center of a satellite pixel in which the algorithm found a thermal anomaly. MODIS fire pixels are nominally 1 kilometer square, so the dot represents an area of about 247 acres, not a fire of that size.</p>
+
+<p>The instrument flies on NASA's Terra and Aqua satellites. Per the MODIS specifications, both fly a sun-synchronous 705 km orbit, Terra crossing at 10:30 a.m. on the descending node and Aqua at 1:30 p.m. on the ascending node, with a swath 2,330 km across track.</p>
+
+<p>Two satellites in daylight plus two night passes give roughly four looks per day at mid-latitudes. NOAA's Hazard Mapping System documentation describes the pair as providing sub-daily global observations around 10:30 a.m. and p.m. and 1:30 a.m. and p.m. local time.</p>
+
+<h3>How small a fire MODIS can see</h3>
+
+<p>The MODIS Collection 6 user guide is unusually direct about detection limits. It states that MODIS can routinely detect flaming and smoldering fires around 1,000 square meters in size, and that under very good conditions flaming fires one tenth that size are detectable.</p>
+
+<p>Under what the guide calls pristine and extremely rare observing conditions, flaming fires of about 50 square meters can register. There is no upper limit: unlike some older sensors, MODIS does not lose the largest and hottest fires to saturation in the detection step.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>MODIS detection thresholds as published in the Collection 6 and 6.1 user guide</caption>
+    <thead>
+      <tr><th scope="col">Observing condition</th><th scope="col">Smallest flaming fire detectable</th><th scope="col">Practical meaning on a map</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Routine</th><td>About 1,000 square meters</td><td>A quarter-acre of active flame anywhere in the pixel</td></tr>
+      <tr><th scope="row">Very good</th><td>About 100 square meters</td><td>Near nadir, little smoke, uniform ground cover</td></tr>
+      <tr><th scope="row">Pristine and rare</th><td>About 50 square meters</td><td>Should never be assumed when planning</td></tr>
+      <tr><th scope="row">Under canopy</th><td>Detection described as very unlikely</td><td>Understory burns often invisible from orbit</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Reading the MODIS confidence number</h3>
+
+<p>MODIS reports a detection confidence between 0 and 100 percent, and that value assigns each fire pixel to one of three classes: low, nominal or high confidence. The percentage is a heuristic quality score, not a probability that a fire exists.</p>
+
+<p>The user guide's own advice is worth following. Readers who want fewer false alarms should keep only nominal and high confidence pixels and treat low confidence pixels as clear land. Readers hunting for any possible ignition should keep all three and accept more noise.</p>
+
+<div class="callout callout-tip"><strong>Use confidence as a filter, not a verdict</strong>A single low-confidence MODIS pixel in isolation is weak evidence. Three detections from different passes over the same square kilometer, at least one of them nominal or high confidence, is strong evidence. Cluster and repetition beat any individual score, per the <a href="https://modis-fire.umd.edu/files/MODIS_C6_C6.1_Fire_User_Guide_1.0.pdf" rel="noopener">MODIS active fire user guide</a>.</div>
+
+<h3>Why MODIS still matters in 2026</h3>
+
+<p>MODIS is the oldest active fire record in wide public use, running since the launch of Terra in December 1999 and Aqua in May 2002. That continuity makes it the reference series for comparing this year against the last two decades.</p>
+
+<p>On a live fire tracker map its role is narrower but real: it adds independent passes at different local times from the VIIRS overpasses, which matters on days when clouds break at 10:30 in the morning but not at 1:30 in the afternoon.</p>
+
+<p>The pixel is the catch. A MODIS pixel is nominally 1 square kilometer at nadir and grows away from nadir, so a detection near the edge of a swath can represent several square kilometers of ground.</p>
+
+<h2 id="viirs">Why do VIIRS pixels dominate a fire tracking map?</h2>
+
+<p>VIIRS dominates a modern fire tracking map because its fire product runs at 375 meters instead of 1 kilometer. NASA put the improvement plainly when the product entered Forest Service operations: resolution rose to 1,230 feet from the 3,280-foot pixels of earlier products.</p>
+
+<p>That is roughly a seven-fold reduction in pixel area. The same fire that produced one MODIS dot can produce several VIIRS dots, which is why a fire tracking map switched to VIIRS suddenly looks busier without any change in fire activity.</p>
+
+<p>The instrument flies on Suomi NPP, launched October 28, 2011, and on the NOAA-20 and NOAA-21 satellites of the Joint Polar Satellite System. The first active fires were detected with VIIRS on January 19, 2012, once the instrument was commissioned.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">375 m</span><span class="stat-label">VIIRS I-band fire pixel, about 1,230 feet</span></div>
+  <div class="stat-card"><span class="stat-number">750 m</span><span class="stat-label">VIIRS M-band fire pixel used for fire power</span></div>
+  <div class="stat-card"><span class="stat-number">3,060 km</span><span class="stat-label">Approximate VIIRS ground swath width</span></div>
+  <div class="stat-card"><span class="stat-number">12 hrs</span><span class="stat-label">Global wall-to-wall coverage per VIIRS instrument</span></div>
+</div>
+
+<h3>What the three VIIRS confidence classes mean</h3>
+
+<p>VIIRS does not publish a percentage. Its fire mask uses classes 7, 8 and 9 for low, nominal and high confidence, and the definitions are physical rather than statistical, which makes them easier to reason about.</p>
+
+<p>Low confidence daytime pixels are typically associated with sun glint or water and show a mid-infrared temperature anomaly below 15 K. Nominal confidence pixels are free of sun glint contamination and show an anomaly above 15 K, day or night.</p>
+
+<p>High confidence pixels are associated with saturated pixels, including the digital-number folding that occurs when a fire greatly exceeds the sensor's saturation temperature. In practice a class 9 detection means something intensely hot was in that 375-meter square.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Comparing the two NASA polar fire products as they appear on a fire tracker map</caption>
+    <thead>
+      <tr><th scope="col">Attribute</th><th scope="col">MODIS</th><th scope="col">VIIRS</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Fire pixel size</th><td>1 km nominal, grows off nadir</td><td>375 m I-band, 750 m M-band</td></tr>
+      <tr><th scope="row">Confidence format</th><td>0 to 100 percent, three classes</td><td>Classes 7, 8, 9 only</td></tr>
+      <tr><th scope="row">Platforms</th><td>Terra and Aqua</td><td>Suomi NPP, NOAA-20, NOAA-21</td></tr>
+      <tr><th scope="row">Local overpass</th><td>Around 10:30 and 13:30</td><td>Around 01:30 and 13:30</td></tr>
+      <tr><th scope="row">Swath width</th><td>2,330 km</td><td>About 3,060 km</td></tr>
+      <tr><th scope="row">Best role on a map</th><td>Long historical continuity</td><td>Locating the active fire edge</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>What the resolution gain bought firefighters</h3>
+
+<p>The operational case for VIIRS was made by the people who used it first. Brad Quayle, program lead at the USFS Remote Sensing Applications Center in Salt Lake City, said the high-resolution VIIRS data "are available in a short time period and significantly enhances the Forest Service's current strategic fire detection and monitoring capabilities."</p>
+
+<p>Wilfrid Schroeder, who led the VIIRS 375-meter project team at the University of Maryland College Park, framed the goal as reducing pressure on fire managers: "We hope that by infusing these higher resolution detection data and fire behavior modeling outputs into tactical fire situations, we can lessen the pressure on those working in fire management." Both statements appear in <a href="https://www.nasa.gov/news-release/battling-wildfires-from-space-nasa-adds-to-firefighters-toolkit/" rel="noopener">NASA release 15-144</a>.</p>
+
+<p>For the reader, the payoff is the same in miniature. A 375-meter grid resolves the shape of a fire's leading edge well enough that you can see which side of a ridge or highway the heat is on.</p>
+<h2 id="goes">How does GOES heat appear on a fire tracker map?</h2>
+
+<p>GOES heat appears on a fire tracker map as a coarse, frequently updated detection layer. The satellites sit in geostationary orbit 22,236 miles above the equator and stare at the same hemisphere continuously, so they trade spatial detail for temporal detail.</p>
+
+<p>NOAA NESDIS lists GOES-19 as the operational GOES East satellite and GOES-18 as GOES West, with GOES-16 and GOES-17 held as on-orbit backups. NOAA's Hazard Mapping System documentation records the two operational slots as 75.2 degrees west and 137.2 degrees west.</p>
+
+<p>The instrument doing the work is the Advanced Baseline Imager. It carries 16 spectral bands and, in its default 10-minute flex mode, produces a full disk image every 10 minutes, a CONUS image every five minutes and mesoscale sectors every 60 seconds.</p>
+
+<h3>Why a 2 km pixel is still useful</h3>
+
+<p>GOES fire detections run at roughly 2 kilometers, which is four times coarser in each direction than MODIS. A single GOES pixel covers about 988 acres. Any position it reports can be off by more than a kilometer, and NOAA says so explicitly.</p>
+
+<p>What you gain is change over time. Because the CONUS sector refreshes every five minutes, a fire that blows up between two polar overpasses shows in GOES within minutes. That is the difference between learning about a run at 3 p.m. and learning about it at 8 p.m.</p>
+
+<div class="callout callout-info"><strong>Why geostationary data was added to fire products</strong>Dr. Shobha Kondragunta, a physical scientist at NOAA NESDIS, explained the limitation that geostationary data fixes: "This is because polar orbiting satellites, which circle the Earth from pole to pole, can only view portions of the globe at a time and this limits the information they can glean from a quickly evolving wildfire. The addition of GOES satellite data, however, helps resolve this issue." Reported by <a href="https://www.nesdis.noaa.gov/news/noaa-satellites-improve-estimates-of-wildfire-smoke-air-quality-predictions" rel="noopener">NOAA NESDIS</a>.</div>
+
+<h3>How fast GOES data actually arrives</h3>
+
+<p>NOAA publishes its latency budget, which is unusual and useful. GOES full disk Level 1 data become available within about 20 to 30 minutes of observation, and the smaller CONUS sector within 10 to 15 minutes. Fire processing adds another 5 to 15 minutes.</p>
+
+<p>Polar data is slower. MODIS and VIIRS Level 1 files become available within 1 hour 30 minutes to 2 hours 30 minutes of observation, with fire processing adding 5 to 10 minutes. Hazard Mapping System products can add a further 1 to 3 hours while analysts assess quality.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Published latency for satellite fire detections, from NOAA's Hazard Mapping System documentation</caption>
+    <thead>
+      <tr><th scope="col">Data stream</th><th scope="col">Level 1 availability</th><th scope="col">Added fire processing</th><th scope="col">Total typical delay</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">GOES CONUS sector</th><td>10-15 minutes</td><td>5-15 minutes</td><td>Roughly 15-30 minutes</td></tr>
+      <tr><th scope="row">GOES full disk</th><td>20-30 minutes</td><td>5-15 minutes</td><td>Roughly 25-45 minutes</td></tr>
+      <tr><th scope="row">MODIS and VIIRS</th><td>1:30-2:30 hours</td><td>5-10 minutes</td><td>Roughly 1.5-2.5 hours</td></tr>
+      <tr><th scope="row">HMS analyst product</th><td>Depends on input</td><td>1-3 hours added on average</td><td>Longest, but quality controlled</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>The smoke layer that rides along with GOES</h3>
+
+<p>NOAA's Hazard Mapping System, first implemented in 2002, also produces smoke polygons drawn by analysts from daytime GOES imagery. Each polygon carries a density attribute of light, medium or heavy, replacing the older numeric codes.</p>
+
+<p>The schedule is fixed. Initial active fire detections are typically published by 8:00 a.m. Eastern Time, the first smoke classification appears between 11:00 a.m. and 12:00 p.m. Eastern, and a second classification is generally issued between 7:00 p.m. and 8:00 p.m.</p>
+
+<p>That cadence explains a common complaint: smoke overlays often look stale in the early morning. They are. If you need smoke and air quality first thing, read the AQI value rather than the polygon, and see the <a href="/blog/forest-fire-smoke-tracker/">forest fire smoke tracker guide</a> for the full method.</p>
+
+<h3>What NOAA is changing next</h3>
+
+<p>Two changes affecting every fire map tracker are in flight. NOAA's Satellite Analysis Branch has announced it intends to transition away from routine manual verification of automated fire detections within the Hazard Mapping System, which will cut analyst latency but shift more quality judgment onto the reader.</p>
+
+<p>Separately, the Next Generation Fire System uses an algorithm that automatically identifies heat anomalies in GOES East and GOES West data, even through clouds and smoke, and NOAA expects it to reach full operational status later in 2026.</p>
+
+<h2 id="probability">What does a probability score add to a fire map?</h2>
+
+<p>A probability score on a fire tracker map turns three independent signals into one number you can sort and filter by. In US Wildfire Tracker, each detection receives a probability tier that fuses whether an official NIFC record is linked, how fresh that NIFC perimeter is, and how recent the satellite heat is.</p>
+
+<p>The reason for combining them is that no single signal is sufficient. An official record without recent heat may describe a fire that is nearly out. Fresh heat without a record may be a gas flare. Fresh heat plus a linked record plus a recent perimeter is as close to certainty as public data gets.</p>
+
+<p>The score is a ranking device, not a physical measurement. It answers "how much of my attention does this deserve" rather than "what is the chance that fuel is burning here", and it should be read that way.</p>
+
+<h3>How the three inputs behave</h3>
+
+<div class="spec-list">
+  <dt>Official linkage</dt><dd>Whether the detection is matched to a NIFC incident record with a name, acreage and containment figure</dd>
+  <dt>Perimeter freshness</dt><dd>How long ago the linked agency perimeter was captured, read from the polygon timestamp</dd>
+  <dt>Heat recency</dt><dd>How long ago the newest VIIRS, MODIS or GOES detection was observed at that location</dd>
+  <dt>Default filter</dt><dd>Weak signals below 25 percent probability are hidden until you choose to show them</dd>
+  <dt>Stale records</dt><dd>Outdated incident records can be toggled back on when you are reconstructing a timeline</dd>
+</div>
+
+<h3>Why weak signals are hidden by default</h3>
+
+<p>Hiding low-probability detections is a deliberate trade. NOAA's own documentation lists the main causes of false alarms in satellite fire products: fresh burn scars and sandy soils that brighten the mid-infrared channel, sun glint from large solar panel clusters or metallic rooftops, clouds and water bodies.</p>
+
+<p>It also names thermal anomalies from industrial activity, such as steel mills and gas flaring, and structural fires in urban areas. None of those are wildfires, and all of them will light up an unfiltered fire tracker map in the same color as a real one.</p>
+
+<div class="callout callout-warn"><strong>Hotspots are not always fires</strong>A detection means a pixel was hot, not that vegetation was burning. Prescribed burns, agricultural burning, flares, refineries and industrial heat all trigger the same algorithms. US Wildfire Tracker warns about this in the interface; NOAA documents the same commission errors in its <a href="https://www.ospo.noaa.gov/products/land/hms.html" rel="noopener">Hazard Mapping System FAQ</a>.</div>
+
+<h3>When to turn the weak signals back on</h3>
+
+<p>There is one situation where showing everything is correct: the first hour of a suspected new ignition in your own area. Before an incident record exists, a cluster of low-probability detections may be the only public evidence that anything is happening.</p>
+
+<p>The discipline is to switch the filter back afterwards. Leaving every marginal pixel visible permanently trains you to ignore the map, which is worse than not having it. The <a href="/blog/wildfire-tracking/">wildfire tracking data guide</a> goes deeper on how these signals are scored.</p>
+<h2 id="alerts">How do NWS fire-weather alerts sit on a fire map?</h2>
+
+<p>National Weather Service fire-weather alerts sit on a fire map as area shading rather than fire shapes. On a fire map tracker they describe weather that would make ignition and spread dangerous. They say nothing about whether anything is currently burning inside them, and that distinction trips up most first-time readers.</p>
+
+<p>The two products you will see are the Red Flag Warning and the Fire Weather Watch. NWS issues a Red Flag Warning, in conjunction with land management agencies, to alert land managers to an ongoing or imminent critical fire weather pattern. A watch signals that such conditions are possible but not imminent.</p>
+
+<p>Both are drawn from fire weather zones, which are administrative areas rather than terrain features. A zone can cover several counties, so the shading will always look coarser than the fire data underneath it.</p>
+
+<h3>The criteria behind the color</h3>
+
+<p>The NWS glossary gives a national description of Red Flag criteria: the warning is issued when the event is ongoing, or when the forecaster has high confidence it will occur within 24 hours, with sustained wind averaging 15 mph or greater, relative humidity at or below 25 percent, and temperature above 75 degrees Fahrenheit.</p>
+
+<p>Local offices then set their own thresholds. The NWS Chicago office, for example, lists sustained 20-foot winds of 20 mph or higher and afternoon relative humidity below 25 percent, and it issues a Fire Weather Watch up to 72 hours ahead of expected conditions.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Fire-weather alert products and how to act on each one</caption>
+    <thead>
+      <tr><th scope="col">Product</th><th scope="col">Timing</th><th scope="col">What it means</th><th scope="col">Reasonable response</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Fire Weather Watch</th><td>Up to 72 hours ahead in some offices</td><td>Critical conditions are possible</td><td>Charge devices, review your routes, delay outdoor burning</td></tr>
+      <tr><th scope="row">Red Flag Warning</th><td>Ongoing or within 24 hours</td><td>Critical conditions are occurring or imminent</td><td>Refresh the map more often, avoid any spark-producing work</td></tr>
+      <tr><th scope="row">Evacuation warning</th><td>Issued by local authorities</td><td>Be ready to leave at short notice</td><td>Pack, move vehicles, keep the map open</td></tr>
+      <tr><th scope="row">Evacuation order</th><td>Issued by local authorities</td><td>Leave now by the designated route</td><td>Go. Do not wait for the map to update</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why the alert layer sometimes has no polygon</h3>
+
+<p>This is the single most misunderstood behavior in the alert layer. Many fire-weather alerts carry no geographic polygon at all; they are defined by zone codes, and the map has to draw the zone boundaries itself.</p>
+
+<p>We tested this directly. On September 9, 2026 we queried the National Weather Service API for active Red Flag Warnings. It returned 10 alerts, from the Bismarck, Riverton, Glasgow, Cheyenne, Pocatello, Billings and Missoula offices, and not one of the 10 carried a polygon geometry.</p>
+
+<p>The consequence is that alert shading follows zone lines, which often run along county borders. If the shading appears to stop at a straight line across open country, that is administrative geography, not a change in the weather.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">10</span><span class="stat-label">Active Red Flag Warnings on September 9, 2026</span></div>
+  <div class="stat-card"><span class="stat-number">0</span><span class="stat-label">Of those 10 that carried a polygon geometry</span></div>
+  <div class="stat-card"><span class="stat-number">15 mph</span><span class="stat-label">Sustained wind in the national Red Flag criteria</span></div>
+  <div class="stat-card"><span class="stat-number">25%</span><span class="stat-label">Relative humidity threshold in those criteria</span></div>
+</div>
+
+<h3>How the alert feed itself works</h3>
+
+<p>The National Weather Service publishes alerts through api.weather.gov. The agency describes the information as open data, free to use for any purpose, with rate limits that are not public but typically clear within about five seconds if exceeded.</p>
+
+<p>Two details matter for readers. Endpoints that include geometry default to GeoJSON, and the alerts endpoint contains alerts issued over the past seven days rather than a permanent archive. A fire map cannot show you last month's Red Flag Warning from this feed.</p>
+
+<div class="callout callout-tip"><strong>Read the alert text, not just the color</strong>Every NWS alert carries a headline, a description and an expiry time. The description usually names the specific hazard, such as gusts to a stated speed or single-digit humidity. Two warnings with the same color can describe very different afternoons, per the <a href="https://www.weather.gov/documentation/services-web-api" rel="noopener">NWS API documentation</a>.</div>
+
+<h3>How weather changes what the fire data means</h3>
+
+<p>Fire-weather alerts change the weight you give everything else on the fire tracker map. A perimeter twelve hours old is usually adequate on a humid, still day. The same perimeter under a Red Flag Warning with 30 mph gusts is close to worthless for judging where the fire is now.</p>
+
+<p>Wind direction is the practical link. If the alert describes southwest winds and the newest heat sits on the northeast edge of a perimeter, the fire is being pushed in a direction that is already visible in the data.</p>
+
+<h2 id="acres">What do acres and containment mean on a fire map?</h2>
+
+<p>Acres and percent contained are the two fire tracker map numbers most people read first and most people misread. Acres describe the area inside the fire's outer boundary. Percent contained describes how much of the control line around that boundary is finished. Neither describes how much is still burning.</p>
+
+<p>NWCG defines containment as the status of a wildfire suppression action signifying that a control line has been completed around the fire, and any associated spot fires, which can reasonably be expected to stop the fire's spread. CAL FIRE describes it more simply as a measure of the amount of line around a wildfire.</p>
+
+<p>That is why a fire can be 100 percent contained and still burning vigorously inside its own footprint for weeks. Containment is a statement about the boundary, not about the interior.</p>
+
+<h3>What a containment line physically is</h3>
+
+<p>A control line can be a bulldozed break, a hand-cut trench, a road, a river, or previously burned ground. Reporting on the 2017 Thomas Fire described the most common form as a shallow trench roughly 10 to 12 feet wide dug into the dirt by crews.</p>
+
+<p>Containment can also go backwards. The same reporting noted that Thomas Fire containment fell from 15 percent to 10 percent on December 10, 2017 when Santa Ana winds pushed the fire across finished line. A falling percentage is a serious signal, not a data error.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>How to translate containment percentages into a realistic picture</caption>
+    <thead>
+      <tr><th scope="col">Reported containment</th><th scope="col">What it says about the line</th><th scope="col">What it does not say</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">0 to 10 percent</th><td>Crews are still building line; the fire is largely open</td><td>Nothing about the direction of spread</td></tr>
+      <tr><th scope="row">25 to 50 percent</th><td>A substantial share of the perimeter is held</td><td>Which share; the open half may face you</td></tr>
+      <tr><th scope="row">75 to 95 percent</th><td>Most of the boundary is finished</td><td>Interior fuel can still burn for weeks</td></tr>
+      <tr><th scope="row">100 percent</th><td>The line is complete around the whole perimeter</td><td>Not extinguished, not controlled, not out</td></tr>
+      <tr><th scope="row">Falling percentage</th><td>Line has been lost or the perimeter grew</td><td>Treat as an escalation until proven otherwise</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Acres, and why the number lags</h3>
+
+<p>Acreage on a fire map comes from two places. The polygon acreage is measured from the mapped shape. The reported incident size comes from the situation report. On a fast-moving fire the reported figure is often the older of the two.</p>
+
+<p>Real examples make the scale concrete. In our September 10, 2026 query of the interagency perimeter service, the largest active perimeter was the Big Grass fire in Oregon at about 575,163 acres and 94 percent contained, while the Sinlahekin fire in Washington sat at about 166,018 acres, 67 percent contained, with 1,145 personnel assigned.</p>
+
+<p>Personnel counts are an underrated signal. A fire with over a thousand people assigned is being fought hard right now; a fire of similar size with nine people assigned is in mop-up. Both can show the same acreage.</p>
+
+<div class="callout callout-info"><strong>Growth is uneven, especially early</strong>Yang Chen, an atmospheric scientist at the University of California, Irvine, described the pattern found in hundreds of large California fires between 2012 and 2020: "Many of those fires showed quite uneven growth overall, with explosive rates of growth occurring during the first several days after ignition." That is reported by <a href="https://science.nasa.gov/earth/earth-observatory/tracking-canadas-extreme-2023-fire-season-151985/" rel="noopener">NASA Earth Observatory</a>, and it is the reason a new small fire deserves more attention than its acreage suggests.</div>
+<h2 id="history">How do historical perimeters change a fire map?</h2>
+
+<p>Historical perimeters are the footprints of fires from previous seasons, drawn as a separate optional layer. Switching them on turns a fire tracker map from a snapshot into a fuel-history document, because ground that burned recently usually cannot carry another intense fire immediately.</p>
+
+<p>The practical use of a historical fire perimeter map is prediction without modeling. If a new fire's active edge is running toward a large footprint from three years ago, that edge is likely to slow when it reaches the old scar. If it is running toward unburned timber, the opposite applies.</p>
+
+<p>Historical footprints also explain the map you are looking at. A fire that appears to have an unnaturally straight northern boundary is often bounded by an older burn, not by a control line.</p>
+
+<h3>What historical perimeters cannot do</h3>
+
+<p>Old scars are not fireproof. Grass and brush regrow within one to three seasons in much of the West, and a scar that stopped a crown fire in year one may carry a fast grass fire in year four. The layer indicates reduced fuel load, not immunity.</p>
+
+<p>There is also a data gap. NIFC notes on its statistics page that prior to 1983, the federal wildland fire agencies did not track official wildfire data using current reporting processes, so long historical layers thin out sharply as you go back.</p>
+
+<div class="callout callout-tip"><strong>Use the history layer before the season, not during it</strong>The best time to study historical perimeters near your home is a quiet week in spring. Learn which drainages have burned, which have not, and where the old scars sit relative to your access roads. During an incident you want the layer off, because it competes visually with the current perimeter.</div>
+
+<h3>Reading repeat burns</h3>
+
+<p>Areas that appear in three or more historical footprints within a decade are telling you something about local fire regime. Chaparral, grassland and some pine systems reburn on short intervals; high-elevation forest does not.</p>
+
+<p>When you see repeat burns near a community, the useful question is not whether it will burn again but which direction the last several fires approached from. Alignment across multiple events usually reflects terrain and prevailing wind, and both are stable.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>What an old fire footprint suggests about current fire behavior</caption>
+    <thead>
+      <tr><th scope="col">Age of the scar</th><th scope="col">Typical fuel state</th><th scope="col">Effect on a new fire</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Under 1 year</th><td>Bare ground, ash, standing dead</td><td>Strong barrier to surface spread in most fuel types</td></tr>
+      <tr><th scope="row">1 to 3 years</th><td>Grass and light brush returning</td><td>Slows timber fire, can still carry grass fire</td></tr>
+      <tr><th scope="row">4 to 10 years</th><td>Continuous brush, young regrowth</td><td>Often burns readily, sometimes faster than before</td></tr>
+      <tr><th scope="row">Over 10 years</th><td>Approaching pre-fire fuel loading</td><td>Little practical barrier effect remains</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="basemap">Which basemap works best on a fire map tracker?</h2>
+
+<p>The basemap is the layer under everything else, and it decides whether a fire tracker map is readable. US Wildfire Tracker uses OpenStreetMap, a community-maintained dataset covering roads, trails, railway stations and much more, which supplies the road network and place names you need to orient yourself.</p>
+
+<p>OpenStreetMap is the right default for wildfire work for one specific reason: road and trail coverage in rural areas is generally better than on commercial street maps, because local contributors add forest roads and tracks that commercial vendors ignore.</p>
+
+<p>The organization describes itself as built by a community of mappers who contribute and maintain data about roads, trails and much more, all over the world, and it supplies map data to thousands of websites, apps and devices.</p>
+
+<h3>What to look for in the base layer during an incident</h3>
+
+<p>Three features matter more than anything else: the road network, ridgelines and watercourses, and named places. Roads give you escape routes. Terrain explains why the fire is moving as it is. Place names let you match the map to what officials are saying on the radio.</p>
+
+<p>Everything else is decoration during an emergency. If a base layer's styling makes red detection markers hard to see against red terrain shading, that is a real usability problem, not an aesthetic preference.</p>
+
+<div class="spec-list">
+  <dt>Best for orientation</dt><dd>A street-style base with clear road classes and named settlements</dd>
+  <dt>Best for terrain reasoning</dt><dd>Any base that shows ridgelines, drainages and elevation change</dd>
+  <dt>Worst during an incident</dt><dd>Dark or high-contrast bases that compete with red and orange fire markers</dd>
+  <dt>What US Wildfire Tracker uses</dt><dd>OpenStreetMap, chosen for rural road and trail coverage</dd>
+</div>
+
+<h3>Why zoom level changes the story</h3>
+
+<p>Fire data is displayed at fixed marker sizes, so zooming changes the apparent density of detections dramatically. At a national zoom, a single large fire looks like a smudge. At street zoom, the same fire resolves into individual pixel centers with gaps between them.</p>
+
+<p>Those gaps are not unburned ground. NOAA notes that the spacing between adjacent fire points is a function of the sensor's spatial resolution. At 375 meters the points are 375 meters apart because that is the grid, not because the fire skipped ground.</p>
+
+<div class="callout callout-warn"><strong>Do not measure a fire by counting dots</strong>Detection points mark pixel centers, not flame locations. NOAA's documentation states that spatial offsets typically range from tens to hundreds of meters for VIIRS and up to more than 1 km for GOES, with larger errors over mountain ranges and steep terrain. Use the official perimeter for area, and the dots only for direction and recency.</div>
+
+<h2 id="near-me">How do you find fires near you on a fire map?</h2>
+
+<p>Finding fires near you takes three steps on any competent fire tracker map: allow location access, set a search radius in miles, and read the resulting list sorted by distance. US Wildfire Tracker does this with browser geolocation and shows fires within a distance you choose.</p>
+
+<p>Distance alone is not the whole answer. A fire 30 miles upwind on a Red Flag day can matter more than a fire 8 miles away in the opposite direction, behind a river. Bearing and wind convert distance into relevance.</p>
+
+<p>Privacy is worth stating plainly, because people hesitate at the location prompt. In US Wildfire Tracker, location is used only to find nearby fires. It is never stored, sold or shared.</p>
+
+<ol class="step-list">
+  <li>Open the live map and allow location access when the browser prompts, or filter to your state if you prefer not to share a position.</li>
+  <li>Set a radius that matches your terrain: 25 miles in flat, open country, 50 miles or more in mountainous terrain where fires travel along drainages.</li>
+  <li>Sort the resulting fire list by distance and read the top three entries in full, including acres, containment and the perimeter timestamp.</li>
+  <li>Note the bearing from you to each fire, then compare it with the forecast wind direction in the current fire-weather alert.</li>
+  <li>Check whether any of them has satellite heat newer than its perimeter, which is the signal that the mapped shape is already out of date.</li>
+</ol>
+
+<h3>Choosing a radius that is not misleading</h3>
+
+<p>Too small a radius hides the fire that matters. Too large a radius fills the list with incidents you cannot act on. The useful compromise is to set the radius to roughly the distance a fire could cover in a day under bad conditions in your fuel type.</p>
+
+<p>In grass, wind-driven runs of many miles in a single afternoon are documented in incident reporting. In heavy timber, spread is usually far slower. Adjust the number to your surroundings rather than using a national default.</p>
+
+<h3>What to do when the list is empty</h3>
+
+<p>An empty list is good news but not proof. Satellite detections can lag, small fires may never reach a national dataset, and cloud can hide heat entirely. The MODIS user guide lists exactly these causes: a fire may start and end between overpasses, or be too small or too cool for the footprint.</p>
+
+<p>If you can see or smell smoke and the map is empty, trust your senses and call local dispatch. Then check again in twenty minutes; a new GOES detection can appear well before any incident record exists. For a step-by-step version of this workflow, see the <a href="/blog/fire-tracker-near-me/">fire tracker near me guide</a>.</p>
+<h2 id="worked">How would you read one real fire on a fire map?</h2>
+
+<p>Reading a real fire on a fire tracking map is a fixed sequence, and the fastest way to learn it is to walk through actual records. The two examples below come from our own query of the interagency perimeter service on September 10, 2026, and they show two completely different situations that look similar at a glance.</p>
+
+<p>The first is the Big Grass fire in Oregon: about 575,163 acres, 94 percent contained, 236 personnel assigned, with a perimeter captured on August 24, 2026. The second is the Sinlahekin fire in Washington: about 166,018 acres, 67 percent contained, 1,145 personnel, perimeter captured September 9, 2026.</p>
+
+<h3>Step one: read the perimeter timestamp first</h3>
+
+<p>Big Grass has a perimeter more than two weeks old at the time of the query. Sinlahekin's perimeter is from the previous day. Before looking at any other number, that difference tells you which shape you can trust as a current outline.</p>
+
+<p>An old perimeter on a well-contained fire is normal and unalarming; there is no reason to fly an infrared mission over a fire that has stopped moving. An old perimeter on a lightly contained fire is a warning sign.</p>
+
+<h3>Step two: compare containment against personnel</h3>
+
+<p>Big Grass is 94 percent contained with 236 people. Sinlahekin is 67 percent contained with 1,145 people. The staffing ratio confirms what containment implies: one fire is being finished, the other is still being fought.</p>
+
+<p>Personnel is the field most readers skip and the one that most often resolves ambiguity. Agencies do not keep a thousand people on a fire that has stopped needing them.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Two real incidents from the WFIGS perimeter service on September 10, 2026</caption>
+    <thead>
+      <tr><th scope="col">Field</th><th scope="col">Big Grass, Oregon</th><th scope="col">Sinlahekin, Washington</th><th scope="col">What the contrast tells you</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Perimeter acres</th><td>About 575,163</td><td>About 166,018</td><td>Size alone does not rank urgency</td></tr>
+      <tr><th scope="row">Percent contained</th><td>94</td><td>67</td><td>A third of the Washington line is still open</td></tr>
+      <tr><th scope="row">Total personnel</th><td>236</td><td>1,145</td><td>Resourcing tracks the open line, not the acres</td></tr>
+      <tr><th scope="row">Perimeter captured</th><td>August 24, 2026</td><td>September 9, 2026</td><td>One shape is current, the other is historical</td></tr>
+      <tr><th scope="row">Map method</th><td>Mixed Methods</td><td>IR Image Interpretation</td><td>Infrared interpretation implies a recent flight</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Step three: look for heat outside the line</h3>
+
+<p>With the perimeter on screen, switch on satellite detections and look specifically at the ground outside the polygon. Detections inside the line are expected on any active fire; detections outside it are the story.</p>
+
+<p>Cluster matters. One isolated VIIRS pixel 2 miles beyond the perimeter may be a spot fire, a slash pile, or a marginal detection. Six pixels in a line running away from the perimeter along a drainage is a fire making a run.</p>
+
+<h3>Step four: convert the picture into a decision</h3>
+
+<p>The decision framework for reading a fire tracker map is short. If the fire is behind terrain, well contained, heavily staffed, and the newest heat is inside the line, monitor daily. If containment is low, heat sits outside the line on your side, and a Red Flag Warning is active, monitor hourly and prepare to leave.</p>
+
+<p>Write the decision down as a threshold before you need it. "If heat appears west of the ridge, we load the car" is a usable rule. "We will keep an eye on it" is not.</p>
+
+<div class="callout callout-tip"><strong>The ninety-second routine</strong>Perimeter timestamp, containment, personnel, heat outside the line, fire-weather alert, distance and bearing. Six checks, in that order, on the <a href="https://wildfire-map.org/">live fire map</a>. Practising the routine on a distant fire in a quiet week is what makes it fast when the fire is yours.</div>
+
+<h3>How the same routine works during initial attack</h3>
+
+<p>In the first hours of a new fire, most of those fields are empty. There is no incident record, no perimeter, no containment figure. All you have is a cluster of detections and, if you are lucky, a GOES trend.</p>
+
+<p>In that situation the useful signals invert. Recency and repetition across successive satellite passes replace containment and personnel. If three consecutive passes over 90 minutes each show heat in the same place and the cluster is growing, you are watching a fire establish itself, whatever the record says.</p>
+
+<h2 id="misreadings">Which fire tracker map misreadings cause bad calls?</h2>
+
+<p>Most fire tracker map errors come from six specific misreadings, and every one of them is avoidable. They share a root cause: treating a symbol as a measurement instead of as a summary produced by a documented process with documented limits.</p>
+
+<p>The list below is ordered by how often it leads people to a wrong conclusion, based on the questions we see most often about our own map and on the caveats that NASA and NOAA publish about their products.</p>
+
+<h3>Misreading one: dots equal fire size</h3>
+
+<p>A detection marker shows the center of a satellite pixel. NOAA states that fire detection point data describe the center latitude and longitude of the pixel in which a potential fire was detected, and that the exact location may differ.</p>
+
+<p>Scale that up and a single fire can paint a wide band of markers across a map when only a fraction of the ground is burning. Use the official perimeter for area, always.</p>
+
+<h3>Misreading two: no dots equal no fire</h3>
+
+<p>Absence of detection is weak evidence. NOAA notes that thick or vertically developed smoke plumes can be confused with clouds during daytime observation, causing omission errors, and that obscuration by terrain, canopy and cloud all reduce detection.</p>
+
+<p>The MODIS user guide adds that a fire may simply have started and ended between overpasses. A clean map at 11 a.m. does not describe the afternoon.</p>
+
+<h3>Misreading three: heat means wildfire</h3>
+
+<p>Thermal anomalies from industrial activity such as steel mills and gas flaring appear in these products, as do structural fires in urban environments and sun glint from large solar panel clusters or metallic rooftops. Fresh burn scars and sandy soils can also raise a false signal.</p>
+
+<p>Prescribed burning is the most common benign explanation in spring and fall. A tidy rectangle of detections on agricultural or forest land, during daylight, in calm weather, is usually planned burning.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Six common fire tracker map misreadings and the correction for each</caption>
+    <thead>
+      <tr><th scope="col">Misreading</th><th scope="col">Why it happens</th><th scope="col">The correction</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Dots equal fire size</th><td>Markers are drawn at fixed sizes regardless of zoom</td><td>Read area from the official perimeter only</td></tr>
+      <tr><th scope="row">No dots equal no fire</th><td>Cloud, canopy, smoke and pass timing cause omissions</td><td>Treat a clean map as provisional, not final</td></tr>
+      <tr><th scope="row">Heat equals wildfire</th><td>Industrial and agricultural heat share the signature</td><td>Check context, repetition and any linked record</td></tr>
+      <tr><th scope="row">100 percent contained equals out</th><td>Everyday language differs from NWCG usage</td><td>Contained means the line is complete, nothing more</td></tr>
+      <tr><th scope="row">Alert shading equals active fire</th><td>Fire-weather zones are drawn like hazard areas</td><td>Alerts describe weather, not combustion</td></tr>
+      <tr><th scope="row">Newest layer equals newest truth</th><td>Layers refresh on different clocks</td><td>Compare each layer's own timestamp before ranking them</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Misreading four: containment as extinguishment</h3>
+
+<p>Containment describes completed control line. A fire at 100 percent containment continues to burn inside its own boundary, sometimes for weeks, and the terms "controlled" and "out" describe later, stricter states.</p>
+
+<p>The corollary matters too: containment can fall. A percentage that drops between updates means line was lost or the perimeter grew, and it should raise your attention level immediately.</p>
+
+<h3>Misreading five: alert shading as fire location</h3>
+
+<p>Red Flag shading covers fire weather zones, which are administrative. Because most alerts carry no polygon at all, the shape you see is a zone boundary. Nothing inside it is necessarily burning, and a fire just outside it is not safer.</p>
+
+<h3>Misreading six: mixing up the timestamps</h3>
+
+<p>Every layer has its own age. A perimeter from 03:15 UTC, a VIIRS detection from 90 minutes ago and a GOES detection from 20 minutes ago describe three different moments. Ranking them by which looks freshest on screen, rather than by their stated times, produces confident wrong answers.</p>
+
+<div class="callout callout-warn"><strong>The one habit that prevents most errors</strong>Before acting on anything, say the timestamp out loud. "This perimeter is from yesterday evening; this heat is from forty minutes ago." Naming the ages forces the comparison that makes the rest of the map interpretable, and it takes about five seconds.</div>
+<h2 id="mobile">Does a fire map tracker work the same on mobile?</h2>
+
+<p>A fire map tracker behaves differently on a phone than on a desktop, and the differences are worth planning for before an emergency. Screen area, network reliability and battery life all change what you can realistically read and how long you can keep reading it.</p>
+
+<p>The core data on the fire tracker map is identical. What changes is how much of it fits at once, how precisely you can tap a small detection marker, and how gracefully the map degrades when the cell network is congested near an active incident.</p>
+
+<h3>What to change on a small screen</h3>
+
+<p>Turn off every layer you are not actively using. On a phone, historical perimeters and smoke overlays consume the same screen area as the current perimeter and compete for the same few hundred pixels of visual bandwidth.</p>
+
+<p>Zoom to a level where the road network is legible, not to the tightest zoom available. Roads are what convert a fire's position into a decision about whether your route out is threatened.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Practical differences between reading a fire map on desktop and on a phone</caption>
+    <thead>
+      <tr><th scope="col">Factor</th><th scope="col">Desktop or laptop</th><th scope="col">Phone</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Layers on at once</th><td>Three or four is comfortable</td><td>Two is usually the practical limit</td></tr>
+      <tr><th scope="row">Marker precision</th><td>Cursor selects individual detections easily</td><td>Zoom in before tapping clustered pixels</td></tr>
+      <tr><th scope="row">Panel space</th><td>Fire list and map side by side</td><td>List and map usually alternate</td></tr>
+      <tr><th scope="row">Network</th><td>Usually stable</td><td>Congested near incidents and in canyons</td></tr>
+      <tr><th scope="row">Battery</th><td>Not a constraint</td><td>Continuous geolocation drains quickly</td></tr>
+      <tr><th scope="row">Best role</th><td>Planning, comparison, printing</td><td>Checking distance and bearing in the field</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why a browser side panel is a good middle ground</h3>
+
+<p>On a desktop the most sustainable way to monitor a fire is not a full-screen map you keep switching away from. It is a persistent panel beside the work you are actually doing, so glancing costs nothing.</p>
+
+<p>That is the reason US Wildfire Tracker ships as a Chrome extension in addition to the website. The <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Fire Tracker extension</a> opens the same map in the Chrome side panel or a full tab, is free, requires no account, and carries no ads or third-party ad trackers.</p>
+
+<p>Both surfaces refresh automatically every few minutes while open, and if a refresh fails, the last saved results stay on screen rather than the map going blank. During a network outage near a fire, that behavior matters more than any feature.</p>
+
+<h3>Preparing a phone before fire season</h3>
+
+<ol class="step-list">
+  <li>Open the live map once on the device and grant location access, so you are not fighting a permission prompt during an incident.</li>
+  <li>Save the state-filtered view you use most often as a bookmark on the home screen for one-tap access.</li>
+  <li>Note the distances from your home to two or three landmarks you can identify on the map, such as a ridge or a highway junction.</li>
+  <li>Test the map once on cellular data alone, with wifi disabled, so you know how it behaves on a weak connection.</li>
+  <li>Keep a paper note of the county emergency number and your two planned evacuation routes, because no map replaces either.</li>
+</ol>
+
+<div class="callout callout-info"><strong>Why frequency beats detail on a phone</strong>Dr. Ivanka Stajner, Deputy Director of the Environmental Modeling Center at NOAA's National Weather Service, put the case for hourly data plainly: "Weather conditions change during the day. The new hour-by-hour wildfire emissions from RAVE help us develop better computer models to predict how wildfires cause poor air quality near the fires and even across the country." Reported by <a href="https://www.nesdis.noaa.gov/news/noaa-satellites-improve-estimates-of-wildfire-smoke-air-quality-predictions" rel="noopener">NOAA NESDIS</a>. On a phone, checking a simple view often beats studying a complex one rarely.</div>
+
+<h2 id="share">How do you print or share a live fire tracker map?</h2>
+
+<p>Sharing a live fire tracker map view is how a household, a crew or a newsroom stays on the same picture. The two useful mechanisms on a fire map tracker are a link to a specific fire and a printed or saved snapshot with the timestamps visible.</p>
+
+<p>US Wildfire Tracker supports sharing a link to an individual fire, which opens the same incident for whoever receives it. That removes the most common failure in group communication: two people describing different fires with the same generic name.</p>
+
+<p>Incident names repeat across states and across years. Always pair a name with a state, or send the link, or both. A shared link is unambiguous in a way that "the Ross fire" is not.</p>
+
+<h3>What to include when you share</h3>
+
+<div class="spec-list">
+  <dt>The incident link</dt><dd>So the recipient opens the same fire rather than searching by name</dd>
+  <dt>The perimeter timestamp</dt><dd>So they know how old the shape they are looking at actually is</dd>
+  <dt>Acres and containment</dt><dd>The two numbers officials will also be quoting</dd>
+  <dt>Your distance and bearing</dt><dd>Turns an abstract fire into a personal risk statement</dd>
+  <dt>The active alert, if any</dt><dd>Red Flag Warning status changes how urgent everything else is</dd>
+</div>
+
+<h3>Printing a view that stays useful</h3>
+
+<p>A printed fire tracker map is a hedge against losing power or signal. Print at a zoom where road names are readable, which usually means a county-scale view rather than a state-scale one, and write the date and time on the page by hand.</p>
+
+<p>Print two: one at county scale showing the fire and your routes, one at neighborhood scale showing your own address and the nearest through road. Tape them somewhere everyone in the household can see.</p>
+
+<div class="callout callout-tip"><strong>Directions away from a fire</strong>US Wildfire Tracker can open directions away from a fire in Google Maps, Apple Maps or Waze, and it links to official incident pages including an InciWeb search for the incident name. Set those up while you are calm; the moment you need them is the worst time to learn where the buttons are.</div>
+
+<h3>Sharing responsibly during an incident</h3>
+
+<p>Two rules prevent most harm. Never present a satellite detection as a confirmed fire in a public post, and never present a perimeter as current without its timestamp. Both mistakes spread faster than corrections do.</p>
+
+<p>If you are relaying information to neighbors, quote the official incident record and the alert text rather than your own interpretation of the pixels. The distinction between "NIFC reports 67 percent containment" and "it looks contained to me" is the whole difference between useful and harmful.</p>
+
+<h2 id="glossary">Which fire map terms should you know in advance?</h2>
+
+<p>A fire tracker map uses vocabulary borrowed from three separate professional communities: wildland fire operations, satellite remote sensing and weather forecasting. Learning about fifteen terms removes almost all of the ambiguity you will meet on screen.</p>
+
+<p>The definitions below follow the agencies that publish the data, so they match what officials say in briefings. Where everyday usage differs from official usage, the difference is noted, because that gap is where mistakes live.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>A working glossary of fire map terms, with the agency meaning of each</caption>
+    <thead>
+      <tr><th scope="col">Term</th><th scope="col">What it means on a fire map</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Active fire detection</th><td>A satellite pixel flagged as containing a thermal anomaly; the marker is the pixel center</td></tr>
+      <tr><th scope="row">Acres</th><td>Area inside the mapped perimeter, or the reported incident size; the two can differ</td></tr>
+      <tr><th scope="row">Basemap</th><td>The underlying reference map of roads, terrain and place names; OpenStreetMap here</td></tr>
+      <tr><th scope="row">Brightness temperature</th><td>The apparent temperature a sensor measures in an infrared channel, used to flag fire pixels</td></tr>
+      <tr><th scope="row">Confidence class</th><td>MODIS reports 0-100 percent in three classes; VIIRS reports classes 7, 8 and 9 only</td></tr>
+      <tr><th scope="row">Containment</th><td>Share of the control line completed around the fire, per the NWCG definition</td></tr>
+      <tr><th scope="row">Control line</th><td>The constructed or natural barrier intended to stop spread; often a 10 to 12 foot trench</td></tr>
+      <tr><th scope="row">Discovery date</th><td>When the fire was reported, which sets the incident's age on the map</td></tr>
+      <tr><th scope="row">Fire radiative power</th><td>The energy release rate retrieved for a fire pixel, reported in megawatts</td></tr>
+      <tr><th scope="row">Fire weather zone</th><td>The administrative area an NWS fire-weather alert is issued for, not a fire boundary</td></tr>
+      <tr><th scope="row">Full disk</th><td>The whole-hemisphere GOES scan, produced every 10 minutes in the default mode</td></tr>
+      <tr><th scope="row">Hotspot</th><td>Informal name for an active fire detection; never a synonym for a confirmed wildfire</td></tr>
+      <tr><th scope="row">Map method</th><td>How a perimeter was produced, such as IR Image Interpretation or Mixed Methods</td></tr>
+      <tr><th scope="row">Nadir</th><td>The point directly beneath the satellite, where pixels are smallest and most accurate</td></tr>
+      <tr><th scope="row">Perimeter</th><td>The agency-mapped outer boundary of the burned area at a stated time</td></tr>
+      <tr><th scope="row">Red Flag Warning</th><td>NWS product for ongoing or imminent critical fire weather, typically within 24 hours</td></tr>
+      <tr><th scope="row">Swath</th><td>The ground strip a polar-orbiting sensor images on one pass; 2,330 km for MODIS</td></tr>
+      <tr><th scope="row">WFIGS</th><td>The interagency geospatial services that publish official incident and perimeter data</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Three terms people confuse most often</h3>
+
+<p>Contained, controlled and out are three different states, in that order. Contained means the line is complete. Controlled means the interior along the line has been extinguished and hotspots cooled. Out means the fire is declared finished.</p>
+
+<p>A map that reports containment is reporting the earliest of those three states. Treat 100 percent containment as the beginning of the end of an incident, not the end.</p>
+
+<p>Regional guides such as the <a href="/blog/california-fire-map/">California fire map guide</a> apply the same vocabulary to a single state's agencies and seasons, which is often the fastest way to make the terms concrete.</p>
+<div class="expert-quote">
+  <blockquote>We built the map around one belief: the timestamp is the most important number on the screen. Anyone can draw a red polygon. What decides whether you make a good call is knowing that the perimeter is from last night, the satellite heat is from forty minutes ago, and the containment figure came from this morning's report. We show all three, we fuse them into one probability tier, and we hide the weak signals by default so the strong ones are believable.</blockquote>
+  <cite><strong>The US Wildfire Tracker team</strong> — builders of the wildfire-map.org live map and Chrome extension</cite>
+</div>
+
+<h2 id="faq">Frequently Asked Questions About Fire Tracker Map Layers</h2>
+
+<div class="faq-item">
+  <p class="faq-q">What is the difference between a hotspot and a fire perimeter?</p>
+  <p class="faq-a">A hotspot is a satellite detection: the center point of a pixel where an algorithm found a thermal anomaly. On a fire perimeter map, the perimeter is a polygon drawn by an agency, usually interpreted from infrared imagery flown at night, showing the outer boundary of ground the fire has burned. Hotspots tell you where heat is now. Perimeters tell you where the fire has already been, as of a stated time.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">How often does a fire tracker map update?</p>
+  <p class="faq-a">Each layer has its own clock. NOAA reports GOES CONUS imagery reaching users 10 to 15 minutes after observation, with 5 to 15 minutes of fire processing added. MODIS and VIIRS Level 1 data take 1 hour 30 minutes to 2 hours 30 minutes. Official perimeters update after each mapping mission, often once a day. US Wildfire Tracker itself refreshes automatically every few minutes while open.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Why does one fire show dozens of separate dots?</p>
+  <p class="faq-a">Each dot is one satellite pixel that met the detection threshold, drawn at its center. At 375 meters for VIIRS or 1 kilometer for MODIS, a large fire covers many pixels, so it produces many markers. The spacing between markers reflects the sensor grid, not gaps in the fire. Read burned area from the official perimeter and use the dots only for direction and recency.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Does 100 percent contained mean the fire is out?</p>
+  <p class="faq-a">No. NWCG defines containment as a completed control line around the fire and any spot fires that can reasonably be expected to stop its spread. Fuel inside the boundary keeps burning, sometimes for weeks. Controlled is a later state, meaning the interior along the line has been extinguished and hotspots cooled. Out is later still. Containment describes the boundary only.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Can a satellite miss a fire completely?</p>
+  <p class="faq-a">Yes, routinely. The MODIS user guide lists the reasons: the fire started and ended between overpasses, it was too small or too cool for the pixel footprint, or cloud cover, heavy smoke or tree canopy obscured it. Detection of understory burns beneath a canopy is described as very unlikely. An empty map is provisional evidence, never proof that nothing is burning.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">What is the smallest fire a satellite can see?</p>
+  <p class="faq-a">The MODIS user guide says the sensor routinely detects flaming and smoldering fires around 1,000 square meters, and around 100 square meters under very good conditions. NOAA frames it differently: detection algorithms begin to respond when an active fire occupies at least 0.01 percent of a pixel at roughly 800 K, meaning about 100 square meters of active flame inside a 1 kilometer pixel.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Why do some detections sit in the middle of a city?</p>
+  <p class="faq-a">Because the sensors detect heat, not vegetation fires. NOAA lists thermal anomalies from industrial activity such as steel mills and gas flaring, structural fires in urban environments, and sun glint from large solar panel clusters or metallic rooftops as known causes of false alarms. Fresh burn scars and sandy soils can also raise the mid-infrared signal enough to trigger a detection.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Why is a Red Flag Warning area shaped like counties?</p>
+  <p class="faq-a">Fire-weather alerts are issued for fire weather zones, which are administrative areas that often follow county lines. Many carry no polygon geometry at all. When we queried the National Weather Service API for active Red Flag Warnings on September 9, 2026, all 10 returned alerts were zone-defined with no polygon. The shading you see is a zone boundary, not a fire boundary.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">What does the fire probability score actually measure?</p>
+  <p class="faq-a">In US Wildfire Tracker it fuses three things: whether an official NIFC record is linked to the detection, how fresh that NIFC perimeter is, and how recent the satellite heat is. It is a ranking aid rather than a physical measurement. Detections below 25 percent probability are hidden by default because that band is dominated by industrial heat and marginal signals.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Which layer should I trust when two disagree?</p>
+  <p class="faq-a">Trust the layer whose timestamp is closest to now for the question you are asking. For burned area, the official perimeter wins even if it is older, because satellite dots overstate footprint. For current activity, the newest satellite heat wins even if no incident record exists. For what to do, an official evacuation order overrides every layer on the map.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Is a fire tracker map free to use?</p>
+  <p class="faq-a">The US Wildfire Tracker map at wildfire-map.org is free in any browser, with no account required. The Fire Tracker Chrome extension is also free, rated 5 stars in the Chrome Web Store, and carries no ads or third-party ad trackers. The underlying government feeds are open data too: the National Weather Service states its API is free to use for any purpose.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Why did the perimeter get smaller since yesterday?</p>
+  <p class="faq-a">Usually because the mapping improved rather than because the fire shrank. An early estimate from a coarse source gets replaced by a precise infrared trace, and the corrected polygon is smaller. Perimeters also change when a complex is split into separate incidents or an incident is renamed. Check the map method and incident name fields before assuming the fire retreated.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">How far away should I care about a fire?</p>
+  <p class="faq-a">Distance alone is the wrong test. Bearing relative to forecast wind, terrain between you and the fire, fuel type and current containment all matter more. A practical default is a 25 mile radius in flat open country and 50 miles or more in mountains, then adjust based on which direction the newest heat is moving relative to your position.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Does the map store my location?</p>
+  <p class="faq-a">No. In US Wildfire Tracker, browser geolocation is used only to find fires near you and to calculate distances in miles. It is never stored, sold or shared. If you would rather not share a position at all, filter by state instead: the map covers all 50 states plus the District of Columbia, and state filtering needs no location permission.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">What should I check first when a new fire starts nearby?</p>
+  <p class="faq-a">On the fire tracker map, check whether any satellite heat sits between the fire and you, then check the forecast wind direction in the active fire-weather alert, then check the incident record for containment and personnel. In the first hours there may be no record at all, in which case repetition across successive satellite passes is your best available signal that the fire is establishing.</p>
+</div>
+
+<div class="cta-block">
+  <div class="cta-text">
+    <p class="cta-title">Read every layer on one live fire map</p>
+    <p class="cta-body">Official NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES detections and National Weather Service fire alerts, fused into one view with every timestamp visible.</p>
+  </div>
+  <div class="cta-buttons">
+    <a href="https://wildfire-map.org/" class="cta-btn">Open the live fire map →</a>
+    <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" class="cta-btn" rel="noopener">Add to Chrome — free →</a>
+    <a href="/blog/" class="cta-btn">More wildfire guides →</a>
+  </div>
+</div>
+
+<footer class="article-footer">Published September 2026 by the US Wildfire Tracker team. Sources: NIFC, NASA FIRMS, NOAA, National Weather Service and the agencies linked in the text. This guide is informational; always follow evacuation orders from local authorities.</footer>
+</div>
+</main>
+<aside class="related" aria-label="Related guides"><h2>Related wildfire guides</h2><ul><li><a href="/blog/fire-tracker/"><span class="rel-title">Fire Tracker Guide 2026: How to Track Wildfires in Real Time</span><span class="rel-desc">A fire tracker fuses NIFC incident records, satellite heat, perimeters and NWS alerts into one live map. Learn to read every layer and act on what it shows.</span></a></li><li><a href="/blog/live-fire-tracker/"><span class="rel-title">Live Fire Tracker: How Real-Time Wildfire Data Works in 2026</span><span class="rel-desc">A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.</span></a></li><li><a href="/blog/wildfire-map/"><span class="rel-title">Wildfire Map: How to Use a Live US Wildfire Map in 2026</span><span class="rel-desc">A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.</span></a></li><li><a href="/blog/fire-tracker-near-me/"><span class="rel-title">Fire Tracker Near Me: Find Fires Near You in Under a Minute</span><span class="rel-desc">Fire tracker near me: the 60-second check that tells you if fires near me are real, how close matters, and what to do next. Verified NIFC, NASA and NWS data.</span></a></li></ul></aside>
+<footer class="site-footer"><div class="inner">
+<div>&copy; 2026 US Wildfire Tracker &middot; Data: NIFC, NASA FIRMS, NOAA, NWS. Not an official emergency service; always follow local evacuation orders.</div>
+<div><a href="/">Live map</a><a href="/blog/">Guides</a><a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Chrome extension</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/privacy.html" rel="noopener">Privacy</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/terms.html" rel="noopener">Terms</a></div>
+</div></footer>
+</body>
+</html>

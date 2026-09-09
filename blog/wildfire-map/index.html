@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildfire Map: How to Use a Live US Wildfire Map in 2026 | US Wildfire Tracker</title>
+<meta name="description" content="A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.">
+<meta name="keywords" content="wildfire map, fire map, wildfire, wildfires, us wildfire map, live wildfire map, wildfire map today, wildfire perimeter map, wildfire hotspot map">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://wildfire-map.org/blog/wildfire-map/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="US Wildfire Tracker">
+<meta property="og:title" content="Wildfire Map: How to Use a Live US Wildfire Map in 2026 | US Wildfire Tracker">
+<meta property="og:description" content="A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.">
+<meta property="og:url" content="https://wildfire-map.org/blog/wildfire-map/">
+<meta property="og:image" content="https://wildfire-map.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-09-10">
+<meta property="article:modified_time" content="2026-09-10">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wildfire Map: How to Use a Live US Wildfire Map in 2026 | US Wildfire Tracker">
+<meta name="twitter:description" content="A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.">
+<meta name="twitter:image" content="https://wildfire-map.org/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://wildfire-map.org/#organization",
+   "name": "US Wildfire Tracker",
+   "url": "https://wildfire-map.org/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://wildfire-map.org/logo512.png",
+    "width": 512,
+    "height": 512
+   },
+   "sameAs": [
+    "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://wildfire-map.org/#website",
+   "url": "https://wildfire-map.org/",
+   "name": "US Wildfire Tracker",
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://wildfire-map.org/blog/wildfire-map/#article",
+   "headline": "Wildfire Map: How to Use a Live US Wildfire Map in 2026",
+   "description": "A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.",
+   "url": "https://wildfire-map.org/blog/wildfire-map/",
+   "mainEntityOfPage": "https://wildfire-map.org/blog/wildfire-map/",
+   "inLanguage": "en-US",
+   "wordCount": 12535,
+   "image": "https://wildfire-map.org/og-image.png",
+   "keywords": "wildfire map, fire map, wildfire, wildfires, us wildfire map, live wildfire map, wildfire map today, wildfire perimeter map, wildfire hotspot map",
+   "author": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "datePublished": "2026-09-10",
+   "dateModified": "2026-09-10",
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Wildfire map"
+    },
+    {
+     "@type": "Thing",
+     "name": "Wildfire perimeter"
+    },
+    {
+     "@type": "Thing",
+     "name": "Satellite fire detection"
+    },
+    {
+     "@type": "Thing",
+     "name": "Fire weather alerts"
+    },
+    {
+     "@type": "Thing",
+     "name": "Wildfire risk"
+    }
+   ],
+   "mentions": [
+    {
+     "@type": "Thing",
+     "name": "NIFC"
+    },
+    {
+     "@type": "Thing",
+     "name": "WFIGS"
+    },
+    {
+     "@type": "Thing",
+     "name": "IRWIN"
+    },
+    {
+     "@type": "Thing",
+     "name": "NASA FIRMS"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA HMS"
+    },
+    {
+     "@type": "Thing",
+     "name": "National Weather Service"
+    },
+    {
+     "@type": "Thing",
+     "name": "InciWeb"
+    },
+    {
+     "@type": "Thing",
+     "name": "USDA Forest Service"
+    },
+    {
+     "@type": "Thing",
+     "name": "EPA AirNow"
+    },
+    {
+     "@type": "Thing",
+     "name": "US Fire Administration"
+    }
+   ],
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     ".lead",
+     ".faq-a"
+    ]
+   },
+   "isPartOf": {
+    "@id": "https://wildfire-map.org/#website"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://wildfire-map.org/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Wildfire guides",
+     "item": "https://wildfire-map.org/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Wildfire Map: How to Use a Live US Wildfire Map in 2026",
+     "item": "https://wildfire-map.org/blog/wildfire-map/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://wildfire-map.org/blog/wildfire-map/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is the best free wildfire map for the United States?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "US Wildfire Tracker is a free live wildfire map covering all 50 states and the District of Columbia, with no account required and no ads. It fuses official NIFC incident records and WFIGS perimeters, NASA MODIS and VIIRS thermal detections, NOAA GOES heat detections and National Weather Service fire-weather alerts into one view at wildfire-map.org, and the same map is available as a Chrome side-panel extension."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often does a live wildfire map update?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the layer. NOAA reports geostationary GOES fire data reaching users roughly 15 to 45 minutes after observation, while polar-orbiting VIIRS and MODIS detections take about one and a half to two and a half hours plus processing. Incident records typically update once or twice daily after briefings, and perimeters often refresh only after an overnight infrared flight."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does the wildfire map show a fire where there is none?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Satellite sensors detect heat, not flame. Gas flares, refineries, steel mills, landfills, agricultural burning and prescribed fire all produce genuine thermal anomalies. NOAA also documents cases where tall, intense plumes are partly detected as fire pixels. A detection with no official incident record, no repeat on a later pass and no cluster around it should be treated as an unconfirmed lead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is a fire missing from the wildfire map?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Small fires suppressed quickly by local departments frequently never enter federal feeds. NOAA also lists cloud cover, forest canopy, terrain shading, proximity to water bodies and wide satellite viewing angles as causes of missed detections, and notes a fire generally needs an active area of at least about 100 square meters to register in a 1-kilometer pixel. Absence on the map is never proof of absence on the ground."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a fire perimeter and a hotspot?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A perimeter is an agency-produced polygon showing where a fire has already burned, usually mapped by an infrared aircraft at night or by field GPS. A hotspot is a single satellite pixel where anomalous infrared radiation was measured minutes to hours ago. When fresh hotspots appear outside a perimeter, the fire has moved and the polygon is out of date."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does containment percentage mean the fire is going out?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not directly. Containment is the share of the fire's perimeter secured by a control line that crews expect to hold. A fire at 80 percent containment still has a fifth of its edge open, usually in the steepest or least accessible terrain. What matters for a resident is whether the uncontained portion faces toward them, not the headline percentage."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How accurate are the locations on a wildfire map?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "NOAA states that detection points mark the center of the satellite pixel, with typical offsets of tens to hundreds of meters for VIIRS and up to more than a kilometer for GOES. Errors grow over mountains and steep terrain because of terrain correction in satellite geolocation. Official perimeters from infrared flights are far more precise but considerably older."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a wildfire map tell me whether to evacuate?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Evacuation orders come from county emergency management, sheriffs and state agencies, and Ready.gov advises evacuating immediately when authorities tell you to. A wildfire map helps you notice a threat earlier, set personal departure triggers based on distance and fresh heat, and understand road and smoke conditions, but it carries no legal authority and is not an emergency service."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is there smoke over my house with no fire nearby?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wildfire smoke routinely travels hundreds of miles from its source. NOAA's Hazard Mapping System maps smoke plumes separately from fire detections precisely because the two rarely coincide. Check the Air Quality Index for what you are breathing: the EPA sets 101 to 150 as unhealthy for sensitive groups and 151 to 200 as unhealthy for the general public."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does a Red Flag Warning on the map mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It means the National Weather Service expects critical fire weather now or within 24 hours. The glossary criteria are sustained wind averaging 15 miles per hour or more, relative humidity at or below 25 percent, and temperature above 75 degrees Fahrenheit, together with a recent dry spell and high to extreme fire danger. It signals conditions, not an existing fire."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many wildfires burn in the US each year?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Averaging NIFC's published table for the ten years from 2016 through 2025 gives about 63,200 wildfires and roughly 7.05 million acres per year. The range is wide: 2020 saw 10,122,336 acres burn, while 2023 saw 2,693,910. Fire counts stay far steadier than acreage, which shows that a small number of large fires drives most burned area."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are most wildfires caused by people or lightning?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "People, by a wide margin. NIFC recorded 69,556 human-caused wildfires in 2025 against 8,294 lightning-caused ones, which works out to roughly 89 percent human-caused by our calculation from those totals. Lightning fires still account for a disproportionate share of acreage because they start in remote country and often burn for weeks before crews can reach them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I use a wildfire map on my phone and desktop?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The live map at wildfire-map.org runs in any browser, including mobile. On desktop Chromium browsers you can also install the free Fire Tracker extension from the Chrome Web Store, which opens the same map in the side panel next to whatever you are working on or in a full tab."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a wildfire map track my location?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On US Wildfire Tracker, browser geolocation is optional and used only to find fires within a chosen distance of you. Your location is never stored, sold or shared. If you prefer not to grant it, you can filter by any of the 50 states plus the District of Columbia and get the same fire list without sharing any position data at all."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between a wildfire map and a risk map?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A wildfire map shows fires burning now, refreshed in minutes to hours. A risk map shows modeled long-run likelihood and consequence for a location. The USDA Forest Service's Wildfire Risk to Communities, launched in 2020 and fully updated in May 2024, is the national risk reference. Use a risk map to choose where to live and a live map to decide what to do today."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "US Wildfire Tracker",
+   "operatingSystem": "Chrome, any modern browser",
+   "applicationCategory": "UtilitiesApplication",
+   "url": "https://wildfire-map.org/",
+   "installUrl": "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="inner">
+<a class="site-brand" href="/"><img src="/icon48.png" width="32" height="32" alt="US Wildfire Tracker logo">US Wildfire Tracker</a>
+<nav class="site-nav" aria-label="Site"><a href="/">Live fire map</a><a href="/blog/">Wildfire guides</a><a class="primary" href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Add to Chrome</a></nav>
+</div></header>
+<main class="wmt-article">
+<div class="container">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Wildfire guides</a> &rsaquo; Fire Maps</nav>
+<header class="article-header">
+  <span class="article-tag">Fire Maps</span>
+  <h1>Wildfire Map: How to Read a Live US Wildfire Map and Act on What You See</h1>
+  <div class="article-meta">
+    <span>📅 <time datetime="2026-09">September 2026</time></span>
+    <span>⏱ 57 min read</span>
+    <span>✍ <a href="https://wildfire-map.org/">US Wildfire Tracker team</a></span>
+  </div>
+</header>
+
+<p class="lead">A wildfire map is an interactive chart of where fires are burning right now, drawn from official incident records, satellite heat detections and fire-weather alerts. Reading one well means knowing which layer you are looking at, how old it is, and what it cannot tell you about the road outside your house.</p>
+
+<div class="trust-badge">
+  <span class="trust-badge-icon" aria-hidden="true">🏆</span>
+  <div class="trust-badge-text">
+    <div class="trust-badge-title">US Wildfire Tracker — <span>rated 5 stars in the Chrome Web Store</span></div>
+    <div class="trust-badge-sub">2026 — free live wildfire map built on official NIFC, NASA and NOAA data</div>
+  </div>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#what-is-a-wildfire-map">What is a wildfire map and how does it work?</a></li>
+    <li><a href="#map-types">Which type of wildfire map do you actually need?</a></li>
+    <li><a href="#agencies">Which agencies supply US wildfire map data?</a></li>
+    <li><a href="#satellites">How do satellites feed a live wildfire map?</a></li>
+    <li><a href="#smoke">How does a fire map show smoke and air quality?</a></li>
+    <li><a href="#weather">Where do Red Flag Warnings show on a fire map?</a></li>
+    <li><a href="#how-to-read">How do you read a live wildfire map step by step?</a></li>
+    <li><a href="#probability">Why does a wildfire map score fire probability?</a></li>
+    <li><a href="#latency">How fresh is the data on a live wildfire map?</a></li>
+    <li><a href="#seasons">When is wildfire season in each US region?</a></li>
+    <li><a href="#statistics">What do US wildfire statistics say about risk?</a></li>
+    <li><a href="#near-me">How do you find wildfires near your address?</a></li>
+    <li><a href="#evacuation">How does a fire map guide an evacuation decision?</a></li>
+    <li><a href="#travel">How do hikers and travelers use a wildfire map?</a></li>
+    <li><a href="#insurance">How do insurers and buyers read a wildfire map?</a></li>
+    <li><a href="#limits">What can a wildfire map not tell you?</a></li>
+    <li><a href="#mistakes">Which wildfire map mistakes lead to bad calls?</a></li>
+    <li><a href="#glossary">What do the terms on a wildfire map mean?</a></li>
+    <li><a href="#faq">Frequently Asked Questions About Wildfire Maps</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-is-a-wildfire-map">What is a wildfire map and how does it work?</h2>
+
+<p>A wildfire map is an interactive map that plots active wildland fires on a geographic basemap using three families of data: official incident records filed by fire agencies, satellite detections of heat, and weather service alerts. Every serious wildfire map in the United States is a fusion of those feeds.</p>
+
+<p>None of those feeds is a live camera. Each one is a periodic snapshot produced by a different organization on a different schedule, and the map's job is to stitch them into a single picture that a non-specialist can read in under a minute.</p>
+
+<p>That fusion is the whole reason a public wildfire map exists. A firefighter working an incident already has radio traffic, infrared flight products and a division supervisor. A homeowner in the wildland-urban interface has none of that, and the US Fire Administration notes that more than 60,000 communities in the United States are at risk of wildland-urban interface fires.</p>
+
+<h3>The three data families behind every US fire map</h3>
+
+<p>The first family is the official incident record. When an agency dispatches resources to a fire, that fire gets a record with a name, a discovery date, an acreage estimate, a containment percentage and a managing organization. Those records flow through interagency systems and end up in public feeds published by the National Interagency Fire Center.</p>
+
+<p>The second family is satellite thermal detection. Instruments in orbit measure infrared radiation and flag pixels that are far hotter than their surroundings. NOAA's documentation explains that these algorithms begin responding when the burning area occupies at least about 0.01 percent of the pixel footprint, assuming an average fire temperature of 800 kelvin or more.</p>
+
+<p>The third family is fire weather. The National Weather Service issues a Red Flag Warning when critical fire weather conditions are ongoing or imminent, and a Fire Weather Watch when those conditions are possible but not yet occurring. Those polygons tell you where a new ignition would run fastest today.</p>
+
+<div class="callout callout-info"><strong>Why satellites matter to ground crews</strong>Brad Quayle of the Forest Service's Geospatial Technology and Applications Center told NOAA that "we use the satellites to inform decisions on where to stage assets across the country," adding that when competition for firefighters, tankers and aircraft is high, "decisions have to be made on how to distribute those assets." Read the full account in NOAA's feature on <a href="https://nesdis.noaa.gov/content/wildfires-space-how-view-above-helps-firefighters-ground" rel="noopener">wildfires seen from space</a>.</div>
+
+<h3>What a wildfire map is not</h3>
+
+<p>A wildfire map is not an emergency notification system, and it is not the legal authority on evacuations. County sheriffs, emergency managers and state agencies issue evacuation orders, and those orders reach residents through Wireless Emergency Alerts, local sign-up systems and door-to-door notification, not through a map layer.</p>
+
+<p>A wildfire map is also not a prediction of where a fire will go next. The perimeter you see is where the fire had already burned when the last mapping product was produced. Fire spread modeling is a specialist discipline run inside incident management teams, and its outputs are not published as public map layers in real time.</p>
+
+<p>Finally, a wildfire map is not complete. Small fires that are caught in ten minutes by a rural volunteer department may never generate a federal incident record or a satellite detection at all. The absence of a marker is weak evidence of the absence of fire, which is why smoke you can smell always outranks a blank map.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">375 m</span><span class="stat-label">VIIRS thermal pixel size, about three times finer than MODIS</span></div>
+  <div class="stat-card"><span class="stat-number">5 min</span><span class="stat-label">GOES scan interval over the contiguous United States</span></div>
+  <div class="stat-card"><span class="stat-number">60,000+</span><span class="stat-label">US communities the US Fire Administration lists as at risk of WUI fire</span></div>
+  <div class="stat-card"><span class="stat-number">1 to 5</span><span class="stat-label">National Preparedness Level scale used by NIFC</span></div>
+</div>
+
+<h3>How a fire map turns feeds into markers</h3>
+
+<p>Behind the scenes, the map requests each feed on a timer, normalizes the geometry, and matches records that describe the same fire. A single blaze can appear as one official incident record, a cluster of forty satellite pixels and a smoke polygon, all with different coordinates and different timestamps.</p>
+
+<p>Matching is the hard part. Satellite pixel centers are offset from the true burning area by tens to hundreds of meters for VIIRS data and by up to about a kilometer for GOES data, according to NOAA's Hazard Mapping System documentation, and offsets grow larger over steep terrain.</p>
+
+<p>Our own approach on the <a href="https://wildfire-map.org/">US Wildfire Tracker live map</a> is to keep the sources visible rather than hidden: each fire shows its own "Last NIFC update", "Last satellite heat" and "Last GOES heat" timestamps so you can judge the age of every signal yourself. The mechanics of that layering are covered in depth in our guide to reading a <a href="/blog/fire-tracker-map/">fire tracker map</a> layer by layer.</p>
+<h2 id="map-types">Which type of wildfire map do you actually need?</h2>
+
+<p>Five distinct products all get called a wildfire map: an incident map, a perimeter map, a hotspot map, a smoke map and a risk map. They answer different questions, update on different clocks, and mixing them up is the single most common reason people misread fire information.</p>
+
+<p>An incident map answers "which fires are officially being managed and how big are they". A perimeter map answers "where has the fire already burned". A hotspot map answers "where was heat detected in the last few hours". A smoke map answers "where is the plume drifting". A risk map answers "how likely is this place to burn in an average year".</p>
+
+<h3>Incident map: the official record layer</h3>
+
+<p>An incident map plots one marker per managed fire, positioned at the incident's reported point of origin or a representative point. Each marker carries structured attributes: incident name, discovery date, acres, containment percentage, incident type, managing organization and often total assigned personnel.</p>
+
+<p>The strength of an incident map is authority. A human dispatcher or public information officer entered the record, and it is the same figure quoted in agency briefings. On September 9, 2026, NIFC's national fire news reported 59 large fires burning with 14,405 firefighters and support personnel assigned nationwide.</p>
+
+<p>The weakness is cadence and geometry. Acreage and containment are usually revised once or twice a day after a morning briefing, so an incident marker can sit at "1,200 acres, 10 percent contained" while the fire triples overnight. A point marker also says nothing about shape.</p>
+
+<h3>Perimeter map: where the fire has already burned</h3>
+
+<p>A perimeter map draws the outline of the burned area as a polygon. Those polygons are produced by infrared mapping flights, by GPS tracks walked or driven by field crews, and increasingly by satellite-derived estimates when aircraft are unavailable.</p>
+
+<p>The Forest Service's National Infrared Operations program flies aircraft whose sensors see a six-mile swath from 10,000 feet, can map 300,000 acres of terrain per hour, detect a hotspot just six inches across, and place it within 12.5 feet on a map, according to NOAA's account of the program. Those flights normally happen at night.</p>
+
+<p>Because the flights are nocturnal and the products are processed afterward, the perimeter you see during the day is usually last night's shape. On a fast wind-driven run, a perimeter can be many hours and many thousands of acres behind reality, which is exactly when people most want to trust it.</p>
+
+<div class="callout callout-warn"><strong>Perimeters are history, not forecasts</strong>Treat every perimeter polygon as the answer to "where had this fire burned as of the last mapping product", never as "where the fire is now". Check the perimeter timestamp before you use the outline to judge how far the fire is from a road, a ridge or a house.</div>
+
+<h3>Hotspot map: raw satellite heat detections</h3>
+
+<p>A hotspot map plots individual satellite detections as points or small squares. Each one represents a pixel where the sensor measured anomalous infrared radiation. These are the fastest signals available to the public and the noisiest, because heat is heat regardless of its cause.</p>
+
+<p>Industrial flares, steel mills, gas processing plants, agricultural burning and prescribed fire all produce legitimate thermal anomalies. NOAA also documents a subtler failure: on large, intense wildfires with tall plumes, the VIIRS 375 meter product can detect part of the plume itself alongside the surface fire, which analysts then correct by hand.</p>
+
+<p>The value of a hotspot map is timing. When a fire starts in a remote canyon at two in the morning, a satellite pixel may exist hours before any agency record does. The cost is interpretation: a lone hotspot with no incident record behind it is a lead, not a fact.</p>
+
+<h3>Smoke map: plumes and surface air quality</h3>
+
+<p>A smoke map is a different product entirely, and it usually comes from two sources. NOAA's Hazard Mapping System publishes smoke polygons hand-drawn by analysts from geostationary satellite imagery, classified by density as light, medium or heavy. Separately, surface monitors feed the Air Quality Index.</p>
+
+<p>Smoke routinely travels far beyond any fire perimeter, so a smoke map and a fire map disagree by design. You can sit under an orange sky with an AQI of 180 and have no fire within 500 miles. Our companion guide to a <a href="/blog/forest-fire-smoke-tracker/">forest fire smoke tracker</a> works through the health thresholds in detail.</p>
+
+<h3>Risk map: long-run likelihood, not today</h3>
+
+<p>A risk map shows modeled wildfire likelihood and potential consequences for a location over the long run. The USDA Forest Service publishes Wildfire Risk to Communities, first launched in 2020 and completely updated in May 2024, built from LANDFIRE vegetation and fuels data, National Weather Service weather data and Census Bureau community data.</p>
+
+<p>Risk maps change on a multi-year cycle, not hourly. They are the right tool for choosing where to buy a house, how to prioritize fuel reduction and how to write a community wildfire protection plan. They are the wrong tool for deciding whether to leave tonight.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Five kinds of wildfire map compared by question answered and update speed</caption>
+    <thead><tr><th scope="col">Map type</th><th scope="col">Question it answers</th><th scope="col">Typical update speed</th><th scope="col">Main weakness</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Incident map</th><td>Which fires are officially managed, how big, how contained</td><td>Once or twice a day after briefings</td><td>Point geometry; acreage lags fast growth</td></tr>
+      <tr><th scope="row">Perimeter map</th><td>Where the fire has already burned</td><td>Often overnight after an infrared flight</td><td>Always historical; gaps when aircraft are unavailable</td></tr>
+      <tr><th scope="row">Hotspot map</th><td>Where heat was detected from orbit</td><td>Minutes to a few hours</td><td>False positives from industry and prescribed burns</td></tr>
+      <tr><th scope="row">Smoke map</th><td>Where the plume is and what the air is like</td><td>Twice daily analyst passes plus hourly monitors</td><td>Cloud cover hides plumes; no fire location detail</td></tr>
+      <tr><th scope="row">Risk map</th><td>How likely a place is to burn in an average year</td><td>Every few years</td><td>Says nothing about current fires</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>A well-built consumer wildfire map does not force you to choose. It carries the incident record, the perimeter polygon, the satellite hotspots and the fire-weather alert on the same screen, and labels which is which. That combined view is what the <a href="/blog/fire-tracker/">fire tracker pillar guide</a> describes end to end.</p>
+
+<h2 id="agencies">Which agencies supply US wildfire map data?</h2>
+
+<p>Public US wildfire map data comes from a short list of federal programs: NIFC and its interagency geospatial services for incidents and perimeters, IRWIN for record exchange, NASA and NOAA for satellite detections, NOAA's Hazard Mapping System for smoke, and the National Weather Service for fire-weather alerts.</p>
+
+<p>Understanding who publishes what tells you which numbers to trust for which purpose. Acreage disputes, containment revisions and duplicate fire names almost always trace back to the boundary between two of these systems.</p>
+
+<h3>NIFC and the National Interagency Coordination Center</h3>
+
+<p>The National Interagency Fire Center in Boise, Idaho is the coordination hub for federal wildland fire. It publishes the national fire news summary, the national preparedness level, year-to-date fire and acreage statistics, and the interagency geospatial feeds that most public fire maps consume.</p>
+
+<p>NIFC's preparedness level runs from 1 to 5 and describes how committed national firefighting resources are. On September 9, 2026, NIFC reported that the national preparedness level had decreased to 3 because of improving fire weather across multiple geographic areas and increasing availability of nationally shared resources.</p>
+
+<p>NIFC also publishes the long-run statistics that anchor any honest discussion of wildfire trends, and notes on its statistics page that before 1983 the federal wildland fire agencies did not track official wildfire data using current reporting processes. That caveat matters whenever someone shows you a century-long acreage chart.</p>
+
+<h3>WFIGS: the interagency geospatial feed</h3>
+
+<p>Wildland Fire Interagency Geospatial Services publishes the authoritative national layers of current fire locations and current fire perimeters through NIFC Open Data. These are the services that let an independent map show the same polygon a federal analyst sees, rather than a redrawn approximation.</p>
+
+<p>WFIGS layers refresh on a schedule measured in minutes for locations and considerably slower for perimeters, because a perimeter only changes when someone flies, walks or models a new outline. A location record can update the moment a dispatcher edits it.</p>
+
+<h3>IRWIN: how one fire keeps one identity</h3>
+
+<p>The Integrated Reporting of Wildland-Fire Information service is the plumbing that keeps a single fire from becoming three fires in three databases. IRWIN exchanges core incident attributes between agency dispatch, reporting and geospatial systems so that a fire keeps one persistent identifier across them.</p>
+
+<p>When you see a public map show a fire with a stable name, a stable discovery date and a consistent acreage across days, IRWIN is usually the reason. When you see the same fire twice under slightly different names, it is usually because a state or local record has not yet been reconciled with the federal one.</p>
+
+<h3>InciWeb, NASA FIRMS, NOAA HMS and the NWS</h3>
+
+<p>InciWeb is the interagency incident information system where management teams post narrative updates, closure orders, community meeting notices and maps for larger incidents. It is where a map's structured attributes turn into sentences a resident can act on.</p>
+
+<p>NASA's Fire Information for Resource Management System distributes MODIS and VIIRS active fire detections in near real time. NOAA's Hazard Mapping System, first implemented in 2002 by the NESDIS Satellite Analysis Branch, adds analyst-reviewed fire and smoke products over North America.</p>
+
+<p>The National Weather Service supplies the fire-weather layer through its alert feed, including Red Flag Warnings and Fire Weather Watches issued by local forecast offices in coordination with land management agencies.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Agencies and feeds behind a US wildfire map and what each contributes</caption>
+    <thead><tr><th scope="col">Source</th><th scope="col">What it provides</th><th scope="col">Layer it becomes</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">NIFC / NICC</th><td>National fire news, preparedness level, annual statistics</td><td>Context and national totals</td></tr>
+      <tr><th scope="row">WFIGS interagency services</th><td>Current fire locations and current fire perimeters</td><td>Incident markers and perimeter polygons</td></tr>
+      <tr><th scope="row">IRWIN</th><td>Shared incident identity and core attributes across agencies</td><td>Consistent naming and de-duplication</td></tr>
+      <tr><th scope="row">NASA FIRMS</th><td>MODIS and VIIRS active fire detections in near real time</td><td>Satellite hotspot points</td></tr>
+      <tr><th scope="row">NOAA HMS</th><td>Analyst-reviewed GOES fire detections and smoke polygons</td><td>Fast heat signals and smoke density</td></tr>
+      <tr><th scope="row">National Weather Service</th><td>Red Flag Warnings and Fire Weather Watches</td><td>Fire-weather alert polygons</td></tr>
+      <tr><th scope="row">InciWeb</th><td>Narrative incident updates, closures and community notices</td><td>Per-fire detail links</td></tr>
+      <tr><th scope="row">USDA Forest Service</th><td>Infrared mapping flights and long-run community risk data</td><td>Perimeter accuracy and risk layers</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2 id="satellites">How do satellites feed a live wildfire map?</h2>
+
+<p>Two orbit types feed every live wildfire map. Polar-orbiting satellites carrying MODIS and VIIRS give sharp detections a few times a day, while geostationary GOES satellites give coarse detections every few minutes. A good map shows both and labels which produced each signal.</p>
+
+<p>The trade-off is fixed by physics. A satellite parked 22,000 miles above the equator can stare continuously but cannot resolve fine detail. A satellite 500 miles up sees detail but only passes overhead a few times daily.</p>
+
+<h3>MODIS: the 1,000 meter workhorse</h3>
+
+<p>NASA's Moderate Resolution Imaging Spectroradiometer flies on the Terra satellite launched in December 1999 and the Aqua satellite launched in May 2002. NOAA documents that together they provide sub-daily global observations around 10:30 a.m. and p.m. and 1:30 a.m. and p.m. local time.</p>
+
+<p>The MODIS thermal band detects hot spots at a resolution of 1,000 meters per pixel. That is coarse enough that a single MODIS detection covers about 247 acres of ground, so a MODIS pixel tells you a fire is somewhere in that square, not where its edge lies.</p>
+
+<p>MODIS remains valuable because of its length of record. NASA notes that after nearly 20 years in orbit its optical and thermal bands continued to provide daytime visible imagery and nighttime information on active fires, which is why long-run fire-detection studies still lean on it.</p>
+
+<h3>VIIRS: 375 meters and the small-fire advantage</h3>
+
+<p>The Visible Infrared Imaging Radiometer Suite launched on the Suomi NPP satellite in October 2011, followed by NOAA-20 in November 2017 as the first Joint Polar Satellite System spacecraft. NOAA states that each instrument provides global wall-to-wall coverage every 12 hours or less, around 1:30 a.m. and p.m. local time.</p>
+
+<p>VIIRS detects hot spots at 375 meters per pixel, making its fire observations about three times more detailed than MODIS. NASA notes the practical consequence directly: VIIRS can detect many small and low-temperature fires that MODIS misses.</p>
+
+<p>VIIRS also carries a Day-Night Band that measures low-intensity visible light, which gives it nighttime detection capability for small and fledgling fires. For a resident, that is the difference between a fire appearing on a map at 2 a.m. and appearing at 10 a.m.</p>
+
+<div class="callout callout-info"><strong>Why the 375 meter product changed fire response</strong>Wilfrid Schroeder, a scientist at the University of Maryland and principal investigator for the VIIRS active fire data product, said: "We hope that by infusing the higher-resolution fire detection data and fire behavior modeling outputs into tactical fire situations, we can lessen the pressure on those working in wildfire management." NASA's Earth Observatory published the comparison in <a href="https://science.nasa.gov/earth/earth-observatory/a-clearer-view-of-fire-87111/" rel="noopener">A Clearer View of Fire</a>.</div>
+
+<h3>GOES: coarse pixels, five-minute refresh</h3>
+
+<p>NOAA's Geostationary Operational Environmental Satellites provide 5-minute observations over the contiguous United States imaging sector and 10-minute observations over the entire western hemisphere full-disk sector, with two satellites positioned at 75.2 degrees west and 137.2 degrees west.</p>
+
+<p>Geostationary pixels are around 2 kilometers for the fire product, so GOES will never draw you a perimeter. What it does is notice, within minutes, that something got very hot in a place where nothing was hot before. That is the single most valuable early-warning signal available to the public.</p>
+
+<p>NOAA describes a concrete case: on July 2, 2018, after smoke was reported in a wooded area near central Colorado's Custer County, GOES-East detected a hotspot there, forecasters in Pueblo inspected the data, provided exact coordinates for what became the Adobe Fire, and crews were sent quickly to the scene.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Satellite sensors behind US wildfire map hotspot layers</caption>
+    <thead><tr><th scope="col">Sensor</th><th scope="col">Platforms</th><th scope="col">Fire pixel size</th><th scope="col">Refresh</th><th scope="col">Best used for</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">MODIS</th><td>Terra (1999), Aqua (2002)</td><td>1,000 m</td><td>Sub-daily, near 10:30 and 13:30 local</td><td>Long record; confirming large fires</td></tr>
+      <tr><th scope="row">VIIRS</th><td>Suomi NPP (2011), NOAA-20 (2017)</td><td>375 m</td><td>Global coverage every 12 hours or less</td><td>Small and low-temperature fires, night detection</td></tr>
+      <tr><th scope="row">GOES ABI</th><td>Geostationary at 75.2 W and 137.2 W</td><td>About 2 km</td><td>5 min over CONUS, 10 min full disk</td><td>Earliest possible alert on a new ignition</td></tr>
+      <tr><th scope="row">Airborne infrared</th><td>Forest Service NIROPS aircraft</td><td>Detects a 6-inch hotspot</td><td>Typically once nightly per fire</td><td>Authoritative perimeter mapping</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>What satellites still cannot see</h3>
+
+<p>NOAA states the limits plainly. Heat signatures are averaged over pixels, which makes precise fire location and size hard to pin down. Smoke above a fire can diminish the thermal signal, and smoldering fires may not radiate as much energy as flaming fires in the observed spectral bands.</p>
+
+<p>Cloud cover is the other blocker. A marine layer over a coastal range or a thunderstorm anvil over a lightning-started fire can hide detections for an entire satellite pass. NOAA notes that its near-real-time system does not back-fill data gaps caused by downtime or interruptions.</p>
+
+<div class="callout callout-info"><strong>The case for orbit over aircraft</strong>Ralph Kahn, a senior research scientist at NASA's Goddard Space Flight Center, put the coverage argument simply: "You can't get a global picture with an aircraft, you can't do it from a ground station. To get a global picture, you need satellites." His comments appear in NOAA's feature on <a href="https://nesdis.noaa.gov/content/wildfires-space-how-view-above-helps-firefighters-ground" rel="noopener">how the view from above helps firefighters</a>.</div>
+
+<p>The detection science behind these products, including confidence levels and fire radiative power, is unpacked further in our guide to <a href="/blog/wildfire-tracking/">wildfire tracking</a>.</p>
+
+<h2 id="smoke">How does a fire map show smoke and air quality?</h2>
+
+<p>Smoke reaches a wildfire map through two independent paths: satellite-derived smoke polygons drawn by NOAA analysts, and ground-level Air Quality Index readings from monitors. The first shows where the plume is overhead; the second shows what you are actually breathing.</p>
+
+<p>Confusing the two is common and consequential. A thick plume at 15,000 feet can leave surface air perfectly breathable, while a shallow overnight inversion can trap smoke from a distant fire and push surface readings into unhealthy territory under a clear-looking sky.</p>
+
+<h3>NOAA Hazard Mapping System smoke polygons</h3>
+
+<p>HMS smoke analysis uses daytime imagery from GOES satellites. NOAA documents that the first smoke classification is available between 11:00 a.m. and 12:00 p.m. Eastern Time, with a second classification generally issued between 7:00 p.m. and 8:00 p.m. Eastern Time.</p>
+
+<p>Each polygon carries a density attribute of light, medium or heavy. Because analysts draw them from visible imagery, cloud cover directly limits coverage, and NOAA warns that cloud interference can lead to incomplete representation of smoke extent.</p>
+
+<p>Fire detections follow a different clock. NOAA states that initial active fire detections are typically published online by 8:00 a.m. Eastern Time and are continuously updated throughout the day as new satellite observations arrive.</p>
+
+<h3>Reading the Air Quality Index alongside a fire map</h3>
+
+<p>The EPA's AirNow program defines six color-coded AQI categories. An AQI value of 100 generally corresponds to an ambient concentration equal to the level of the short-term national ambient air quality standard for protecting public health.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Air Quality Index categories from EPA AirNow, with official descriptions</caption>
+    <thead><tr><th scope="col">Category</th><th scope="col">AQI range</th><th scope="col">Official description</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Good</th><td>0 to 50</td><td>Air quality is satisfactory, and air pollution poses little or no risk</td></tr>
+      <tr><th scope="row">Moderate</th><td>51 to 100</td><td>Acceptable, but there may be a risk for unusually sensitive people</td></tr>
+      <tr><th scope="row">Unhealthy for Sensitive Groups</th><td>101 to 150</td><td>Sensitive groups may experience health effects; general public less likely affected</td></tr>
+      <tr><th scope="row">Unhealthy</th><td>151 to 200</td><td>Some of the general public may experience effects; sensitive groups more serious effects</td></tr>
+      <tr><th scope="row">Very Unhealthy</th><td>201 to 300</td><td>Health alert: the risk of health effects is increased for everyone</td></tr>
+      <tr><th scope="row">Hazardous</th><td>301 and higher</td><td>Health warning of emergency conditions: everyone is more likely to be affected</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>The EPA's own <a href="https://www.airnow.gov/aqi/aqi-basics/" rel="noopener">AQI basics page</a> is the reference to keep open next to any fire map during a smoke event, because the category thresholds drive school, sports and outdoor-work decisions across most of the country.</p>
+
+<h3>Why smoke forecasts and fire maps disagree</h3>
+
+<p>Forecast smoke comes from NOAA's HRRR-Smoke model, which produces two distinct plots. Near-surface smoke refers to smoke about 26 feet from the ground, the kind responsible for burning eyes and worsening asthma. Vertically integrated smoke is all the smoke in a vertical column.</p>
+
+<div class="callout callout-info"><strong>Two different smoke questions</strong>Ravan Ahmadov, the main developer of the HRRR smoke model and a research scientist at NOAA's Earth Systems Research Laboratory and CIRES at CU Boulder, said: "Near-surface smoke is one indicator of air pollution, but the smoke could also be at much higher altitudes. That's important to know, because the smoke could affect visibility for aviation." NOAA published his comments in a feature on <a href="https://www.nesdis.noaa.gov/news/how-scientists-use-satellite-data-forecast-wildfire-smoke" rel="noopener">forecasting wildfire smoke</a>.</div>
+
+<p>Fuel type changes plume behavior too. Eric James, a research associate with NOAA's Earth Systems Research Laboratory and CIRES at CU Boulder, explained that grass burns fast while a dense forest has so much biomass that it produces far more smoke than a grassland.</p>
+
+<p>Practically, that means a 3,000-acre grass fire in the Southern Plains and a 3,000-acre timber fire in the Northern Rockies produce very different smoke footprints on the same map. Read acreage together with fuel type, never alone.</p>
+<h2 id="weather">Where do Red Flag Warnings show on a fire map?</h2>
+
+<p>Red Flag Warnings appear on a wildfire map as shaded polygons covering NWS fire-weather zones, drawn from the National Weather Service alert feed. They are the only forward-looking layer on most public fire maps, and they matter most when the map shows no fires at all.</p>
+
+<p>The National Weather Service issues a Red Flag Warning, in conjunction with land management agencies, to alert land managers to an ongoing or imminent critical fire weather pattern. A Fire Weather Watch alerts the public that upcoming conditions could result in extensive wildland fire occurrence or extreme fire behavior.</p>
+
+<h3>The criteria behind the polygon</h3>
+
+<p>The NWS glossary sets out the forecast parameters that typically trigger a Red Flag Warning: sustained wind averaging 15 miles per hour or greater, relative humidity at or below 25 percent, and temperature greater than 75 degrees Fahrenheit. The warning is issued when those conditions are occurring or expected within 24 hours with high confidence.</p>
+
+<p>Two additional conditions apply. The area must have experienced a dry spell, typically one to two weeks, or a shorter period before spring green-up or after fall color. The National Fire Danger Rating System must also indicate high to extreme fire danger.</p>
+
+<p>Local offices adjust these thresholds for their own climate. A humidity threshold appropriate for Nevada would fire constantly in Florida, so the exact numbers vary by NWS forecast office while the structure stays the same.</p>
+
+<div class="callout callout-tip"><strong>Read the warning as a launch condition</strong>A Red Flag Warning does not mean a fire exists. It means that if one starts, it will move faster than crews can catch it. During a warning, treat any new hotspot on the map as significant and check it again within 30 minutes rather than waiting for the next daily incident update.</div>
+
+<h3>Extreme fire behavior alerts</h3>
+
+<p>The National Weather Service also defines extreme fire behavior, which implies a wildfire likely to rage out of control. NWS lists the criteria as a high rate of spread, prolific crowning or spotting, presence of fire whirls, and a strong convection column, with one or more of those needing to be met.</p>
+
+<p>When a fire's official narrative uses those words, the perimeter on your map is likely to be badly out of date within hours. That is the moment to switch attention from polygon geometry to the timestamp of the most recent satellite heat.</p>
+
+<h3>Fire weather and the national picture</h3>
+
+<p>Fire weather also drives the national resource posture. NIFC explicitly linked the September 9, 2026 drop to national preparedness level 3 to continued improving fire weather conditions across multiple geographic areas, alongside increasing availability of nationally shared resources.</p>
+
+<p>You can read the national preparedness level as a rough proxy for how much slack the system has. At the low end, crews and aircraft are widely available; at level 5, national resources are committed and new incidents wait longer for help. The <a href="https://www.weather.gov/safety/wildfire-ww" rel="noopener">NWS wildfire watches and warnings page</a> is the primary reference for the alert definitions themselves.</p>
+
+<h2 id="how-to-read">How do you read a live wildfire map step by step?</h2>
+
+<p>Reading a live wildfire map takes about 60 seconds if you work in a fixed order: set your location, check for fire-weather alerts, look for official incidents, inspect satellite hotspots, read every timestamp, then check smoke. Skipping straight to the nearest red dot is how people scare themselves for no reason.</p>
+
+<p>The order matters because each layer answers a different question and each has a different reliability. When you open a wildfire map today, let the alert layer frame how urgent everything else is, then read the incident layer for what agencies have confirmed, then the hotspot layer for what may be new.</p>
+
+<ol class="step-list">
+  <li>Set your position. Use browser geolocation or type your state, city or ZIP so the map centers on the area you actually care about instead of the largest fire in the country.</li>
+  <li>Check the fire-weather layer first. A Red Flag Warning over your county changes how you should interpret every other layer for the rest of the day.</li>
+  <li>Look for official incident markers within your chosen radius. Note the name, acres, containment percentage and discovery date on each one.</li>
+  <li>Open the nearest incident and read its "Last NIFC update" timestamp. If it is more than 12 hours old, the acreage and containment figures are stale.</li>
+  <li>Switch on satellite hotspots. Look for clusters, not single points, and note whether the cluster sits inside or outside the mapped perimeter.</li>
+  <li>Read the satellite timestamps. Heat detected 40 minutes ago on the northeast edge of a perimeter means the fire is running that way now.</li>
+  <li>Check the smoke and air quality layer to understand what you will breathe today, which is a separate question from whether you are in danger from flame.</li>
+  <li>Cross-check anything alarming against the official incident page or your county emergency management channel before you act on it.</li>
+</ol>
+
+<h3>How to judge distance properly</h3>
+
+<p>Distance from a marker is not distance from the fire. An incident marker sits at a point of origin that may be miles behind the current head of the fire, and a perimeter is the outline of what has already burned, not the reach of embers.</p>
+
+<p>Wind-driven fires throw embers well ahead of the flaming front, which is how structures ignite in neighborhoods that never see a flame wall. Measure your distance to the nearest edge of the perimeter and to the nearest fresh hotspot, then treat the shorter of the two as the real number.</p>
+
+<p>Terrain matters as much as distance. Fires accelerate uphill, so a fire three miles below you on a slope deserves more attention than a fire two miles away across a river on flat ground. A map shows you geometry; you supply the topography.</p>
+
+<div class="callout callout-warn"><strong>Never measure safety in map pixels</strong>Zoom level distorts intuition. At a state-wide zoom, a fire 40 miles away and a fire 4 miles away can look similarly close to your dot. Always read the distance figure in miles rather than judging by eye, and re-check it after every zoom change.</div>
+
+<h3>Reading a fire's attributes correctly</h3>
+
+<p>Containment percentage is the share of the perimeter secured by control line, not the share of the fire that is out. A fire at 90 percent containment can still have a mile of open line, and that mile is where growth happens if the wind shifts.</p>
+
+<p>Acreage is a cumulative figure. It only goes up during the incident, so a fire that has stopped growing keeps its acreage number while its containment climbs. Rising acreage with flat containment is the signature of an active run.</p>
+
+<p>Discovery age tells you how mature the response is. A fire discovered four hours ago with no containment figure is normal; a fire discovered nine days ago with no containment figure usually means limited resources or difficult terrain, both of which imply a longer timeline. Our <a href="/blog/live-fire-tracker/">live fire tracker guide</a> goes deeper into timestamp interpretation.</p>
+
+<h2 id="probability">Why does a wildfire map score fire probability?</h2>
+
+<p>A probability score exists because raw feeds contradict each other. A wildfire map that shows every satellite pixel as a fire would drown you in gas flares and prescribed burns, while a map that shows only official incidents would hide new ignitions for hours. Scoring resolves the tension.</p>
+
+<p>On US Wildfire Tracker, each detection receives a probability tier that fuses three inputs: whether an official NIFC record is linked to the detection, how fresh the NIFC perimeter is, and how recent the satellite heat from VIIRS, MODIS or GOES is.</p>
+
+<h3>What raises and lowers a score</h3>
+
+<p>The strongest possible signal is a satellite cluster that sits inside a fresh official perimeter with recent heat on its edge. Every source agrees, and the fire is both real and active. That combination sits at the top of the probability range.</p>
+
+<p>The weakest signal is a single isolated pixel with no incident record, no perimeter and no repeat detection on a later pass. It might be a new ignition. It might equally be a refinery. On our map, weak signals below 25 percent probability are hidden by default and can be shown deliberately when you want the noisiest possible view.</p>
+
+<p>In between sit the interesting cases: fresh heat well outside a mapped perimeter, which usually means spot fires or a run the perimeter has not caught up with; and an official record with no heat for two days, which usually means the fire is largely out but the record has not been closed.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>How signal combinations map to confidence on a wildfire map</caption>
+    <thead><tr><th scope="col">Signal combination</th><th scope="col">Likely meaning</th><th scope="col">What to do</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Official record plus fresh perimeter plus recent heat</th><td>Active, confirmed, well-documented fire</td><td>Use it for planning; check the heat edge for direction</td></tr>
+      <tr><th scope="row">Fresh heat cluster, no official record yet</th><td>Possible new ignition ahead of dispatch reporting</td><td>Re-check in 30 minutes; look for local reports</td></tr>
+      <tr><th scope="row">Heat outside a mapped perimeter</th><td>Spot fires or a run past the last mapping flight</td><td>Trust the heat, not the polygon, for direction</td></tr>
+      <tr><th scope="row">Official record, no heat for 48 hours</th><td>Fire mostly out or record not yet closed</td><td>Read containment and the last update timestamp</td></tr>
+      <tr><th scope="row">Single isolated pixel, repeats daily at the same spot</th><td>Industrial heat source or long-running flare</td><td>Disregard unless a local report contradicts it</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Because outdated records can still be useful, the map lets you toggle them back on rather than deleting them, and it warns openly that hotspots can reflect prescribed burns or industrial heat rather than wildfire. That honesty is the point: a score is a filter, not a verdict.</p>
+<h2 id="latency">How fresh is the data on a live wildfire map?</h2>
+
+<p>Freshness on a live wildfire map ranges from about 20 minutes for geostationary heat to more than 24 hours for a perimeter polygon. NOAA publishes the processing chain in detail, and the numbers explain almost every apparent contradiction between layers.</p>
+
+<p>Latency has two components: how long the raw data takes to arrive, and how long processing takes afterward. Both differ by orbit type, and analyst review adds a third delay to quality-controlled products.</p>
+
+<h3>The published latency chain</h3>
+
+<p>NOAA states that GOES full-disk Level 1 data become available within roughly 20 to 30 minutes of observation, while the smaller CONUS imaging sector is usually available within 10 to 15 minutes. Fire data processing adds another 5 to 15 minutes on top.</p>
+
+<p>Polar-orbiting MODIS and VIIRS Level 1 data become available within 1 hour 30 minutes to 2 hours 30 minutes of observation, with fire data processing adding another 5 to 10 minutes. For analyst-reviewed Hazard Mapping System outputs, latency can increase by a further 1 to 3 hours on average.</p>
+
+<p>Stack those figures and the picture is clear: the fastest public heat signal is roughly 15 to 45 minutes old, a good VIIRS detection is roughly 2 to 3 hours old, and an analyst-checked product can be 3 to 6 hours old. Nothing available to the public is instantaneous.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Typical age of each layer on a live wildfire map</caption>
+    <thead><tr><th scope="col">Layer</th><th scope="col">Typical age when you see it</th><th scope="col">Why</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">GOES heat detection</th><td>About 15 to 45 minutes</td><td>10 to 30 min data availability plus 5 to 15 min processing</td></tr>
+      <tr><th scope="row">VIIRS or MODIS hotspot</th><td>About 1 hour 35 minutes to 2 hours 40 minutes</td><td>Polar downlink plus 5 to 10 min processing</td></tr>
+      <tr><th scope="row">Analyst-reviewed HMS product</th><td>Add 1 to 3 hours on average</td><td>Manual quality assessment of every detection</td></tr>
+      <tr><th scope="row">Incident record attributes</th><td>Hours; often once or twice daily</td><td>Updated after operational briefings</td></tr>
+      <tr><th scope="row">Official perimeter polygon</th><td>Often 8 to 24 hours</td><td>Usually flown at night, processed afterward</td></tr>
+      <tr><th scope="row">NWS fire-weather alert</th><td>Minutes</td><td>Issued directly by forecast offices to the alert feed</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why a fire can look active after it is out</h3>
+
+<p>Records persist. A fire that was declared controlled last Tuesday keeps its incident record until someone closes it, and a burned area can keep radiating enough heat from stumps and duff to trigger detections for days after the flaming front is gone.</p>
+
+<p>The reverse also happens. A fire that is genuinely running can vanish from the hotspot layer for six hours because clouds moved in or because the next polar pass is not due. Absence of new heat is not evidence of containment.</p>
+
+<p>That is why we surface three separate timestamps per fire rather than one. When "Last NIFC update" is 14 hours old but "Last GOES heat" is 20 minutes old, you know exactly which number to trust for what.</p>
+
+<div class="callout callout-tip"><strong>Refresh discipline during an active event</strong>During a wind event near your home, re-open the map every 20 to 30 minutes rather than staring at it. GOES is the only feed that can meaningfully change inside 30 minutes, and constant refreshing of slower layers produces anxiety without information.</div>
+
+<h3>How refresh behaves in practice</h3>
+
+<p>US Wildfire Tracker refreshes its data automatically every few minutes while the map is open, and if a refresh fails it shows the last saved results rather than an empty screen. That fallback matters during major events, when public data services see their heaviest load.</p>
+
+<p>Manual refresh still has a place. After a lightning outbreak or a wind shift, forcing a refresh guarantees you are looking at the newest available cycle rather than a cached one. The button exists for exactly those moments.</p>
+
+<h2 id="seasons">When is wildfire season in each US region?</h2>
+
+<p>There is no single US wildfire season. The National Park Service describes a fire year in which the season moves around the country, waxing and waning in each area as the seasons progress, coordinated through ten geographic areas that share crews, aircraft and equipment.</p>
+
+<p>That rotation is deliberate policy as much as climate. Because peak activity arrives at different times in Florida, Arizona, Alaska and California, the same national pool of resources can serve all of them across a calendar year.</p>
+
+<h3>The ten geographic areas</h3>
+
+<p>The interagency system divides the country into ten geographic areas: Alaska, Northwest, Northern California, Southern California, Northern Rockies, Great Basin, Southwest, Rocky Mountain, Eastern and Southern. NIFC publishes fire counts by those areas, which makes them the natural unit for regional comparison.</p>
+
+<p>NIFC's human-caused fire statistics for 2025 show how uneven the distribution is: the Southern Area recorded 36,040 human-caused fires and the Eastern Area 15,275, while Alaska recorded 217. Lightning tells the opposite story, with Alaska at 248 lightning-caused fires in 2025 against 1,048 in the Southern Area.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">69,556</span><span class="stat-label">Human-caused US wildfires in 2025, per NIFC</span></div>
+  <div class="stat-card"><span class="stat-number">8,294</span><span class="stat-label">Lightning-caused US wildfires in 2025, per NIFC</span></div>
+  <div class="stat-card"><span class="stat-number">10</span><span class="stat-label">Geographic areas coordinating US wildland fire response</span></div>
+  <div class="stat-card"><span class="stat-number">89%</span><span class="stat-label">Share of 2025 US wildfires that were human-caused, calculated from NIFC totals</span></div>
+</div>
+
+<h3>Region by region timing</h3>
+
+<p>The Southeast and Southern Area run an early season. Fires there concentrate in late winter and spring, before green-up, when cured grass and pine needle litter cure out under low humidity. Hurricane debris can extend the window in coastal counties for years after a storm.</p>
+
+<p>The Southwest peaks before the monsoon. May and June are the dangerous months in Arizona and New Mexico, and activity typically collapses when monsoon moisture arrives in July. That makes the Southwest one of the few regions with a sharply defined end date.</p>
+
+<p>Alaska's season is compressed and legally recognized. The state requires burn permits from April 1 to August 31, which brackets the period when the boreal forest can carry fire. Long daylight and remote terrain mean many Alaska fires are monitored rather than suppressed.</p>
+
+<p>The Northern Rockies, Great Basin and Northwest peak in mid to late summer, when the snowpack is gone and fuels have cured. The Pacific Northwest often extends into September, and Northern California's most damaging fires cluster around offshore wind events in autumn.</p>
+
+<p>Southern California is the outlier. Its severe fires are wind events rather than season events, driven by offshore flow that can arrive from October into January, which is why a January wind-driven fire there is not an anomaly. Our <a href="/blog/california-fire-map/">California fire map guide</a> covers that pattern county by county.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Approximate peak wildfire periods by US region</caption>
+    <thead><tr><th scope="col">Region</th><th scope="col">Typical peak months</th><th scope="col">Dominant driver</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Southern Area (Southeast, Gulf, Texas)</th><td>February to May, plus autumn drought windows</td><td>Cured grass and pine litter before green-up</td></tr>
+      <tr><th scope="row">Southwest (Arizona, New Mexico)</th><td>May and June</td><td>Pre-monsoon heat, wind and low humidity</td></tr>
+      <tr><th scope="row">Great Basin (Nevada, Utah, southern Idaho)</th><td>June to September</td><td>Cured cheatgrass and dry lightning</td></tr>
+      <tr><th scope="row">Northern Rockies</th><td>July to September</td><td>Late-summer drying and lightning</td></tr>
+      <tr><th scope="row">Northwest (Oregon, Washington)</th><td>July to September, sometimes October</td><td>East winds and long dry spells</td></tr>
+      <tr><th scope="row">Northern California</th><td>July to November</td><td>Summer lightning plus autumn offshore winds</td></tr>
+      <tr><th scope="row">Southern California</th><td>September to January</td><td>Offshore wind events on cured fuels</td></tr>
+      <tr><th scope="row">Rocky Mountain</th><td>June to September, with spring grass fires</td><td>Grassland runs and montane drying</td></tr>
+      <tr><th scope="row">Eastern Area</th><td>March to May and October to November</td><td>Leaf-off periods before and after the growing season</td></tr>
+      <tr><th scope="row">Alaska</th><td>Late April to August</td><td>Boreal fuels, long daylight, lightning outbreaks</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Treat this calendar as a planning aid rather than a guarantee. NIFC's national fire news on September 9, 2026 noted firefighters engaged in eight geographic areas simultaneously, which is a reminder that overlap is now normal rather than exceptional.</p>
+<h2 id="statistics">What do US wildfire statistics say about risk?</h2>
+
+<p>NIFC's <a href="https://www.nifc.gov/fire-information/statistics/wildfires" rel="noopener">national wildfire statistics</a> show roughly 63,200 wildfires and about 7.05 million acres burned per year on average across the ten years from 2016 to 2025, calculated from the agency's published table. Year-to-year variation is enormous, which is why any single year is a poor guide.</p>
+
+<p>The 2016 to 2025 range runs from 2,693,910 acres in 2023 to 10,122,336 acres in 2020, a factor of nearly four. Fire counts vary far less than acreage, which tells you that a small number of large fires drives almost all of the burned area.</p>
+
+<h3>Fires and acres by year</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>US wildfires and acres burned by year, 2016 to 2025, from NIFC statistics</caption>
+    <thead><tr><th scope="col">Year</th><th scope="col">Fires</th><th scope="col">Acres burned</th><th scope="col">Average acres per fire</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">2025</th><td>77,850</td><td>5,131,474</td><td>66</td></tr>
+      <tr><th scope="row">2024</th><td>64,897</td><td>8,924,884</td><td>138</td></tr>
+      <tr><th scope="row">2023</th><td>56,580</td><td>2,693,910</td><td>48</td></tr>
+      <tr><th scope="row">2022</th><td>68,988</td><td>7,577,183</td><td>110</td></tr>
+      <tr><th scope="row">2021</th><td>58,985</td><td>7,125,643</td><td>121</td></tr>
+      <tr><th scope="row">2020</th><td>58,950</td><td>10,122,336</td><td>172</td></tr>
+      <tr><th scope="row">2019</th><td>50,477</td><td>4,664,364</td><td>92</td></tr>
+      <tr><th scope="row">2018</th><td>58,083</td><td>8,767,492</td><td>151</td></tr>
+      <tr><th scope="row">2017</th><td>71,499</td><td>10,026,086</td><td>140</td></tr>
+      <tr><th scope="row">2016</th><td>67,743</td><td>5,509,995</td><td>81</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>The average acres per fire column is our own arithmetic on NIFC's figures, and it is the most useful number in the table. In 2020 the average fire burned 172 acres; in 2023 it burned 48. Same country, same agencies, a 3.5-fold difference in outcome per ignition.</p>
+
+<p>NIFC cautions on its statistics page that prior to 1983, the federal wildland fire agencies did not track official wildfire data using current reporting processes. Any chart that runs back to the 1920s is comparing incompatible record systems, so treat those long trend lines with care.</p>
+
+<h3>What the current year looks like</h3>
+
+<p>As of September 9, 2026, NIFC's <a href="https://www.nifc.gov/fire-information/nfn" rel="noopener">national fire news</a> reported 53,802 fires and 8,404,094 acres burned nationally for the year to date. The equivalent point in 2025 showed 48,327 fires and 4,312,046 acres, and 2024 showed 36,040 fires and 6,918,822 acres.</p>
+
+<p>Those same-date comparisons are the honest way to judge a season in progress. Comparing a September figure against a full prior-year total will always make the current year look mild, and comparing acreage without fire counts hides whether the difference is more ignitions or bigger fires.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">8.40M</span><span class="stat-label">US acres burned year to date as of September 9, 2026 (NIFC)</span></div>
+  <div class="stat-card"><span class="stat-number">53,802</span><span class="stat-label">US fires year to date as of September 9, 2026 (NIFC)</span></div>
+  <div class="stat-card"><span class="stat-number">59</span><span class="stat-label">Large fires being contained nationally on September 9, 2026</span></div>
+  <div class="stat-card"><span class="stat-number">14,405</span><span class="stat-label">Firefighters and support personnel assigned that day</span></div>
+</div>
+
+<h3>What suppression costs reveal</h3>
+
+<p>Federal suppression spending is a useful severity proxy because it aggregates effort rather than area. NIFC reports total federal firefighting suppression costs of $3,166,300,000 in 2023, $3,549,000,000 in 2022 and $4,389,000,000 in 2021, split between the Forest Service and Interior agencies.</p>
+
+<p>The agency's published ten-year average total is $2,523,259,200, against a five-year average of $2,989,051,200. The gap between those two averages is the clearest single indicator that recent seasons have cost more than the decade preceding them.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Federal wildfire suppression costs and burned area, selected years, from NIFC</caption>
+    <thead><tr><th scope="col">Year</th><th scope="col">Acres burned</th><th scope="col">Forest Service</th><th scope="col">Interior agencies</th><th scope="col">Total</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">2023</th><td>2,693,910</td><td>$2,700,000,000</td><td>$466,300,000</td><td>$3,166,300,000</td></tr>
+      <tr><th scope="row">2022</th><td>7,577,183</td><td>$2,900,000,000</td><td>$649,000,000</td><td>$3,549,000,000</td></tr>
+      <tr><th scope="row">2021</th><td>7,125,643</td><td>$3,741,000,000</td><td>$648,000,000</td><td>$4,389,000,000</td></tr>
+      <tr><th scope="row">2020</th><td>10,122,336</td><td>$1,764,000,000</td><td>$510,000,000</td><td>$2,274,000,000</td></tr>
+      <tr><th scope="row">2019</th><td>4,664,364</td><td>$1,150,000,000</td><td>$440,000,000</td><td>$1,590,000,000</td></tr>
+      <tr><th scope="row">2018</th><td>8,767,492</td><td>$2,615,256,000</td><td>$528,000,000</td><td>$3,143,256,000</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Notice that 2023 burned a quarter of the acreage of 2020 yet cost 39 percent more to suppress. Cost tracks where fires burn and what they threaten, not how many acres they cover, which is precisely the distinction a wildfire map helps a resident make.</p>
+
+<h3>Causes and where the risk actually starts</h3>
+
+<p>NIFC's cause tables settle a recurring argument. In 2025 the agencies recorded 69,556 human-caused wildfires against 8,294 lightning-caused ones, meaning roughly 89 percent of ignitions came from people. The 2024 split was similar at 57,962 human-caused fires.</p>
+
+<p>Lightning fires, however, punch above their weight in acreage because they start in remote terrain during dry, unstable weather and often burn for weeks before crews reach them. Human ignitions cluster near roads and homes, where they are caught faster but threaten more.</p>
+
+<p>For a map reader, that pattern is directly actionable. A new detection along a highway corridor on a Red Flag day deserves immediate attention, because that is exactly the geometry that produces destructive fires. Our guide to <a href="/blog/current-wildfires/">following current wildfires</a> covers the day-by-day workflow.</p>
+
+<h2 id="near-me">How do you find wildfires near your address?</h2>
+
+<p>Finding fires near an address takes three inputs: a location, a radius in miles, and a filter that removes weak signals. On US Wildfire Tracker you can either grant browser geolocation for a "fires near me" view or select any of the 50 states plus the District of Columbia manually.</p>
+
+<p>The radius choice matters more than people expect. Too tight and you miss the fire two valleys over that will smoke you out tonight; too wide and you are reading about incidents in another time zone.</p>
+
+<h3>Choosing a useful radius</h3>
+
+<p>A 5-mile radius answers the immediate safety question: is there anything close enough to affect my street in the next few hours. This is the radius to use during a wind event, and the one where a single fresh hotspot justifies action.</p>
+
+<p>A 25-mile radius answers the situational question: what is developing in my county and the ones adjacent to it. Most evacuation-relevant fires appear in this band hours before they matter to you.</p>
+
+<p>A 50 to 100-mile radius answers the logistics question: which highways, passes and airports might close, and where the smoke over my house is coming from. Smoke routinely travels several hundred miles, so even this radius will not always explain your air quality.</p>
+
+<dl class="spec-list">
+  <dt>5 miles</dt><dd>Immediate threat check during wind events and overnight</dd>
+  <dt>10 to 25 miles</dt><dd>County-level awareness and early evacuation planning</dd>
+  <dt>50 miles</dt><dd>Road closures, school decisions, livestock and equipment moves</dd>
+  <dt>100 miles or more</dt><dd>Travel routing and identifying probable smoke sources</dd>
+</dl>
+
+<h3>What to do with a hit</h3>
+
+<p>When something appears inside your radius, work through it in order rather than reacting to the marker. Read the name and discovery time, then the acreage and containment, then the last update timestamp, then the freshest satellite heat, then the direction of that heat relative to you.</p>
+
+<p>If an official record exists, open the incident links and search InciWeb for the narrative update. If no record exists yet, the detection is a lead: check again in 30 minutes and look for a repeat detection on the next pass before treating it as real.</p>
+
+<p>Location privacy is a fair concern when you enable geolocation. On our map, location is used only to find nearby fires and is never stored, sold or shared. The detailed near-me procedure lives in our <a href="/blog/fire-tracker-near-me/">fire tracker near me guide</a>.</p>
+
+<div class="callout callout-warn"><strong>A blank map is not an all-clear</strong>Small fires suppressed quickly by local departments often never appear in federal feeds, and satellite passes can miss fires under cloud or forest canopy. If you smell smoke, see a column, or receive a Wireless Emergency Alert, act on that first and use the map for context afterward.</div>
+<h2 id="evacuation">How does a fire map guide an evacuation decision?</h2>
+
+<p>A wildfire map informs an evacuation decision but never authorizes it. Ready.gov instructs residents to pay attention to emergency alerts and notifications and to evacuate immediately if authorities tell them to. The map's job is to help you leave earlier than the order, not later.</p>
+
+<p>Most people who die in wildfires die in vehicles or at home during a late evacuation. The value of watching a map during a wind event is that it converts a vague sense of unease into a specific trigger you decided on in advance.</p>
+
+<h3>Set your own triggers before the event</h3>
+
+<p>Write down two thresholds while you are calm. A first threshold for loading the car and moving animals, and a second for leaving regardless of whether an order has been issued. Distance, wind direction and terrain should all appear in those thresholds.</p>
+
+<p>A workable first trigger is fresh satellite heat within 10 miles and upwind of you during a Red Flag Warning. A workable second trigger is fresh heat within 5 miles with the wind blowing from the fire toward your home, or any official evacuation warning for your zone.</p>
+
+<p>Triggers work because they remove deliberation at the worst possible moment. The map supplies the two facts you need to test them: distance in miles and the timestamp of the most recent heat.</p>
+
+<ol class="step-list">
+  <li>Know your evacuation zone identifier before fire season and keep it written down where you can find it in the dark.</li>
+  <li>Sign up for your county's alert system, and confirm Wireless Emergency Alerts are enabled on every phone in the household.</li>
+  <li>Identify two routes out that do not share a chokepoint, and check both on a map for road closures during an event.</li>
+  <li>Keep a go bag with a first aid kit in the car trunk, as Ready.gov advises, so departure does not depend on packing.</li>
+  <li>Store an N95 mask per person; Ready.gov recommends one to protect against smoke inhalation.</li>
+  <li>Maintain a fire-resistant zone free of leaves, debris and flammable materials for at least 30 feet around the home.</li>
+  <li>During an event, check the map on a fixed cadence and compare what you see against your written triggers rather than your mood.</li>
+</ol>
+
+<h3>Understanding evacuation terminology</h3>
+
+<p>Most jurisdictions use a three-stage structure, often labeled Ready, Set and Go, or Advisory, Warning and Order. The names differ by state and county, but the meaning is consistent: prepare, be ready to leave at a moment's notice, and leave now.</p>
+
+<p>Evacuation zones are administrative polygons drawn by counties, not by fire behavior. A zone can be ordered evacuated while the fire is still miles away because the zone shares a single road out, and a neighboring zone may stay open despite being closer.</p>
+
+<p>That is why the map and the order can look inconsistent, and why the order wins. Emergency managers know the road network, the shelter capacity and the resource picture; the map knows only geometry and heat.</p>
+
+<div class="callout callout-warn"><strong>The map is not an alerting authority</strong>US Wildfire Tracker is not an official emergency service. Evacuation orders, road closures and shelter information come from county emergency management, the sheriff's office and state agencies. Use the map to notice a problem early, then act on official instructions.</div>
+
+<h3>Alerts that reach you when you are not looking</h3>
+
+<p>Ready.gov recommends having several ways to receive alerts, including downloading the FEMA app for real-time National Weather Service alerts for up to five locations nationwide, signing up for community alerts, and understanding the Emergency Alert System and Wireless Emergency Alerts, which require no sign-up.</p>
+
+<p>Proximity notifications on a fire map complement those channels rather than replacing them. When location is enabled, US Wildfire Tracker can notify you about new incidents near you, and surfaces evacuation orders and warnings and road closures from official alerts alongside smoke and air-quality overlays.</p>
+
+<h2 id="travel">How do hikers and travelers use a wildfire map?</h2>
+
+<p>Hikers and travelers use a wildfire map to answer three questions before departure: is my destination burning, is my route likely to close, and will the air be breathable when I arrive. All three need checking days ahead, not on the morning of the trip.</p>
+
+<p>Backcountry travel adds a fourth question that road travel does not: will I have any way to learn about a new fire once I lose signal. That constraint changes how you use the map more than any other factor.</p>
+
+<h3>Trip planning three to seven days out</h3>
+
+<p>Start with the national view to see where activity is concentrated, then filter to the states you will cross. Note any large incidents within about 50 miles of your route, because those are the ones that generate closures even when they never reach the highway.</p>
+
+<p>Check the fire-weather layer for the days you will travel. A Red Flag Warning across a national forest you plan to enter is a strong signal to have an alternate destination ready, since forests routinely issue closure orders during critical fire weather.</p>
+
+<p>Read acreage together with containment for each nearby incident. A 40,000-acre fire at 85 percent containment rarely closes roads; a 4,000-acre fire at zero containment on a windy ridge frequently does.</p>
+
+<h3>The morning of and on the road</h3>
+
+<p>On departure day, refresh the map and look for two things: new hotspot clusters that did not exist yesterday, and any change in the fire-weather layer. New heat near a highway corridor is the most reliable early predictor of a closure.</p>
+
+<p>While driving, check the smoke and air-quality layer at fuel stops rather than while moving. Visibility drops fast in heavy smoke, and a plume that looked distant on the map at breakfast can be over the road by afternoon.</p>
+
+<div class="callout callout-tip"><strong>Screenshot before you lose signal</strong>Cellular coverage disappears in most western drainages. Before a trailhead, capture the current map view, the incident names and acreages, and the fire-weather status. A stale screenshot with a known timestamp beats no information, provided you remember it is stale.</div>
+
+<h3>Backcountry judgment the map cannot supply</h3>
+
+<p>In the field, your senses outrank the map. A column building on a ridge, a sudden wind shift, or ash falling on the trail all demand a decision immediately, without waiting for a satellite pass that may be hours away.</p>
+
+<p>Plan escape routes downhill and away from drainages, since fires accelerate uphill and canyons channel both flame and smoke. Tell someone your route and your turn-around time, because a fire closure can cut a planned exit and force a long detour.</p>
+
+<p>For multi-state trips, work through the seasonal calendar above region by region, because knowing which geographic areas are likely to be active in your travel month is faster than checking every state individually.</p>
+
+<h2 id="insurance">How do insurers and buyers read a wildfire map?</h2>
+
+<p>Insurers, lenders and home buyers use risk maps rather than live incident maps. The question they ask is how likely a parcel is to burn over decades, which is answered by modeled hazard layers built from fuels, terrain, weather and structure density, not by today's hotspots.</p>
+
+<p>The financial stakes are large and concentrated. The Insurance Information Institute lists the 2018 Camp Fire at an estimated $10 billion in insured losses when it occurred, equivalent to $12.524 billion in 2024 dollars, the costliest wildland fire on its US list.</p>
+
+<h3>The risk layers professionals actually use</h3>
+
+<p>The USDA Forest Service publishes Wildfire Risk to Communities under a direction from Congress in the 2018 Consolidated Appropriations Act. It combines LANDFIRE vegetation and fuels data, National Weather Service weather data and Census Bureau community data into nationally consistent risk layers.</p>
+
+<p>The program describes itself as the first time maps and data about community wildfire risk have been available nationwide, and it is designed for elected officials, community planners and fire managers. It was first launched in 2020 and completely updated in May 2024.</p>
+
+<p>These are the layers that inform community wildfire protection plans, grant applications and mitigation priorities. They are public, and a buyer can consult the same data a planner does through the <a href="https://wildfirerisk.org/about/" rel="noopener">Wildfire Risk to Communities</a> program.</p>
+
+<h3>What a buyer should check before an offer</h3>
+
+<p>Start with the long-run risk layer for the parcel and the surrounding few miles, since risk is a neighborhood property rather than a lot property. Then look at the live wildfire map history: how often have fires occurred within 10 miles over recent seasons.</p>
+
+<p>Historical perimeters are the underused layer here. A parcel surrounded by three burn scars from the last decade has a different fuel situation than an unburned parcel in identical terrain, and the difference cuts both ways because recent burns can slow future fires.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Costliest US wildland fires by estimated insured loss, from the Insurance Information Institute</caption>
+    <thead><tr><th scope="col">Fire</th><th scope="col">Year</th><th scope="col">Insured loss when it occurred</th><th scope="col">In 2024 dollars</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Camp Fire</th><td>2018</td><td>$10 billion</td><td>$12.524 billion</td></tr>
+      <tr><th scope="row">Tubbs Fire</th><td>2017</td><td>$8.7 billion</td><td>$11.134 billion</td></tr>
+      <tr><th scope="row">Woolsey Fire</th><td>2018</td><td>$4.2 billion</td><td>$5.260 billion</td></tr>
+      <tr><th scope="row">Maui wildfire</th><td>2023</td><td>$4.3 billion</td><td>$4.421 billion</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Questions to ask beyond the map</h3>
+
+<p>Ask the local fire district about response times and water supply, since a parcel on a narrow dirt road with no hydrant is a different underwriting proposition than one on a paved loop. Ask whether the county has a current community wildfire protection plan.</p>
+
+<p>Ask what mitigation the seller has done. Ready.gov's guidance to create a zone free of leaves, debris and flammable materials for at least 30 feet from the home is the baseline, and the presence or absence of that work is visible on a site visit.</p>
+
+<p>Finally, ask whether the property sits in one of the more than 60,000 US communities the US Fire Administration identifies as at risk of wildland-urban interface fire. That framing changes the conversation from whether fire is possible to how the household will respond when it happens.</p>
+<h2 id="limits">What can a wildfire map not tell you?</h2>
+
+<p>A wildfire map cannot tell you where a fire will be in two hours, whether your specific street is safe, how intense the fire is at any point on its perimeter, or whether a small fire near you was already put out. Those gaps are structural, not defects of any particular map.</p>
+
+<p>Knowing the gaps is what separates a useful map habit from a dangerous one. Every limitation below traces back to a documented property of the underlying feeds.</p>
+
+<h3>Resolution and geolocation limits</h3>
+
+<p>NOAA states that fire detection point data describe the center coordinates of the satellite pixel in which a potential fire was detected, and that the exact fire location may differ, with spatial offsets typically ranging from tens to hundreds of meters for VIIRS data up to more than a kilometer for GOES data.</p>
+
+<p>Fire pixels detected over mountain ranges or steep terrain can show larger locational errors introduced by terrain correction procedures applied to satellite geolocation data. In other words, the steeper your neighborhood, the less precise the dot.</p>
+
+<p>There is also no absolute size threshold above which a satellite will always see a fire. NOAA explains that detection is largely a function of spatial resolution, and that a fire must have an active area of at least about 100 square meters to be detected by a pixel with an effective resolution of 1 kilometer.</p>
+
+<h3>Omission errors you should expect</h3>
+
+<p>NOAA lists the factors that cause missed detections: obscuration by terrain or forest canopies, clouds, and proximity to water bodies where the algorithm's land and water separation may be imperfect. Thick or vertically developed plumes can also be confused with clouds during daytime observations.</p>
+
+<p>Viewing angle degrades performance too. Increasing satellite view angles enlarge the pixel area, effectively coarsening resolution and requiring a larger fire area for detection. A fire at the edge of a swath is harder to see than the same fire directly beneath the satellite.</p>
+
+<div class="callout callout-info"><strong>Why the first hour is the hard problem</strong>Everett Hinkley, National Remote Sensing Program Manager for the US Forest Service, described the gap this way: "Those firefighters who are first responders don't always know the precise location of the fire, how fast it's moving, or in what direction. We're working to try to give them real-time or near-real-time information to help them better understand the fire behavior in those early critical hours." His comments appear in NOAA's <a href="https://nesdis.noaa.gov/content/wildfires-space-how-view-above-helps-firefighters-ground" rel="noopener">wildfires from space feature</a>.</div>
+
+<h3>What no public layer contains</h3>
+
+<p>Public feeds do not include fire spread forecasts, structure-by-structure damage assessments during an event, tactical resource positions, or the reasoning behind an evacuation zone boundary. Those live inside incident management teams and are released later, if at all.</p>
+
+<p>Public feeds also lag on small incidents. A quarter-acre roadside fire handled by a rural department may generate no federal record and no detection, which means the map will be blank while a neighbor watches an engine work the ditch.</p>
+
+<p>Vince Ambrosia, a wildfires remote-sensing scientist at NASA's Ames Research Center, framed the operational goal in NOAA's reporting: firefighters want to reach a fire within the first hours so they can act, which makes repeatable coverage critical. Public maps inherit that same coverage constraint.</p>
+
+<h2 id="mistakes">Which wildfire map mistakes lead to bad calls?</h2>
+
+<p>Six mistakes account for most bad decisions made from a wildfire map: trusting a stale perimeter, treating a hotspot as a confirmed fire, measuring distance from the wrong feature, ignoring wind direction, assuming a blank map means safety, and confusing smoke with proximity.</p>
+
+<p>Each one has a simple correction, and each correction takes seconds once you know to make it.</p>
+
+<h3>Stale perimeters and phantom precision</h3>
+
+<p>A polygon looks authoritative because it has a crisp edge. That edge was true at the moment of the mapping flight, often the previous night. During an active run, the fire may be miles outside it while the map still draws the old shape.</p>
+
+<p>The correction is to read the perimeter timestamp every single time, and to weight fresh satellite heat above the polygon whenever the two disagree. If heat appears well outside the outline, the outline is the thing that is wrong.</p>
+
+<h3>Treating every hotspot as a fire</h3>
+
+<p>Isolated detections are frequently industrial heat, agricultural burning or prescribed fire. A hotspot that repeats at the same coordinates day after day, especially near a refinery, landfill or steel plant, is almost certainly not a wildfire.</p>
+
+<p>The correction is to look for corroboration: a cluster rather than a point, a repeat on a later pass, an official incident record, or a local report. Probability scoring automates part of this, but the habit is worth keeping.</p>
+
+<h3>Wind, terrain and the direction problem</h3>
+
+<p>A fire five miles away is a different problem depending on whether the wind is blowing from it toward you or from you toward it. Maps show position; they do not shout direction. Read the fire-weather discussion or a wind layer alongside the fire layer.</p>
+
+<p>Terrain compounds it. Fires run uphill faster than they run on the flat, and drainages funnel both wind and flame. A fire below you in a canyon is a more urgent problem than the raw mileage suggests.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Common wildfire map misreadings and the correction for each</caption>
+    <thead><tr><th scope="col">Mistake</th><th scope="col">What goes wrong</th><th scope="col">Correction</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Trusting a stale perimeter</th><td>Polygon is hours old during a fast run</td><td>Read the timestamp; weight fresh heat higher</td></tr>
+      <tr><th scope="row">Hotspot equals wildfire</th><td>Industrial and agricultural heat look identical</td><td>Require a cluster, a repeat pass or an official record</td></tr>
+      <tr><th scope="row">Measuring from the marker</th><td>Marker sits at origin, not at the active edge</td><td>Measure to the nearest perimeter edge and nearest fresh heat</td></tr>
+      <tr><th scope="row">Ignoring wind direction</th><td>Distance treated as symmetric in all directions</td><td>Check forecast wind before judging any distance</td></tr>
+      <tr><th scope="row">Blank map equals safe</th><td>Small or obscured fires never enter the feeds</td><td>Trust your senses and official alerts first</td></tr>
+      <tr><th scope="row">Smoke equals nearby fire</th><td>Plumes travel hundreds of miles</td><td>Read smoke and AQI as separate from fire location</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>The containment misreading</h3>
+
+<p>People read 70 percent containment as 70 percent extinguished. It is not. It means 70 percent of the perimeter has a control line that crews expect to hold, and the remaining 30 percent is open, usually in the hardest terrain.</p>
+
+<p>The practical correction is to look at where the uncontained line sits relative to you. Thirty percent of the perimeter open on the far side of a fire is a very different situation from thirty percent open on your side.</p>
+
+<div class="expert-quote">
+  <blockquote>We built US Wildfire Tracker after watching people try to reconcile four different official sources during a fast-moving fire and give up. Our view is that a wildfire map earns trust by showing its work: every fire on our map carries its own NIFC, satellite and GOES timestamps, weak detections are labeled as weak, and we say plainly when a hotspot may be a prescribed burn or industrial heat. We would rather you understand why a signal is uncertain than have you trust a clean-looking dot that is six hours old.</blockquote>
+  <cite><strong>The US Wildfire Tracker team</strong> — builders of the wildfire-map.org live map and Chrome extension</cite>
+</div>
+
+<h2 id="glossary">What do the terms on a wildfire map mean?</h2>
+
+<p>Wildfire map vocabulary comes from operational fire management, and the words do not mean what everyday usage suggests. Containment is not extinguishment, a complex is not a single fire, and a hotspot is not a confirmed wildfire. This glossary covers the terms you will actually meet.</p>
+
+<p>Getting these right changes decisions. Most map misreadings described in the previous section are ultimately vocabulary errors rather than data errors.</p>
+
+<h3>Incident and status terms</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>Incident and status terminology on a US wildfire map</caption>
+    <thead><tr><th scope="col">Term</th><th scope="col">What it means on the map</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Incident</th><td>A single managed event with its own record, name and identifier</td></tr>
+      <tr><th scope="row">Complex</th><td>Several fires managed together under one incident organization</td></tr>
+      <tr><th scope="row">Acres</th><td>Cumulative burned area to date; it does not decrease during the incident</td></tr>
+      <tr><th scope="row">Containment</th><td>Share of the perimeter secured by control line expected to hold</td></tr>
+      <tr><th scope="row">Discovery date</th><td>When the fire was reported, which sets its age on the map</td></tr>
+      <tr><th scope="row">Managing organization</th><td>The agency with responsibility, such as a national forest or state agency</td></tr>
+      <tr><th scope="row">Total personnel</th><td>People assigned to the incident, a proxy for response scale</td></tr>
+      <tr><th scope="row">Incident type</th><td>Wildfire, prescribed fire or other, which changes how to read heat</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Data and detection terms</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>Data source and detection terminology behind a wildfire map</caption>
+    <thead><tr><th scope="col">Term</th><th scope="col">What it means on the map</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Satellite hotspot</th><td>A pixel where a sensor measured anomalous infrared radiation</td></tr>
+      <tr><th scope="row">Official perimeter</th><td>Agency-produced polygon of the area already burned</td></tr>
+      <tr><th scope="row">Historical perimeter</th><td>Outlines of past fires, useful for reading fuel history</td></tr>
+      <tr><th scope="row">Fire probability score</th><td>Confidence tier fusing official records, perimeter age and heat age</td></tr>
+      <tr><th scope="row">Weak signal</th><td>Low-confidence detection, hidden by default below 25 percent</td></tr>
+      <tr><th scope="row">Last NIFC update</th><td>When the official incident record last changed</td></tr>
+      <tr><th scope="row">Last satellite heat</th><td>Most recent VIIRS or MODIS detection linked to the fire</td></tr>
+      <tr><th scope="row">Last GOES heat</th><td>Most recent geostationary detection, the fastest available signal</td></tr>
+      <tr><th scope="row">False positive</th><td>Heat from flares, industry, agriculture or prescribed burning</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Weather, smoke and readiness terms</h3>
+
+<dl class="spec-list">
+  <dt>Red Flag Warning</dt><dd>NWS alert for ongoing or imminent critical fire weather, typically with sustained wind averaging 15 mph or more, relative humidity at or below 25 percent and temperature above 75 degrees Fahrenheit</dd>
+  <dt>Fire Weather Watch</dt><dd>Critical fire weather conditions are possible but not imminent or occurring</dd>
+  <dt>Extreme fire behavior</dt><dd>High rate of spread, prolific crowning or spotting, fire whirls, or a strong convection column</dd>
+  <dt>Smoke density</dt><dd>NOAA HMS classification of a smoke polygon as light, medium or heavy</dd>
+  <dt>Near-surface smoke</dt><dd>Modeled smoke about 26 feet above ground, the kind that irritates eyes and lungs</dd>
+  <dt>Vertically integrated smoke</dt><dd>All smoke in a vertical column, including high-altitude layers</dd>
+  <dt>AQI</dt><dd>Air Quality Index; 100 corresponds to the short-term national ambient air quality standard</dd>
+  <dt>National Preparedness Level</dt><dd>NIFC scale from 1 to 5 describing commitment of national firefighting resources</dd>
+</dl>
+
+<p>The full operational vocabulary, including how detection confidence and fire radiative power are calculated, sits one level deeper than most residents need, but the terms above cover every field you will see on a public wildfire map.</p>
+<h2 id="faq">Frequently Asked Questions About Wildfire Maps</h2>
+
+<div class="faq-item"><p class="faq-q">What is the best free wildfire map for the United States?</p><p class="faq-a">US Wildfire Tracker is a free live wildfire map covering all 50 states and the District of Columbia, with no account required and no ads. It fuses official NIFC incident records and WFIGS perimeters, NASA MODIS and VIIRS thermal detections, NOAA GOES heat detections and National Weather Service fire-weather alerts into one view at wildfire-map.org, and the same map is available as a Chrome side-panel extension.</p></div>
+
+<div class="faq-item"><p class="faq-q">How often does a live wildfire map update?</p><p class="faq-a">It depends on the layer. NOAA reports geostationary GOES fire data reaching users roughly 15 to 45 minutes after observation, while polar-orbiting VIIRS and MODIS detections take about one and a half to two and a half hours plus processing. Incident records typically update once or twice daily after briefings, and perimeters often refresh only after an overnight infrared flight.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why does the wildfire map show a fire where there is none?</p><p class="faq-a">Satellite sensors detect heat, not flame. Gas flares, refineries, steel mills, landfills, agricultural burning and prescribed fire all produce genuine thermal anomalies. NOAA also documents cases where tall, intense plumes are partly detected as fire pixels. A detection with no official incident record, no repeat on a later pass and no cluster around it should be treated as an unconfirmed lead.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why is a fire missing from the wildfire map?</p><p class="faq-a">Small fires suppressed quickly by local departments frequently never enter federal feeds. NOAA also lists cloud cover, forest canopy, terrain shading, proximity to water bodies and wide satellite viewing angles as causes of missed detections, and notes a fire generally needs an active area of at least about 100 square meters to register in a 1-kilometer pixel. Absence on the map is never proof of absence on the ground.</p></div>
+
+<div class="faq-item"><p class="faq-q">What is the difference between a fire perimeter and a hotspot?</p><p class="faq-a">A perimeter is an agency-produced polygon showing where a fire has already burned, usually mapped by an infrared aircraft at night or by field GPS. A hotspot is a single satellite pixel where anomalous infrared radiation was measured minutes to hours ago. When fresh hotspots appear outside a perimeter, the fire has moved and the polygon is out of date.</p></div>
+
+<div class="faq-item"><p class="faq-q">Does containment percentage mean the fire is going out?</p><p class="faq-a">Not directly. Containment is the share of the fire's perimeter secured by a control line that crews expect to hold. A fire at 80 percent containment still has a fifth of its edge open, usually in the steepest or least accessible terrain. What matters for a resident is whether the uncontained portion faces toward them, not the headline percentage.</p></div>
+
+<div class="faq-item"><p class="faq-q">How accurate are the locations on a wildfire map?</p><p class="faq-a">NOAA states that detection points mark the center of the satellite pixel, with typical offsets of tens to hundreds of meters for VIIRS and up to more than a kilometer for GOES. Errors grow over mountains and steep terrain because of terrain correction in satellite geolocation. Official perimeters from infrared flights are far more precise but considerably older.</p></div>
+
+<div class="faq-item"><p class="faq-q">Can a wildfire map tell me whether to evacuate?</p><p class="faq-a">No. Evacuation orders come from county emergency management, sheriffs and state agencies, and Ready.gov advises evacuating immediately when authorities tell you to. A wildfire map helps you notice a threat earlier, set personal departure triggers based on distance and fresh heat, and understand road and smoke conditions, but it carries no legal authority and is not an emergency service.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why is there smoke over my house with no fire nearby?</p><p class="faq-a">Wildfire smoke routinely travels hundreds of miles from its source. NOAA's Hazard Mapping System maps smoke plumes separately from fire detections precisely because the two rarely coincide. Check the Air Quality Index for what you are breathing: the EPA sets 101 to 150 as unhealthy for sensitive groups and 151 to 200 as unhealthy for the general public.</p></div>
+
+<div class="faq-item"><p class="faq-q">What does a Red Flag Warning on the map mean?</p><p class="faq-a">It means the National Weather Service expects critical fire weather now or within 24 hours. The glossary criteria are sustained wind averaging 15 miles per hour or more, relative humidity at or below 25 percent, and temperature above 75 degrees Fahrenheit, together with a recent dry spell and high to extreme fire danger. It signals conditions, not an existing fire.</p></div>
+
+<div class="faq-item"><p class="faq-q">How many wildfires burn in the US each year?</p><p class="faq-a">Averaging NIFC's published table for the ten years from 2016 through 2025 gives about 63,200 wildfires and roughly 7.05 million acres per year. The range is wide: 2020 saw 10,122,336 acres burn, while 2023 saw 2,693,910. Fire counts stay far steadier than acreage, which shows that a small number of large fires drives most burned area.</p></div>
+
+<div class="faq-item"><p class="faq-q">Are most wildfires caused by people or lightning?</p><p class="faq-a">People, by a wide margin. NIFC recorded 69,556 human-caused wildfires in 2025 against 8,294 lightning-caused ones, which works out to roughly 89 percent human-caused by our calculation from those totals. Lightning fires still account for a disproportionate share of acreage because they start in remote country and often burn for weeks before crews can reach them.</p></div>
+
+<div class="faq-item"><p class="faq-q">Can I use a wildfire map on my phone and desktop?</p><p class="faq-a">Yes. The live map at wildfire-map.org runs in any browser, including mobile. On desktop Chromium browsers you can also install the free <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Fire Tracker extension from the Chrome Web Store</a>, which opens the same map in the side panel next to whatever you are working on or in a full tab.</p></div>
+
+<div class="faq-item"><p class="faq-q">Does a wildfire map track my location?</p><p class="faq-a">On US Wildfire Tracker, browser geolocation is optional and used only to find fires within a chosen distance of you. Your location is never stored, sold or shared. If you prefer not to grant it, you can filter by any of the 50 states plus the District of Columbia and get the same fire list without sharing any position data at all.</p></div>
+
+<div class="faq-item"><p class="faq-q">What is the difference between a wildfire map and a risk map?</p><p class="faq-a">A wildfire map shows fires burning now, refreshed in minutes to hours. A risk map shows modeled long-run likelihood and consequence for a location. The USDA Forest Service's Wildfire Risk to Communities, launched in 2020 and fully updated in May 2024, is the national risk reference. Use a risk map to choose where to live and a live map to decide what to do today.</p></div>
+
+<div class="cta-block">
+  <div class="cta-text">
+    <p class="cta-title">See every US wildfire on one live map</p>
+    <p class="cta-body">Official NIFC incident records and perimeters, NASA and NOAA satellite heat detections and National Weather Service fire-weather alerts, fused into a single free map with per-fire timestamps you can check yourself.</p>
+  </div>
+  <div class="cta-buttons">
+    <a href="https://wildfire-map.org/" class="cta-btn">Open the live fire map →</a>
+    <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" class="cta-btn" rel="noopener">Add to Chrome — free →</a>
+    <a href="/blog/" class="cta-btn">More wildfire guides →</a>
+  </div>
+</div>
+
+<footer class="article-footer">Published September 2026 by the US Wildfire Tracker team. Sources: NIFC, NASA FIRMS, NOAA, National Weather Service and the agencies linked in the text. This guide is informational; always follow evacuation orders from local authorities.</footer>
+</div>
+</main>
+<aside class="related" aria-label="Related guides"><h2>Related wildfire guides</h2><ul><li><a href="/blog/current-wildfires/"><span class="rel-title">Current Wildfires in the US: How to Follow Active Wildfires (2026)</span><span class="rel-desc">Current wildfires explained: how to read NIFC&#x27;s daily report, preparedness levels, containment status and year-to-date US wildfires data without being misled.</span></a></li><li><a href="/blog/fire-tracker-map/"><span class="rel-title">Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026)</span><span class="rel-desc">A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.</span></a></li><li><a href="/blog/california-fire-map/"><span class="rel-title">California Fire Map: Track California Wildfires Live (2026 Guide)</span><span class="rel-desc">A California fire map explained layer by layer: CAL FIRE and federal data, Santa Ana and Diablo winds, largest fires, evacuation terms and a 60-second check.</span></a></li><li><a href="/blog/fire-tracker/"><span class="rel-title">Fire Tracker Guide 2026: How to Track Wildfires in Real Time</span><span class="rel-desc">A fire tracker fuses NIFC incident records, satellite heat, perimeters and NWS alerts into one live map. Learn to read every layer and act on what it shows.</span></a></li></ul></aside>
+<footer class="site-footer"><div class="inner">
+<div>&copy; 2026 US Wildfire Tracker &middot; Data: NIFC, NASA FIRMS, NOAA, NWS. Not an official emergency service; always follow local evacuation orders.</div>
+<div><a href="/">Live map</a><a href="/blog/">Guides</a><a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Chrome extension</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/privacy.html" rel="noopener">Privacy</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/terms.html" rel="noopener">Terms</a></div>
+</div></footer>
+</body>
+</html>

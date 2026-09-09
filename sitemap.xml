@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://wildfire-map.org/</loc>
-    <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://wildfire-map.org/</loc><lastmod>2026-09-10</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://wildfire-map.org/blog/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wildfire-map.org/blog/fire-tracker/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://wildfire-map.org/blog/fire-tracking-app/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/fire-tracker-map/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/live-fire-tracker/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/wildfire-tracker/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/fire-tracker-near-me/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/forest-fire-smoke-tracker/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/wildfire-map/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/california-fire-map/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/la-fires-map/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/south-carolina-fires/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/fire-tracker-app/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/wildfire-tracking/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/blog/current-wildfires/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

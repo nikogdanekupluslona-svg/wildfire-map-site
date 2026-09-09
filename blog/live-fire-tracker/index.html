@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Fire Tracker: How Real-Time Wildfire Data Works in 2026 | US Wildfire Tracker</title>
+<meta name="description" content="A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.">
+<meta name="keywords" content="live fire tracker, live wildfire tracker, live fire tracker map, real-time fire tracker, live fire map, fire tracker live, fire tracker, wildfire tracker, satellite fire detection, wildfire tracking, fire tracker data">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://wildfire-map.org/blog/live-fire-tracker/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="US Wildfire Tracker">
+<meta property="og:title" content="Live Fire Tracker: How Real-Time Wildfire Data Works in 2026 | US Wildfire Tracker">
+<meta property="og:description" content="A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.">
+<meta property="og:url" content="https://wildfire-map.org/blog/live-fire-tracker/">
+<meta property="og:image" content="https://wildfire-map.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-09-10">
+<meta property="article:modified_time" content="2026-09-10">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Fire Tracker: How Real-Time Wildfire Data Works in 2026 | US Wildfire Tracker">
+<meta name="twitter:description" content="A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.">
+<meta name="twitter:image" content="https://wildfire-map.org/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://wildfire-map.org/#organization",
+   "name": "US Wildfire Tracker",
+   "url": "https://wildfire-map.org/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://wildfire-map.org/logo512.png",
+    "width": 512,
+    "height": 512
+   },
+   "sameAs": [
+    "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://wildfire-map.org/#website",
+   "url": "https://wildfire-map.org/",
+   "name": "US Wildfire Tracker",
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "Article",
+   "@id": "https://wildfire-map.org/blog/live-fire-tracker/#article",
+   "headline": "Live Fire Tracker: How Real-Time Wildfire Data Works in 2026",
+   "description": "A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.",
+   "url": "https://wildfire-map.org/blog/live-fire-tracker/",
+   "mainEntityOfPage": "https://wildfire-map.org/blog/live-fire-tracker/",
+   "inLanguage": "en-US",
+   "wordCount": 13108,
+   "image": "https://wildfire-map.org/og-image.png",
+   "keywords": "live fire tracker, live wildfire tracker, live fire tracker map, real-time fire tracker, live fire map, fire tracker live, fire tracker, wildfire tracker, satellite fire detection, wildfire tracking, fire tracker data",
+   "author": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "publisher": {
+    "@id": "https://wildfire-map.org/#organization"
+   },
+   "datePublished": "2026-09-10",
+   "dateModified": "2026-09-10",
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Live fire tracker"
+    },
+    {
+     "@type": "Thing",
+     "name": "Wildfire data latency"
+    },
+    {
+     "@type": "Thing",
+     "name": "Satellite fire detection"
+    },
+    {
+     "@type": "Thing",
+     "name": "NIFC incident data"
+    },
+    {
+     "@type": "Thing",
+     "name": "Fire-weather alerts"
+    }
+   ],
+   "mentions": [
+    {
+     "@type": "Thing",
+     "name": "NIFC"
+    },
+    {
+     "@type": "Thing",
+     "name": "WFIGS"
+    },
+    {
+     "@type": "Thing",
+     "name": "IRWIN"
+    },
+    {
+     "@type": "Thing",
+     "name": "NASA FIRMS"
+    },
+    {
+     "@type": "Thing",
+     "name": "NASA LANCE"
+    },
+    {
+     "@type": "Thing",
+     "name": "MODIS"
+    },
+    {
+     "@type": "Thing",
+     "name": "VIIRS"
+    },
+    {
+     "@type": "Thing",
+     "name": "Terra"
+    },
+    {
+     "@type": "Thing",
+     "name": "Aqua"
+    },
+    {
+     "@type": "Thing",
+     "name": "Suomi NPP"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA-20"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA-21"
+    },
+    {
+     "@type": "Thing",
+     "name": "GOES-19"
+    },
+    {
+     "@type": "Thing",
+     "name": "GOES-18"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA"
+    },
+    {
+     "@type": "Thing",
+     "name": "NESDIS"
+    },
+    {
+     "@type": "Thing",
+     "name": "National Weather Service"
+    },
+    {
+     "@type": "Thing",
+     "name": "NOAA Hazard Mapping System"
+    },
+    {
+     "@type": "Thing",
+     "name": "InciWeb"
+    }
+   ],
+   "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+     ".lead",
+     ".faq-a"
+    ]
+   },
+   "isPartOf": {
+    "@id": "https://wildfire-map.org/#website"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://wildfire-map.org/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Wildfire guides",
+     "item": "https://wildfire-map.org/blog/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Live Fire Tracker: How Real-Time Wildfire Data Works in 2026",
+     "item": "https://wildfire-map.org/blog/live-fire-tracker/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://wildfire-map.org/blog/live-fire-tracker/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How live is a live fire tracker, really?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the layer. Geostationary heat detections refresh roughly every five minutes because GOES images the contiguous United States on that cadence. Official NIFC incident and perimeter services pull from IRWIN every five minutes. Polar-orbit hotspots from MODIS and VIIRS are much less frequent, typically arriving within about three hours of an overpass and sometimes under 60 seconds where direct-broadcast processing is available."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the fastest wildfire detection available to the public?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "NASA's ultra-real-time FIRMS tier delivers detections in under 60 seconds from Earth observation to wildfire detection, using direct-broadcast reception at a small set of ground stations in the United States and Canada. Separately, NOAA's Next Generation Fire System can flag geostationary detections in as little as one minute from the moment the fire's energy reaches the satellite, according to its programme manager."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does a fire show on a live fire map with no name or acreage?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because satellite detection precedes the paperwork. A thermal anomaly can appear minutes after ignition, while the incident name, acreage and containment figures only exist once dispatch creates an IRWIN record and a crew performs a size-up. In remote country that gap can run for hours. Treat an unnamed hotspot cluster as a probable fire awaiting confirmation, not as an error."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why is the perimeter smaller than the hotspots on the map?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The perimeter is older. Official perimeters are drawn from infrared mapping flights or GPS tracks, usually once per operational period, so a polygon captured at dawn describes the fire at dawn. Hotspots detected that afternoon reflect where heat is now. When detections sit outside the polygon, the standard interpretation is that the fire grew after the perimeter was mapped."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which timestamp should I check first on a fire?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Check \"Last satellite heat\" first if you want to know where the fire is, and \"Last GOES heat\" first if you want to know whether it is still burning. \"Last NIFC update\" tells you only when the administrative record changed, which can lag the fire's physical behaviour by many hours. The page refresh time tells you nothing about data age at all."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why does a fire stay on the map after it is out?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Records remain in the NIFC current services until the fire is declared contained, controlled or out, or until fall-off rules remove them. Those rules drop fires under 10 acres after three days without an update, fires of 10 to 100 acres after eight days, and larger fires after 14 days. Between real extinguishment and record removal there is often a multi-day gap."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can a live fire tracker miss a fire entirely?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Small, cool or smouldering fires may not emit enough energy to exceed detection thresholds, thick cloud blocks mid-infrared radiation from reaching the sensor, and steep terrain can shield a fire from slant viewing angles. Fires suppressed within the first half hour frequently produce no polar-orbit detection at all. Absence of a hotspot is never proof of absence of fire."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the difference between MODIS and VIIRS detections?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "MODIS flies on Terra and Aqua and produces a 1-kilometre active fire product from 4- and 11-micrometer radiances. VIIRS flies on Suomi NPP, NOAA-20 and NOAA-21 and produces a 375-metre product with markedly better nighttime performance and a better response to small fires. On a live fire tracker, VIIRS gives you the sharper geometry and MODIS gives you the longer historical record."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often does NIFC data actually update?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The WFIGS current incident and perimeter services refresh from IRWIN every five minutes, and changes at a perimeter source can take up to 15 minutes to display. Fall-off rules run hourly. The human-authored summaries move far slower: the National Fire News page states it is updated Monday to Friday, and the Incident Management Situation Report publishes once each morning."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Are all the hotspots on a live wildfire tracker real wildfires?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Satellite instruments detect heat, not wildfire specifically. Gas flares, refineries, steel mills, landfills, agricultural burning and prescribed fires all produce thermal anomalies. Sun glint can also raise weak daytime signals. This is why detections carry confidence classes and why a probability score that checks for a linked official record is more useful than a raw hotspot feed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I refresh a real-time fire tracker constantly?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "There is little value in refreshing faster than every five minutes, because that matches both the GOES CONUS scan cadence and the WFIGS pull interval. US Wildfire Tracker refreshes automatically every few minutes while open. During a wind event, checking every 15 minutes and reading the timestamps carefully beats staring at a map that has not changed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I do in the first 30 minutes after seeing a new detection?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Measure the distance from the detection to your address, identify the wind direction from the active fire-weather alert, and check whether an official incident record is linked. Then set a specific trigger that will make you leave, and confirm two exit routes. Under five miles, prepare to go immediately. Follow any evacuation order from local authorities without waiting for the map to catch up."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does a live fire tracker replace official emergency alerts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. A live fire tracker is an informational map built from public agency data, and US Wildfire Tracker states plainly that it is not an official emergency service. Evacuation orders and warnings come from county sheriffs, city officials and state emergency agencies. Use the map to gain lead time and situational awareness, and follow official direction when it arrives."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why do fire-weather alerts appear faster than fire detections?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because they are published directly by a human forecaster rather than derived from a physical measurement. The National Weather Service issues Red Flag Warnings and Fire Weather Watches through api.weather.gov as soon as a forecast office signs them, so they reach a live fire map within one refresh cycle. Satellite detections must be observed, downlinked, processed and published first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is US Wildfire Tracker free, and does it need an account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is free and no account is required. The live map runs in any browser at wildfire-map.org, and the Chrome extension listed as Fire Tracker opens the same map in the Chrome side panel or a full tab on Chromium browsers. There are no ads and no third-party ad trackers inside the extension. Location, when granted, is used only to find nearby fires and is never stored, sold or shared."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "US Wildfire Tracker",
+   "operatingSystem": "Chrome, any modern browser",
+   "applicationCategory": "UtilitiesApplication",
+   "url": "https://wildfire-map.org/",
+   "installUrl": "https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="inner">
+<a class="site-brand" href="/"><img src="/icon48.png" width="32" height="32" alt="US Wildfire Tracker logo">US Wildfire Tracker</a>
+<nav class="site-nav" aria-label="Site"><a href="/">Live fire map</a><a href="/blog/">Wildfire guides</a><a class="primary" href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Add to Chrome</a></nav>
+</div></header>
+<main class="wmt-article">
+<div class="container">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Wildfire guides</a> &rsaquo; Fire Tracking</nav>
+<header class="article-header">
+  <span class="article-tag">Fire Tracking</span>
+  <h1>Live Fire Tracker: What Real Time Really Means for Wildfire Data and How to Use It</h1>
+  <div class="article-meta">
+    <span>📅 <time datetime="2026-09">September 2026</time></span>
+    <span>⏱ 53 min read</span>
+    <span>✍ <a href="https://wildfire-map.org/">US Wildfire Tracker team</a></span>
+  </div>
+</header>
+
+<p class="lead">A live fire tracker is never a live video feed. It is a stack of feeds with different clocks: geostationary heat every five minutes, polar-orbiting hotspots several times a day, and official incident records refreshed every five minutes. Knowing each clock tells you exactly how old the map in front of you is.</p>
+
+<div class="trust-badge">
+  <span class="trust-badge-icon" aria-hidden="true">🏆</span>
+  <div class="trust-badge-text">
+    <div class="trust-badge-title">US Wildfire Tracker — <span>rated 5 stars in the Chrome Web Store</span></div>
+    <div class="trust-badge-sub">2026 — free live wildfire map built on official NIFC, NASA and NOAA data</div>
+  </div>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#what-a-live-fire-tracker-shows">What does a live fire tracker actually show?</a></li>
+    <li><a href="#why-real-time-fire-tracker-lags">Why is a real-time fire tracker never instant?</a></li>
+    <li><a href="#polar-orbits-set-the-clock">How do polar orbits time your live fire tracker?</a></li>
+    <li><a href="#terra-aqua-modis-passes">When do Terra and Aqua reach your fire tracker?</a></li>
+    <li><a href="#viirs-sharper-eyes">How does VIIRS sharpen a live wildfire tracker?</a></li>
+    <li><a href="#goes-geostationary-cadence">What does GOES add to a fire tracker live view?</a></li>
+    <li><a href="#firms-latency-tiers">How fast is FIRMS data on a live fire map?</a></li>
+    <li><a href="#nifc-wfigs-cadence">How often does NIFC update a live fire tracker?</a></li>
+    <li><a href="#nws-fire-weather-alerts">Where do fire-weather alerts fit a live fire map?</a></li>
+    <li><a href="#fusing-the-feeds">How does a live fire tracker map fuse every feed?</a></li>
+    <li><a href="#timestamps-you-can-trust">Which live fire tracker timestamps can you trust?</a></li>
+    <li><a href="#first-30-minutes">What to do in the first 30 minutes on a live fire map</a></li>
+    <li><a href="#stale-records">Why a real-time fire tracker still shows dead fires</a></li>
+    <li><a href="#refresh-strategy">How often should you refresh a live fire tracker?</a></li>
+    <li><a href="#false-positives">Which satellite fire detection signals are false?</a></li>
+    <li><a href="#night-cloud-terrain">What can a live wildfire tracker miss at night?</a></li>
+    <li><a href="#worked-timeline">What does a live fire tracker timeline look like?</a></li>
+    <li><a href="#latency-glossary">Which live fire tracker terms should you know?</a></li>
+    <li><a href="#faq">Frequently Asked Questions About Live Fire Trackers</a></li>
+  </ol>
+</nav>
+
+<h2 id="what-a-live-fire-tracker-shows">What does a live fire tracker actually show?</h2>
+
+<p>A live fire tracker shows four separate things drawn on one basemap: official incident records, official fire perimeters, satellite heat detections, and fire-weather alerts. Each arrives on its own schedule. The map looks like a single picture, but every dot and polygon on it carries a different age.</p>
+
+<p>The first layer is the official incident record. In the United States that record originates in IRWIN, the Integrated Reporting of Wildland Fire Information service, and reaches the public through the Wildland Fire Interagency Geospatial Services group at the National Interagency Fire Center. It carries the fire's name, acreage, containment percentage and managing organization.</p>
+
+<p>The second layer is the official perimeter: a polygon drawn by fire GIS specialists, usually from an infrared mapping flight or a GPS track walked or flown around the fire's edge. Perimeters are authoritative but slow. They are produced once or twice a day on a large incident, not continuously.</p>
+
+<p>The third layer is satellite heat. These are thermal anomaly detections from instruments in orbit — MODIS on Terra and Aqua, VIIRS on Suomi NPP, NOAA-20 and NOAA-21, and the Advanced Baseline Imager on the GOES geostationary satellites. They are fast and frequent, but they are pixels, not perimeters.</p>
+
+<p>The fourth layer is fire weather. The National Weather Service issues Red Flag Warnings and Fire Weather Watches as polygons through its public API at api.weather.gov, and a live fire tracker overlays them so you can see whether the atmosphere is about to make a small fire into a large one.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">5 min</span><span class="stat-label">How often WFIGS refreshes official incident and perimeter data from IRWIN</span></div>
+  <div class="stat-card"><span class="stat-number">5 min</span><span class="stat-label">How often GOES ABI produces a fresh image of the entire contiguous US</span></div>
+  <div class="stat-card"><span class="stat-number">3 hr</span><span class="stat-label">Typical near-real-time latency for NASA LANCE satellite fire products</span></div>
+  <div class="stat-card"><span class="stat-number">&lt;60 s</span><span class="stat-label">Ultra-real-time FIRMS latency from Earth observation to fire detection</span></div>
+</div>
+
+<h3>The map is a composite, not a camera</h3>
+
+<p>No satellite streams continuous video of your county. What a live fire tracker does is assemble the most recent sample from each sensor and each agency database, stamp it with a time, and redraw. The word "live" describes the pipeline, not the imagery. The pipeline is genuinely continuous; the samples inside it are not.</p>
+
+<p>That distinction matters the moment you use the map for a decision. A hotspot placed at 2:14 p.m. and a perimeter drawn at 6:00 a.m. describe the same fire nine hours apart. If you read them as one snapshot you will underestimate how far the fire has moved since sunrise.</p>
+
+<p>The <a href="/blog/fire-tracker-map/">layer-by-layer guide to reading a fire tracker map</a> covers what each symbol means visually. This article covers the clock behind each one — how old the data can be, and what to do about it.</p>
+
+<h3>Why the age of a pixel is the whole story</h3>
+
+<p>Wildfire spread is measured in chains per hour and miles per day. A wind-driven grass fire can run several miles in an hour. Nebraska's Morrill Fire travelled more than 65 miles across the state between its detection at 1:40 p.m. Mountain Time on March 12, 2026, and 9:00 p.m. that night, according to NOAA's satellite service.</p>
+
+<p>Against that kind of movement, a three-hour-old detection is not a location. It is a starting point. This is why every serious live fire tracker exposes its timestamps instead of hiding them, and why the US Wildfire Tracker interface shows "Last NIFC update", "Last satellite heat" and "Last GOES heat" as three separate fields on every fire.</p>
+
+<div class="callout callout-info"><strong>How fast satellites can see ignition</strong>Mike Pavolonis, Wildland Fire Program Manager at NOAA's Satellite and Information Service, describes the geostationary fleet this way: "Geostationary satellites are constant sentinels. They enable detection of fires within 5 to 30 minutes of ignition." See NOAA's account of the <a href="https://www.nesdis.noaa.gov/news/noaas-wildfire-detection-system-game-changer-nebraskas-record-breaking-morrill-fire" rel="noopener">Morrill Fire detection</a>.</div>
+
+<h2 id="why-real-time-fire-tracker-lags">Why is a real-time fire tracker never instant?</h2>
+
+<p>A real-time fire tracker lags because four physical and administrative steps sit between a flame and your screen: the sensor must fly over or scan the spot, the raw data must be downlinked, an algorithm must classify the pixel as fire, and the result must be published to a service your map can read.</p>
+
+<p>Step one is observation. A geostationary satellite scans the contiguous United States on a fixed cadence. A polar-orbiting satellite has to physically pass overhead. Until one of those events happens, the fire is invisible to space-based sensors no matter how large it is.</p>
+
+<p>Step two is downlink. Data either goes to a NOAA or NASA ground station on a scheduled pass, or it is broadcast continuously and picked up by a direct-readout antenna within radio line of sight. Direct broadcast is what makes sub-minute detection possible over the United States.</p>
+
+<p>Step three is processing. A fire-detection algorithm compares each pixel's mid-infrared and thermal-infrared brightness temperatures against its neighbours, screens out sun glint, clouds and water, and assigns a confidence value. MODIS fire detection works from 4- and 11-micrometer radiances; VIIRS adds a 375-metre imagery-band product.</p>
+
+<p>Step four is publication. The detection lands in a public service — NASA FIRMS, the NOAA Hazard Mapping System, a NOAA fire dashboard — and only then can a live fire tracker fetch it. Each hop adds seconds to hours, and the total is what you experience as latency.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>The four steps between ignition and a dot on a live fire tracker</caption>
+    <thead>
+      <tr><th scope="col">Step</th><th scope="col">What happens</th><th scope="col">Typical time added</th><th scope="col">What can stall it</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Observation</th><td>Sensor scans or overflies the fire location</td><td>0 to 12 hours</td><td>Polar orbit gap; heavy cloud; extreme viewing angle</td></tr>
+      <tr><th scope="row">Downlink</th><td>Raw data reaches a ground antenna</td><td>Seconds to about 90 minutes</td><td>No direct-readout station in range; scheduled dump only</td></tr>
+      <tr><th scope="row">Processing</th><td>Algorithm classifies the pixel as an active fire</td><td>Under 60 seconds to about 3 hours</td><td>Quality assurance passes; reprocessing; geolocation checks</td></tr>
+      <tr><th scope="row">Publication</th><td>Detection appears in a public feed the map reads</td><td>Seconds to minutes</td><td>Service outage; feed rate limits; cache expiry</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Latency is not one number, it is a distribution</h3>
+
+<p>The honest way to describe a live fire tracker is with a range, not a headline figure. A fire that ignites two minutes before a GOES scan and sits in a NOAA Next Generation Fire System coverage area can be flagged almost immediately. The same fire igniting under thick cloud at 3:00 a.m. may not be confirmed by satellite until well after sunrise.</p>
+
+<p>NOAA's own framing is useful here. Its Next Generation Fire System, built with the Cooperative Institute for Meteorological Satellite Studies, "can provide alerts in as little as one minute from the time the energy from the fire reaches the satellite," Pavolonis said in NOAA's <a href="https://www.noaa.gov/news-release/noaa-unveils-powerful-convergence-of-ai-and-science-with-revolutionary-next-generation-fire-system" rel="noopener">May 2025 announcement</a>. The qualifier — "reaches the satellite" — is the whole point.</p>
+
+<p>Energy reaching the satellite requires a scan. On the standard operating mode, the contiguous United States is imaged every five minutes, so the worst case for that leg is roughly five minutes plus processing. For polar orbiters the equivalent worst case is measured in hours.</p>
+
+<h3>Where administrative latency beats sensor latency</h3>
+
+<p>Official numbers move slower than heat. Acreage, containment percentage and personnel counts on a large incident come from an ICS-209 report submitted by the incident management team, typically once per operational period. That is why a fire's acreage can sit unchanged for 18 hours while its satellite footprint visibly grows.</p>
+
+<p>The National Interagency Fire Center's own <a href="https://www.nifc.gov/fire-information/nfn" rel="noopener">National Fire News</a> page states plainly that the report "is currently updated Monday to Friday." Weekend acreage on a national summary is therefore often Friday's number, even though the underlying WFIGS services keep refreshing every five minutes.</p>
+
+<p>Understanding both clocks — the sensor clock and the paperwork clock — is what separates a confident reading of a live fire map from a guess. The <a href="/blog/wildfire-tracking/">explainer on how wildfires are tracked from ignition to containment</a> walks through the agency side of that pipeline in more detail.</p>
+<h2 id="polar-orbits-set-the-clock">How do polar orbits time your live fire tracker?</h2>
+
+<p>Polar-orbiting satellites set the rhythm of a live fire tracker's sharpest detections. They fly pole to pole while the Earth turns underneath, so each orbit sees a different strip of ground. NOAA's Joint Polar Satellite System spacecraft complete 14 orbits a day and cover the globe twice daily.</p>
+
+<p>The orbit is sun-synchronous. That means the satellite crosses the equator at roughly the same local solar time on every pass, so images of the same place are always taken under comparable lighting. JPSS spacecraft fly at about 833 kilometres altitude at an inclination of 98.75 degrees.</p>
+
+<p>Sun-synchronous timing has a direct consequence for a live wildfire tracker: your area gets visited at predictable clock times, not at random. Once you learn those windows, you can tell whether a gap in new detections means the fire is dying down or simply that nothing has flown over yet.</p>
+
+<p>At mid-latitudes across the contiguous United States, adjacent orbital swaths overlap enough that most locations are covered by more than one pass per satellite per half-day. Nearer the poles the overlap grows; Alaska sees far more passes per day than Florida from the same spacecraft.</p>
+
+<h3>Why one satellite is never enough</h3>
+
+<p>A single polar orbiter gives you roughly one daytime and one nighttime look. Stack several spacecraft with staggered crossing times and the picture improves quickly. NOAA states that NOAA-21 flies approximately 50 minutes ahead of NOAA-20 in the same constellation, alongside Suomi NPP.</p>
+
+<p>Those staggered slots are why a modern live fire tracker can show several independent satellite confirmations of the same fire on the same afternoon. Two detections 50 minutes apart, from two different spacecraft, give you a crude growth vector that a single pass never could.</p>
+
+<p>Adding NASA's older Terra and Aqua platforms extends the sampling further into the morning and early afternoon. The result across the whole fleet is a set of observation windows spread through the day and night rather than a single daily snapshot.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Polar-orbiting satellites that feed a live fire tracker</caption>
+    <thead>
+      <tr><th scope="col">Satellite</th><th scope="col">Fire instrument</th><th scope="col">Launched</th><th scope="col">Orbit notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Terra</th><td>MODIS, 1 km fire product</td><td>December 18, 1999</td><td>705 km, 10:30 a.m. descending node</td></tr>
+      <tr><th scope="row">Aqua</th><td>MODIS, 1 km fire product</td><td>May 4, 2002</td><td>Was 1:30 p.m. ascending; now in free drift to later crossing times</td></tr>
+      <tr><th scope="row">Suomi NPP</th><td>VIIRS, 375 m fire product</td><td>October 28, 2011</td><td>JPSS constellation, sun-synchronous</td></tr>
+      <tr><th scope="row">NOAA-20</th><td>VIIRS, 375 m fire product</td><td>November 2017</td><td>About 833 km, 98.75 degree inclination</td></tr>
+      <tr><th scope="row">NOAA-21</th><td>VIIRS, 375 m fire product</td><td>November 10, 2022</td><td>Flies roughly 50 minutes ahead of NOAA-20</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>What an orbit gap feels like on the map</h3>
+
+<p>Suppose a fire starts at 3:15 p.m. local time in eastern Oregon. The early-afternoon VIIRS passes have already gone by. Depending on swath geometry, the next polar-orbit look might be the evening pass or the pre-dawn pass. In between, the only satellite evidence available to a live fire tracker comes from the geostationary fleet.</p>
+
+<p>This is exactly the situation where a fire tracker live view can appear to freeze. The incident record may still be empty because nobody has filed one, and the 375-metre hotspots have not refreshed. The five-minute GOES heat detection is doing all the work, at far coarser resolution.</p>
+
+<p>Reading the map correctly in that window means checking the "Last satellite heat" field rather than assuming the absence of new dots equals the absence of fire. A quiet map at 4:30 p.m. is usually an orbit gap, not good news.</p>
+
+<div class="callout callout-tip"><strong>Practical rule</strong>If the newest polar-orbit hotspot on your live fire tracker is more than about three hours old and the fire is under a wind event, treat the map's fire footprint as a floor, not a boundary. Assume growth you cannot yet see, and check the fire-weather layer for the wind direction.</div>
+
+<h2 id="terra-aqua-modis-passes">When do Terra and Aqua reach your fire tracker?</h2>
+
+<p>Terra and Aqua carry MODIS, the instrument that gave the public its first global fire map. Terra flies a 705-kilometre sun-synchronous orbit with a 10:30 a.m. descending node; Aqua flew the matching 1:30 p.m. ascending node until it exhausted its fuel and entered free drift.</p>
+
+<p>MODIS scans a 2,330-kilometre-wide swath cross-track, with a scan mirror turning at 20.3 revolutions per minute. Its bands resolve at 250 metres, 500 metres and 1,000 metres depending on wavelength. The active-fire product runs at 1-kilometre resolution using 4- and 11-micrometer radiances.</p>
+
+<p>That 1-kilometre pixel is the key limitation. A MODIS fire detection tells you that somewhere inside roughly a square kilometre there is a thermal anomaly hot enough to stand out against its surroundings. It does not tell you where in that square the flame front sits.</p>
+
+<p>Terra's product is delivered as five-minute Level 2 swath granules, and the satellite acquires observations twice daily at 10:30 in the morning and evening. That cadence has been remarkably stable for more than a quarter century, which is why MODIS remains the backbone of long-term fire climatology.</p>
+
+<h3>What Aqua's free drift changed</h3>
+
+<p>NASA reports that Aqua completed its final drag makeup manoeuvres in December 2021 and is now in free drift, slowly descending below the A-Train and drifting to later equatorial crossing times and lower altitudes. Its afternoon slot is no longer fixed at 1:30 p.m.</p>
+
+<p>For a live fire tracker this has two effects. First, the historical assumption "Aqua means early afternoon" is weakening year by year. Second, MODIS observations from Aqua now arrive under later-afternoon sun angles, which changes both illumination and the thermal contrast the algorithm sees.</p>
+
+<p>NASA's Aqua mission page notes that the spacecraft continues collecting and transmitting high-quality data from four of its six instruments, MODIS among them. The data is still good; only the timetable has moved. A careful live wildfire tracker treats the timestamp on each detection as authoritative rather than inferring time from the satellite name.</p>
+
+<h3>When a 1-kilometre pixel is still the right tool</h3>
+
+<p>MODIS is coarse, but it is also 27 years deep. If you want to know whether this September's fire activity in the Northern Rockies is unusual, MODIS is the consistent record. If you want to know where the flame front is on a fire two ridges away, it is the wrong instrument.</p>
+
+<p>The practical guidance for anyone reading a live fire map is to weight MODIS detections as corroboration rather than precision. One MODIS pixel plus two VIIRS pixels plus a GOES heat flag is a strong signal. One isolated MODIS pixel with nothing else is worth a second look before you act on it.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">705 km</span><span class="stat-label">Terra and Aqua orbital altitude</span></div>
+  <div class="stat-card"><span class="stat-number">2,330 km</span><span class="stat-label">MODIS cross-track swath width</span></div>
+  <div class="stat-card"><span class="stat-number">20.3 rpm</span><span class="stat-label">MODIS scan mirror rotation rate</span></div>
+  <div class="stat-card"><span class="stat-number">1 km</span><span class="stat-label">MODIS active-fire product pixel size</span></div>
+</div>
+
+<h2 id="viirs-sharper-eyes">How does VIIRS sharpen a live wildfire tracker?</h2>
+
+<p>VIIRS gives a live wildfire tracker its highest-resolution routine fire detections. The imagery-band active fire product resolves at 375 metres, roughly seven times more area-precise than the 1-kilometre MODIS product, and it performs markedly better at night.</p>
+
+<p>NASA describes the improvement plainly: compared with coarser products at 1 kilometre or worse, the 375-metre data give a greater response over fires of relatively small area and improved mapping of large fire perimeters. That second benefit matters most on big incidents where the pixel cloud starts to trace the fire's real shape.</p>
+
+<p>VIIRS flies on Suomi NPP, NOAA-20 and NOAA-21. Its swath is about 3,000 kilometres wide, and its spatial resolution degrades gracefully from roughly 0.4 kilometres at nadir to about 0.8 kilometres at the edge of scan — far better than the four-fold degradation typical of older scanners.</p>
+
+<p>NOAA emphasises the same point from the operational side: at 375 metres per pixel, VIIRS enables detection of smaller and lower-temperature fires, and its Day-Night Band measures low-intensity visible light for enhanced nighttime fire detection.</p>
+
+<h3>Confidence classes and what they mean for you</h3>
+
+<p>Every VIIRS 375-metre detection carries a confidence class. Low confidence is associated with daytime sun glint and weak mid-infrared temperature anomalies below about 15 kelvin. Nominal confidence means the pixel is free of sun-glint contamination with an anomaly above that threshold. High confidence corresponds to saturated pixels, day or night.</p>
+
+<p>Those three classes are the raw material behind the fire probability score you see on US Wildfire Tracker. A low-confidence VIIRS pixel with no NIFC incident linked to it is precisely the kind of weak signal that the app hides by default and lets you switch on when you want to see everything.</p>
+
+<p>Each detection also carries fire radiative power in megawatts, a measure of how much energy the pixel is emitting. NASA cautions that FRP retrieval is only fully viable across small or low-intensity fires because the mid-infrared channel saturates on the hottest ones — so a very intense fire can report a deceptively modest FRP.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>VIIRS 375 m active fire confidence classes and how to read them</caption>
+    <thead>
+      <tr><th scope="col">Class</th><th scope="col">Technical basis</th><th scope="col">How a live fire tracker should treat it</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Low</th><td>Daytime sun glint, or mid-infrared anomaly under about 15 K</td><td>Weak signal; needs corroboration from a second pass or an official record</td></tr>
+      <tr><th scope="row">Nominal</th><td>No sun-glint contamination, anomaly above about 15 K</td><td>Credible heat source; check whether an incident record exists</td></tr>
+      <tr><th scope="row">High</th><td>Saturated pixel, daytime or nighttime</td><td>Strong active fire signal; expect an incident record to follow if one is absent</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why nighttime VIIRS is the most valuable pass of the day</h3>
+
+<p>Fire behaviour usually moderates overnight as relative humidity recovers and temperatures fall. That is also when VIIRS is at its best, because there is no solar reflection to confuse the mid-infrared signal and the Day-Night Band can pick up the visible glow of combustion directly.</p>
+
+<p>Practically, the pre-dawn VIIRS pass is often the cleanest measurement of a fire's actual overnight footprint you will get all day. If you check a live fire tracker once every 24 hours, checking it in the early morning after that pass has processed is the highest-value single look.</p>
+
+<p>It is also the pass most likely to reveal fires nobody has reported. Small ignitions in remote country frequently show up first as a two or three pixel nighttime VIIRS cluster with no incident record attached — a pattern worth knowing if you live at the edge of public land. The guide to <a href="/blog/fire-tracker-near-me/">finding fires near you</a> covers how to set that up around your own location.</p>
+<h2 id="goes-geostationary-cadence">What does GOES add to a fire tracker live view?</h2>
+
+<p>GOES gives a fire tracker live view its fastest heat signal. The two operational geostationary satellites hold fixed positions 22,236 miles above the equator and scan on a clock rather than an orbit, so the contiguous United States gets a fresh image every five minutes, all day and all night.</p>
+
+<p>GOES-19 became the operational GOES-East satellite on April 7, 2025, positioned at 75.2 degrees west longitude after a June 25, 2024 launch. GOES-18 has served as GOES-West since January 4, 2023. GOES-16 is now the on-orbit backup, and the GOES-R programme keeps a spare slot at 105 degrees west.</p>
+
+<p>The instrument that matters for fire is the Advanced Baseline Imager. It carries 16 spectral bands — two visible, four near-infrared and ten infrared — resolving at 0.5 kilometres for the 0.64-micrometer visible band, 1.0 kilometre for other visible and near-infrared bands, and 2 kilometres above 2 micrometers.</p>
+
+<p>In its default operating mode the ABI produces a full-disk image every 10 minutes, CONUS imagery every five minutes, and mesoscale coverage every 60 seconds, or one sub-domain every 30 seconds, according to the <a href="https://www.goes-r.gov/spacesegment/abi.html" rel="noopener">GOES-R programme's instrument documentation</a>. Compared with the previous generation of GOES instruments it offers three times more spectral channels, four times the resolution and five times faster scanning.</p>
+
+<p>Stephen Volz, Ph.D., assistant administrator for NOAA's Satellite and Information Service, marked the completion of the constellation when GOES-19 entered service: "With GOES-19 now in operation, NOAA has delivered the full fleet of GOES-R satellites to orbit, providing the most sophisticated technology ever flown in space to help forecast weather on Earth." Both operational satellites now carry the same imager, so fire cadence no longer varies between East and West.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>GOES ABI scan sectors and how often each refreshes</caption>
+    <thead>
+      <tr><th scope="col">Sector</th><th scope="col">Refresh</th><th scope="col">What it covers</th><th scope="col">Fire-tracking use</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Full disk</th><td>Every 10 minutes</td><td>The whole visible hemisphere from each satellite</td><td>Continental smoke transport and large fire complexes</td></tr>
+      <tr><th scope="row">CONUS / PACUS</th><td>Every 5 minutes</td><td>Contiguous US from GOES-East; Pacific sector from GOES-West</td><td>The workhorse cadence behind near-continuous heat detection</td></tr>
+      <tr><th scope="row">Mesoscale</th><td>Every 60 seconds</td><td>A small floating box, positioned by forecasters</td><td>Minute-scale monitoring once a specific fire is prioritised</td></tr>
+      <tr><th scope="row">Mesoscale, single sub-domain</th><td>Every 30 seconds</td><td>One of the two mesoscale boxes</td><td>Extreme fire behaviour, plume-dominated runs, pyroconvection</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>The trade: speed for resolution</h3>
+
+<p>Geostationary orbit buys cadence at the cost of pixel size. A GOES fire pixel covers roughly 2 kilometres on a side in the shortwave infrared channels used for thermal detection, and it stretches further toward the edges of the disk because the satellite views high latitudes at a slant.</p>
+
+<p>So the two satellite families are complementary, not competing. GOES answers "is something hot there now?" every five minutes at coarse resolution. VIIRS answers "exactly where is the heat?" at 375 metres a few times a day. A live fire tracker that shows both lets you cross-check one against the other.</p>
+
+<p>This is why US Wildfire Tracker keeps "Last satellite heat" and "Last GOES heat" as separate fields on a fire's detail panel. Collapsing them into one number would hide the difference between a precise-but-old fix and a coarse-but-fresh one.</p>
+
+<h3>What automated GOES fire detection has changed</h3>
+
+<p>NOAA's Next Generation Fire System runs algorithms continuously over ABI imagery, automatically identifying heat anomalies even through clouds and smoke, geolocating them and pushing alerts to an online dashboard. The system was developed by NOAA Satellites with the Cooperative Institute for Meteorological Satellite Studies at the University of Wisconsin-Madison.</p>
+
+<p>The operational uptake has been fast. Ninety percent of the National Weather Service's 122 Weather Forecast Offices subscribed to the NGFS feed after it became available in February 2025, and offices in California, Oregon, New Mexico, Texas, Oklahoma, Nebraska and North Carolina used it during that year's fire season.</p>
+
+<p>Pavolonis has said he has "seen NGFS alerts for fires as small as a quarter acre." During the March 2025 Oklahoma wildfire outbreak, state officials said GOES satellites provided initial detection on 19 separate fires; preliminary spread modelling suggested rapid firefighter response likely saved more than $850 million in structures and property, against a total system development cost under $3 million.</p>
+
+<p>Zach Tolby, who manages NOAA's Fire Weather Testbed in Boulder, Colorado, summarised the reception among forecasters in the same release: "The rapid adoption of NGFS demonstrates its significant value to meteorologists. Now we want to look for ways to optimize the system for wildland fire management in the field." The testbed's follow-up evaluation focused on routing detections directly to land management partners across the western United States.</p>
+
+<div class="callout callout-info"><strong>Why minutes matter to forecasters</strong>Todd Lindley, Science and Operations Officer at the National Weather Service Norman forecast office in Oklahoma, put the stakes bluntly during that outbreak: "Lives can be saved or lost from what you learn in minutes or even seconds." Source: <a href="https://www.noaa.gov/news-release/noaa-unveils-powerful-convergence-of-ai-and-science-with-revolutionary-next-generation-fire-system" rel="noopener">NOAA news release, May 20, 2025</a>.</div>
+
+<h3>Where GOES struggles</h3>
+
+<p>Three situations degrade geostationary heat detection. Thick, cold cloud tops can mask a fire's infrared signature entirely. Very high latitudes are viewed at extreme angles, so Alaskan fires are far harder for GOES than Californian ones. And small, cool, smouldering fires may never generate enough radiance to register in a 2-kilometre pixel.</p>
+
+<p>Terrain adds a fourth. A fire burning in a deep, narrow canyon can be partially hidden from a satellite sitting over the equator, particularly for GOES-East looking at the interior West at a slant. Polar orbiters passing closer to overhead often catch what the geostationary view misses.</p>
+
+<p>None of this makes GOES unreliable. It makes GOES one witness among several, which is exactly how a live fire tracker should present it.</p>
+
+<h2 id="firms-latency-tiers">How fast is FIRMS data on a live fire map?</h2>
+
+<p>NASA's Fire Information for Resource Management System publishes satellite fire detections in three latency tiers, and a live fire map can carry all three. Ultra real-time arrives in under 60 seconds, real-time in roughly 30 to 60 minutes, and near real-time in about three hours.</p>
+
+<p>Near real-time is the global baseline. FIRMS is part of NASA's Land, Atmosphere Near real-time Capability for Earth observation, and NASA states that <a href="https://science.data.nasa.gov/learn/blog/lance-spotlight" rel="noopener">most LANCE data products are available approximately three hours</a> after the satellite observation occurs. That three-hour figure is the number to assume anywhere outside the direct-broadcast footprint.</p>
+
+<p>Real-time data comes from ground stations that process raw direct-readout transmissions, typically delivering detections 30 to 60 minutes after a satellite overpass. It covers most of the conterminous United States, southern Canada and northern Mexico.</p>
+
+<p>Ultra real-time is the fastest tier and the newest. It is produced from direct-broadcast reception at a small set of antennas and populates FIRMS maps immediately, then gets replaced by the near-real-time product one to three hours later as the fuller processing chain catches up.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>NASA FIRMS processing tiers and their latency</caption>
+    <thead>
+      <tr><th scope="col">Tier</th><th scope="col">Latency after observation</th><th scope="col">Coverage</th><th scope="col">How it is produced</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Ultra real-time (URT)</th><td>Under 60 seconds</td><td>Selected direct-readout footprints in the US and Canada</td><td>Direct broadcast received and processed at local antennas</td></tr>
+      <tr><th scope="row">Real-time (RT)</th><td>About 30 to 60 minutes</td><td>Most of the conterminous US, southern Canada, northern Mexico</td><td>Ground stations processing raw direct-readout data</td></tr>
+      <tr><th scope="row">Near real-time (NRT)</th><td>About 3 hours</td><td>Global</td><td>Operational data streams through NASA LANCE</td></tr>
+      <tr><th scope="row">Standard science product</th><td>Days to weeks</td><td>Global</td><td>Full calibration, geolocation and quality assurance</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>How sub-minute detection actually works</h3>
+
+<p>Ultra real-time exists because some satellites broadcast their data continuously as they fly, and any antenna within line of sight can receive it. NASA's forum documentation lists four direct-readout ground stations behind the URT service: Mayaguez in Puerto Rico, Hampton in Virginia, and two in Madison, Wisconsin.</p>
+
+<p>The University of Wisconsin-Madison Space Science and Engineering Center operates the Madison antennas and helped build the pipeline. Liam Gumley, a distinguished scientist at the centre, described the achievement this way: "We've refined our ability to obtain data directly from the satellite and receive it on the ground, a process known as direct broadcast. Now, from Earth observation to wildfire detection is less than 60 seconds."</p>
+
+<p>That is a genuinely different regime from the three-hour global baseline. It is also geographically limited: the antenna must be able to see the satellite. Coverage is best across the middle of the country and thinner at the margins, which is one reason a live fire tracker should never assume every hotspot on screen arrived at the same speed. See the <a href="https://www.ssec.wisc.edu/news/articles/14676" rel="noopener">SSEC account of the direct-broadcast work</a>.</p>
+
+<h3>What the three-hour figure means in practice</h3>
+
+<p>If a VIIRS pass crosses your county at 2:05 p.m. and you are outside the direct-readout footprint, the resulting hotspots may not reach a public feed until roughly 5:00 p.m. A live fire tracker refreshing every few minutes will still show you nothing new until that publication happens.</p>
+
+<p>The correct interpretation of a blank three-hour window is therefore "no data yet", not "no fire". This is the single most common misreading of a live fire map, and it is the reason the freshness table later in this guide is worth memorising.</p>
+
+<p>It is also why fusing GOES into the same view matters so much. Geostationary heat fills the polar-orbit gaps and the processing gaps with a coarse but continuous signal, so the map is rarely completely silent about an actively burning fire.</p>
+
+<h2 id="nifc-wfigs-cadence">How often does NIFC update a live fire tracker?</h2>
+
+<p>The official incident data behind a live fire tracker refreshes far faster than most people expect. The Wildland Fire Interagency Geospatial Services services hosted by the National Interagency Fire Center pull from IRWIN every five minutes, and perimeter changes can take up to 15 minutes to appear.</p>
+
+<p>Three public services carry the bulk of that data. Current Wildland Fire Incident Locations holds the point records for every active wildfire, prescribed fire and incident complex in IRWIN. WFIGS Current Interagency Fire Perimeters holds the polygons. A New Starts service holds incidents whose discovery time falls within the last 24 hours.</p>
+
+<p>All three apply the same inclusion rules: the incident must be categorised in IRWIN as a wildfire, prescribed fire or complex; it must not have been declared contained, controlled or out; its fire report must not be certified; and the record must be valid and not quarantined because of conflicts with other records.</p>
+
+<p>Perimeters carry an extra requirement. The source polygon's attribution must be set to public feature access, approved feature status and visible — which is why many active fires appear as a point on a live fire tracker map with no polygon around them. Perimeters simply are not available for every incident.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">5 min</span><span class="stat-label">WFIGS refresh interval from the IRWIN integration service</span></div>
+  <div class="stat-card"><span class="stat-number">15 min</span><span class="stat-label">Maximum delay before a perimeter source change is displayed</span></div>
+  <div class="stat-card"><span class="stat-number">Hourly</span><span class="stat-label">How often NIFC fall-off rules purge stale records</span></div>
+  <div class="stat-card"><span class="stat-number">24 hr</span><span class="stat-label">Window covered by the WFIGS New Starts incident service</span></div>
+</div>
+
+<h3>The fall-off rules that quietly delete fires</h3>
+
+<p>NIFC removes stale records automatically so the current services do not fill with abandoned entries. The thresholds scale with fire size, and they are enforced hourly. Knowing them explains a lot of otherwise baffling behaviour on a live fire tracker.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>NIFC WFIGS fall-off rules for current fire services</caption>
+    <thead>
+      <tr><th scope="col">Fire size</th><th scope="col">Size class</th><th scope="col">Removed if not updated for</th><th scope="col">What you see on the map</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Under 10 acres</th><td>A or B</td><td>More than 3 days</td><td>Small fire disappears without ever being marked contained</td></tr>
+      <tr><th scope="row">10 to 100 acres</th><td>C</td><td>More than 8 days</td><td>Mid-size fire vanishes from the current layer</td></tr>
+      <tr><th scope="row">Over 100 acres</th><td>D to L</td><td>More than 14 days</td><td>Large fire drops out after two quiet weeks</td></tr>
+      <tr><th scope="row">Prior-year starts</th><td>Any</td><td>Excluded outright</td><td>Fires starting before December of the previous year never appear</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Fire size for these rules comes from the IRWIN incident size field, and last-update time comes from the record's modified timestamp. Fires that drop out of the current services move to the year-to-date and full-history perimeter services, so the data is not lost — only relocated.</p>
+
+<p>The practical consequence: a fire disappearing from a live fire tracker does not mean it went out. It may mean nobody updated its record for three days. That is a very different fact, and it is why US Wildfire Tracker lets you toggle outdated records back into view rather than pretending they never existed.</p>
+
+<h3>The reports that move on a human schedule</h3>
+
+<p>Alongside the five-minute machine feeds, NIFC publishes summaries on a daily human schedule. The Incident Management Situation Report for Wednesday, September 9, 2026 was stamped 0730 MDT and recorded National Preparedness Level 3, 113 active incidents, 3,218,588 cumulative acres, 254 crews, 700 engines, 72 helicopters and 14,405 total personnel.</p>
+
+<p>The National Fire News page carrying those headline numbers states that it "is currently updated Monday to Friday." On the same date it reported 61 new fires the previous day, four new large fires, 59 uncontained large fires, and a year-to-date total of 53,802 fires and more than 8.4 million acres.</p>
+
+<p>Those numbers are excellent for national context and useless for minute-to-minute decisions. Use them the way you would use a weekly report, and use the five-minute services and satellite layers for anything time-critical. The <a href="/blog/current-wildfires/">guide to following active wildfires</a> explains how preparedness levels and situation reports fit together.</p>
+<h2 id="nws-fire-weather-alerts">Where do fire-weather alerts fit a live fire map?</h2>
+
+<p>Fire-weather alerts are the only layer on a live fire map that describes the future rather than the past. The National Weather Service issues Red Flag Warnings and Fire Weather Watches as geographic polygons, and they tell you what the atmosphere is about to do to any fire inside them.</p>
+
+<p>A Red Flag Warning means critical fire weather conditions are occurring or are expected within the next 24 hours. A Fire Weather Watch means those conditions are possible in roughly the next 24 to 48 hours. The Watch is the "be prepared" tier; the Warning is the "take action" tier.</p>
+
+<p>Criteria are set regionally because fuels and climate differ. In the National Weather Service Tallahassee area, for example, Georgia's threshold is relative humidity at or below 25 percent for an hour with sustained winds at or above 15 mph or frequent gusts at or above 25 mph, plus fuel moisture at or below 6 percent.</p>
+
+<p>Alabama's threshold in the same office is relative humidity under 25 percent sustained for four hours with winds at or above 15 mph. Florida's is relative humidity under 28 percent with winds at or above 15 mph. A live fire tracker does not need to know the local numbers — it reads whatever polygon the office issued.</p>
+
+<h3>How the alerts reach the map</h3>
+
+<p>The National Weather Service publishes alerts through api.weather.gov, its public API, with an active-alerts endpoint filterable by state, county and forecast zone. The agency designates all of it as open data, free to use for any purpose, with no usage fees.</p>
+
+<p>Because the API is push-driven by the issuing forecast office, a Red Flag Warning appears on a live fire tracker within one refresh cycle of publication. Alert latency is therefore among the lowest of any layer — usually seconds to a couple of minutes, far faster than satellite processing.</p>
+
+<p>The API documentation does note one relevant caveat about observations: surface observation data can be delayed up to 20 minutes from the upstream MADIS source because of quality-control processing. Alerts themselves are not subject to that delay.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>National Weather Service fire-weather products and their lead times</caption>
+    <thead>
+      <tr><th scope="col">Product</th><th scope="col">Meaning</th><th scope="col">Lead time</th><th scope="col">What to do</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Fire Weather Watch</th><td>Critical conditions possible but not imminent</td><td>Roughly 24 to 48 hours ahead</td><td>Be prepared; review evacuation routes and go-bag</td></tr>
+      <tr><th scope="row">Red Flag Warning</th><td>Critical conditions occurring or expected shortly</td><td>Within the next 24 hours</td><td>Take action; avoid any open flame or spark source</td></tr>
+      <tr><th scope="row">Air quality alert</th><td>Unhealthy pollutant levels, often wildfire smoke</td><td>Issued by local authorities, relayed by NWS</td><td>Limit outdoor exertion; follow AQI guidance</td></tr>
+      <tr><th scope="row">Evacuation order or warning</th><td>Local emergency authority direction</td><td>Immediate</td><td>Follow the order; a fire tracker never overrides it</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Why forecasters go to the fire in person</h3>
+
+<p>Polygons are drawn from models and observation networks, but on large incidents the National Weather Service also deploys people. Incident meteorologists, or IMETs, are dispatched to incident command posts at the request of emergency managers, where they use satellite imagery, radar, real-time observations and model data on site.</p>
+
+<p>NOAA reports it has 97 certified IMETs and 27 trainees ready for deployment, and that there were 141 deployments during 2025. Trainees receive certification only after completing more than 225 hours of fire weather instruction covering fire behaviour in complex terrain from Alaska to the Appalachians.</p>
+
+<div class="callout callout-info"><strong>Round-the-clock fire weather support</strong>Caleb Grunzke, an incident meteorologist based at the National Weather Service office in the Twin Cities of Minnesota, described the role during NOAA's April 2026 feature on IMETs: "We're basically available to the fire crews 24/7." Source: <a href="https://www.noaa.gov/multimedia/photos-images/multimedia-story-forecasters-chart-weather-battlefield-for-fire-crews" rel="noopener">NOAA multimedia story</a>.</div>
+
+<h3>Reading the alert layer against the heat layer</h3>
+
+<p>The most useful thing you can do with a live fire tracker is read the two layers together. A three-hour-old hotspot inside an active Red Flag Warning polygon deserves more caution than a fresh hotspot in humid, still conditions, because the wind field is doing work the satellite has not yet captured.</p>
+
+<p>Check the warning's wind direction if the text gives one. Fire spread aligns with wind, so the sector downwind of a detection is where growth is happening between passes. That is the direction to watch, and the direction not to drive toward.</p>
+
+<p>The reverse case matters too. A large fire with no Red Flag Warning over it and a moderating overnight forecast is a fire whose perimeter is more likely to still resemble what the map shows.</p>
+
+<h2 id="fusing-the-feeds">How does a live fire tracker map fuse every feed?</h2>
+
+<p>A live fire tracker map fuses feeds by matching them in space and time, then scoring the result. The official incident record supplies identity and attributes; satellite detections supply freshness and geometry; fire-weather polygons supply context. The scoring step decides how much confidence the combination deserves.</p>
+
+<p>Spatial matching is the first job. A cluster of VIIRS pixels three miles from a named NIFC incident almost certainly belongs to that incident. A cluster 40 miles from anything on record is either a new start, a prescribed burn, or an industrial heat source. The distance threshold is a design decision every tracker has to make.</p>
+
+<p>Temporal matching is the second. A detection is only evidence about the moment it was taken. Fusing a 4:00 a.m. VIIRS cluster with a 6:00 p.m. GOES flag tells you the fire was active at both times; it does not tell you the shape in between.</p>
+
+<p>Scoring is the third. US Wildfire Tracker assigns each detection a fire probability tier built from three inputs: whether an official NIFC record is linked to it, how fresh the NIFC perimeter is, and how recent the satellite heat is from VIIRS, MODIS or GOES.</p>
+
+<ol class="step-list">
+  <li>Pull the current incident locations and perimeters from the NIFC WFIGS services, which refresh from IRWIN every five minutes.</li>
+  <li>Pull satellite thermal detections from the NASA MODIS and VIIRS active fire products and NOAA's Hazard Mapping System GOES heat detections.</li>
+  <li>Pull active fire-weather alerts from api.weather.gov for the states in view.</li>
+  <li>Match detections to incident records by distance, then by timestamp, keeping unmatched detections as candidate new starts.</li>
+  <li>Score each result into a probability tier, hiding weak signals under 25 percent by default and letting the user reveal them.</li>
+  <li>Stamp every fire with three separate ages — last NIFC update, last satellite heat and last GOES heat — and redraw the map.</li>
+</ol>
+
+<h3>What fusion cannot fix</h3>
+
+<p>Fusion improves confidence; it does not create information. If no sensor has looked at a location in four hours and no human has filed a report, no amount of scoring will tell you what is happening there right now. A good live fire tracker communicates that gap instead of smoothing over it.</p>
+
+<p>Nor can fusion resolve conflicting geometry. When a 6:00 a.m. perimeter and a 2:00 p.m. hotspot disagree — hotspots outside the polygon — the correct reading is almost always that the fire grew, not that the detection is wrong. The polygon is older; treat it as the historical minimum.</p>
+
+<p>Finally, fusion cannot substitute for jurisdiction. Evacuation orders come from county sheriffs, city officials and state emergency agencies, not from satellites. A tracker can surface them, but the order itself is the authority. That principle is unchanged no matter how fresh the map looks.</p>
+
+<div class="expert-quote">
+  <blockquote>We built the fire probability score because our own testing kept hitting the same problem: a map full of dots that all look equally certain is worse than no map at all. So we fused three questions into one tier — is there an official NIFC record behind this, how old is that record, and how recent is the satellite heat? Weak signals stay hidden until you ask for them, and every fire carries its three timestamps in plain sight. We would rather tell you the data is four hours old than let you assume it is four minutes old.</blockquote>
+  <cite><strong>The US Wildfire Tracker team</strong> — builders of the wildfire-map.org live map and Chrome extension</cite>
+</div>
+
+<h2 id="timestamps-you-can-trust">Which live fire tracker timestamps can you trust?</h2>
+
+<p>Every timestamp on a live fire tracker answers a different question, and confusing them is the fastest way to misjudge a fire. "Last NIFC update" is administrative. "Last satellite heat" is a polar-orbit observation. "Last GOES heat" is a geostationary scan. Only the last two describe the fire's physical state.</p>
+
+<p>"Last NIFC update" records when the incident's record in IRWIN was last modified — a name change, a new acreage figure, a containment percentage. On a fast-moving fire this may be many hours old even while the fire is running, because the update depends on a human filing it.</p>
+
+<p>"Last satellite heat" records the observation time of the most recent MODIS or VIIRS detection linked to the fire. This is the highest-resolution evidence available, and it is the field to check before deciding a fire has stopped growing.</p>
+
+<p>"Last GOES heat" records the most recent geostationary heat detection. It is the freshest number on the panel and usually the coarsest in location. If it updated 12 minutes ago, something in that area is still emitting heat, wherever exactly it sits.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Freshness labels on a live fire tracker and how old each can be</caption>
+    <thead>
+      <tr><th scope="col">Label</th><th scope="col">What it measures</th><th scope="col">Typical age</th><th scope="col">Worst realistic age</th><th scope="col">Trust it for</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Last GOES heat</th><td>Most recent geostationary thermal detection</td><td>5 to 20 minutes</td><td>Hours under thick cloud or at high latitude</td><td>Is heat still present in this area right now</td></tr>
+      <tr><th scope="row">Last satellite heat</th><td>Most recent MODIS or VIIRS hotspot</td><td>1 to 6 hours</td><td>12 hours or more in an orbit and cloud gap</td><td>Where the heat actually is, to about 375 metres</td></tr>
+      <tr><th scope="row">Last NIFC update</th><td>Incident record modified in IRWIN</td><td>2 to 12 hours</td><td>Up to 3, 8 or 14 days before fall-off applies</td><td>Name, acreage, containment, managing agency</td></tr>
+      <tr><th scope="row">Official perimeter date</th><td>When the polygon was captured</td><td>6 to 24 hours</td><td>Several days on a low-priority incident</td><td>The minimum area burned as of that capture</td></tr>
+      <tr><th scope="row">Fire-weather alert issue time</th><td>When the NWS office published the polygon</td><td>Seconds to minutes</td><td>Rarely delayed; expires on schedule</td><td>What the weather will do over the next 24 to 48 hours</td></tr>
+      <tr><th scope="row">National summary figures</th><td>NIFC daily reporting</td><td>Same morning, stamped 0730 MDT</td><td>Weekend figures can be Friday's</td><td>National context, not local decisions</td></tr>
+      <tr><th scope="row">Map refresh time</th><td>When your client last fetched data</td><td>Under 5 minutes while open</td><td>Stale if the fetch failed and cache is showing</td><td>Whether you are looking at cached results</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>The refresh timestamp is not a data timestamp</h3>
+
+<p>The most misleading number on any live fire map is the one that says when the page refreshed. That tells you your browser talked to a server. It says nothing about how old the underlying satellite pass was. A map refreshed 30 seconds ago can be showing you a four-hour-old hotspot.</p>
+
+<p>US Wildfire Tracker refreshes automatically every few minutes while the map is open and shows the last saved results if a refresh fails. That fallback is the right behaviour — an old map is more useful than an empty one — but it makes reading the per-fire timestamps essential rather than optional.</p>
+
+<p>Train yourself to look at the fire's fields, not the page's. On any incident you actually care about, the three heat and update timestamps are the numbers that matter.</p>
+
+<h3>A quick triage using timestamps alone</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>What combinations of timestamps usually mean</caption>
+    <thead>
+      <tr><th scope="col">Pattern</th><th scope="col">Most likely meaning</th><th scope="col">Suggested action</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">GOES fresh, satellite heat fresh, NIFC record present</th><td>Confirmed active incident, well observed</td><td>Read acreage and containment; check the alert layer</td></tr>
+      <tr><th scope="row">GOES fresh, satellite heat old, no NIFC record</th><td>Possible new start not yet reported, or industrial heat</td><td>Watch for the next polar pass; check for a prescribed burn</td></tr>
+      <tr><th scope="row">GOES silent, satellite heat fresh, NIFC record present</th><td>Cloud cover or a small residual heat source</td><td>Trust the polar detection; expect GOES to lag</td></tr>
+      <tr><th scope="row">All heat old, NIFC record fresh</th><td>Fire is being mopped up; paperwork still active</td><td>Low urgency; keep containment percentage in view</td></tr>
+      <tr><th scope="row">All heat old, NIFC record old</th><td>Fire is likely out or the record was abandoned</td><td>Expect fall-off removal within days</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>None of these patterns is a rule with no exceptions. They are priors — starting assumptions that are usually right and always worth checking against the fire-weather layer and the official incident links. The <a href="/blog/fire-tracker/">complete fire tracker guide</a> works through the same logic from the beginner's end.</p>
+<h2 id="first-30-minutes">What to do in the first 30 minutes on a live fire map</h2>
+
+<p>The first 30 minutes after a new detection appears on a live fire map are the window in which almost nothing official exists yet. There is no incident name, no acreage, no perimeter and often no news coverage. What you have is a hotspot, a timestamp and the weather.</p>
+
+<p>The goal in that window is not to identify the fire. It is to answer three questions: how far is it from me, which way is the wind pushing it, and does an official record exist yet. Everything else can wait.</p>
+
+<p>Distance comes first because it sets your timescale. A detection 25 miles away under light winds is a monitoring problem. The same detection three miles upwind in a Red Flag Warning is a preparation problem, and you should be moving before any agency confirms anything.</p>
+
+<p>Wind direction comes second. Fire spread follows wind, so the fire's future footprint is a cone downwind of the detection, not a circle around it. Read the active Red Flag Warning text or a local forecast for the wind vector, then place yourself relative to that cone.</p>
+
+<ol class="step-list">
+  <li>Note the detection's own timestamp — "Last satellite heat" or "Last GOES heat" — and subtract it from the current time. That gap is how much movement you cannot see.</li>
+  <li>Measure straight-line distance from the detection to your address using the tracker's nearby-fires view rather than eyeballing the map scale.</li>
+  <li>Check whether a Red Flag Warning or Fire Weather Watch polygon covers the detection, and note the wind direction it describes.</li>
+  <li>Check whether an official NIFC incident record is linked. If not, treat the detection as unconfirmed but real until a second pass either confirms or drops it.</li>
+  <li>Look for a second, independent detection: a different satellite, a different pass time, or a GOES heat flag alongside a VIIRS pixel.</li>
+  <li>Check your county emergency management and sheriff channels for evacuation orders or warnings, which always outrank anything on a map.</li>
+  <li>Decide a trigger now — a distance, a wind shift or an evacuation warning — that will make you leave, and write it down before conditions get confusing.</li>
+  <li>Set the tracker to keep refreshing and check again in 15 minutes rather than staring at a map that updates on a five-minute cycle.</li>
+</ol>
+
+<h3>Why a single detection is worth taking seriously</h3>
+
+<p>Automated geostationary detection now routinely catches fires long before they become newsworthy. Pavolonis has said he has seen NOAA's system alert on fires as small as a quarter acre, and NOAA's account of Nebraska's Morrill Fire records the first detection at 1:40 p.m. Mountain Time on March 12, 2026, with an alert issued 13 minutes later.</p>
+
+<p>That fire went on to travel more than 65 miles across Nebraska by 9:00 p.m. the same day and ultimately burned 642,029 acres before reaching 100 percent containment on March 24, 2026. The gap between "one small detection" and "record-breaking fire" was a single afternoon.</p>
+
+<p>This is the argument for acting on the first 30 minutes rather than waiting for confirmation. Confirmation is a process that runs on human schedules. Wind does not wait for it.</p>
+
+<div class="callout callout-warn"><strong>A live fire map is not an emergency service</strong>US Wildfire Tracker is an informational map built on public agency data. It is not an official emergency notification system. If a county, city or state authority issues an evacuation order or warning for your area, follow it immediately, regardless of what any map shows.</div>
+
+<h3>The 30-minute checklist by distance</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>What to do in the first 30 minutes, by distance to the detection</caption>
+    <thead>
+      <tr><th scope="col">Distance</th><th scope="col">Posture</th><th scope="col">Actions in the first 30 minutes</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Under 5 miles</th><td>Prepare to leave</td><td>Load the go-bag, fuel the vehicle, confirm two exit routes, monitor official alert channels continuously</td></tr>
+      <tr><th scope="row">5 to 10 miles</th><td>Ready</td><td>Gather documents, medications and pet carriers; check wind direction; identify your evacuation trigger</td></tr>
+      <tr><th scope="row">10 to 25 miles</th><td>Monitor closely</td><td>Refresh every 15 minutes; watch for a second detection; note whether the fire is upwind of you</td></tr>
+      <tr><th scope="row">25 to 50 miles</th><td>Situational awareness</td><td>Check air quality trend; avoid travel through the corridor; note road closures</td></tr>
+      <tr><th scope="row">Over 50 miles</th><td>Background</td><td>Smoke, not flame, is the likely local effect; follow the smoke and air-quality layer instead</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Distances are straight lines, and fires do not travel in straight lines. Terrain, fuel breaks, rivers and roads all matter. Treat the table as a triage aid, not a safety guarantee, and let official evacuation zones override it every time.</p>
+
+<h3>What usually happens after 30 minutes</h3>
+
+<p>If the fire is real and on land with an organised response, an IRWIN record typically appears and propagates to the WFIGS services within a refresh cycle or two of being created. At that point the fire acquires a name, a discovery time, a jurisdiction and often an initial acreage figure.</p>
+
+<p>The first perimeter usually comes much later — after an infrared mapping flight or a GPS track, frequently the following morning. Between the first record and the first perimeter, satellite hotspots are the only geometry you have, which is why the 375-metre VIIRS product matters so much on day one.</p>
+
+<p>By the second operational period you will usually see containment percentage, personnel numbers and an official incident page. If the fire is on federal land, it may appear on InciWeb, and US Wildfire Tracker offers a direct "Search on InciWeb" link from the fire's detail panel for exactly that reason.</p>
+
+<h2 id="stale-records">Why a real-time fire tracker still shows dead fires</h2>
+
+<p>A real-time fire tracker can show a fire that is physically out for one simple reason: the incident record stays in the current services until somebody changes its status or the fall-off rules remove it. Neither of those is instantaneous, and both depend on human action.</p>
+
+<p>The inclusion rule is explicit. A fire stays in the WFIGS current services as long as it has not been declared contained, controlled or out, and its final fire report has not been certified. A crew can extinguish a two-acre fire on Tuesday afternoon and the record can persist into Friday.</p>
+
+<p>The removal rule is the fall-off logic already covered: three days for fires under 10 acres, eight days for 10 to 100 acres, and 14 days for anything larger, enforced hourly. Between "out in reality" and "removed from the feed" there is a gap measured in days.</p>
+
+<p>This is not sloppiness. It is a deliberate design choice that favours not losing a fire over not showing a stale one. For anyone reading the map, the correct response is to check the record's own age rather than assuming presence equals activity.</p>
+
+<h3>Containment, control and out are three different things</h3>
+
+<div class="table-wrap">
+  <table>
+    <caption>Fire status terms and what they imply for a live fire tracker</caption>
+    <thead>
+      <tr><th scope="col">Status</th><th scope="col">What it means operationally</th><th scope="col">Effect on the current WFIGS services</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Percent contained</th><td>Share of the incident area no longer active, per the IRWIN definition</td><td>Record stays; a fire at 90 percent is still in the current layer</td></tr>
+      <tr><th scope="row">Contained</th><td>A control line is complete around the fire</td><td>Record leaves the current services once the status is set</td></tr>
+      <tr><th scope="row">Controlled</th><td>Control line is secure and no further spread is expected</td><td>Record leaves the current services</td></tr>
+      <tr><th scope="row">Out</th><td>No burning material remains; fire out date and time recorded</td><td>Record leaves the current services</td></tr>
+      <tr><th scope="row">Report certified</th><td>The final fire report has been approved</td><td>Record is excluded from current services entirely</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Containment percentage is a line-construction measure, not a heat measure. A fire reported at 85 percent contained can still be putting up visible smoke and registering satellite heat inside the perimeter for days. Interior heat is normal and expected; escape past the line is not.</p>
+
+<p>This is where a live fire tracker's separate timestamps earn their keep again. Old satellite heat plus a fresh containment figure is a fire being mopped up. Fresh satellite heat outside a perimeter plus a stale containment figure is a fire that may have moved.</p>
+
+<h3>The opposite failure: a fire vanishes while burning</h3>
+
+<p>Fall-off can also remove a fire that is genuinely burning if nobody updates its record. This is most common on remote, low-priority incidents in monitor status — fires being watched rather than actively suppressed, in wilderness where the management strategy is confine or point-zone protection.</p>
+
+<p>The tell is that satellite heat keeps appearing at a location where the incident record has disappeared. If you see recurring VIIRS clusters over several days with no linked NIFC record, you are probably looking at a monitored fire whose paperwork has gone quiet, not a new start.</p>
+
+<p>US Wildfire Tracker handles this by letting you toggle outdated records back on rather than deleting them from view, so a fire that fell off the current services can still be inspected alongside the heat that is still showing up.</p>
+
+<div class="callout callout-tip"><strong>Two-week rule of thumb</strong>If a large fire disappears from a live fire tracker's current layer, check whether its record has simply aged past 14 days without an update. Fires that fall off move to the year-to-date and full-history perimeter services rather than being deleted, so the geometry usually still exists somewhere.</div>
+<h2 id="refresh-strategy">How often should you refresh a live fire tracker?</h2>
+
+<p>Refreshing a live fire tracker more often than its slowest input updates buys you nothing. The sensible cadence is set by the data, not by anxiety: every five minutes matches the GOES CONUS scan and the WFIGS pull, and anything faster returns the same bytes.</p>
+
+<p>US Wildfire Tracker refreshes automatically every few minutes while the map is open, which aligns with those upstream cycles. Manual refreshing on top of that is mostly useful after a failure, when the app is showing the last saved results instead of fresh ones.</p>
+
+<p>The genuinely useful question is not how often to refresh but when to look. Because the underlying feeds update on known schedules, some moments in the day are far more informative than others.</p>
+
+<p>The two highest-value windows are shortly after a polar-orbit overpass has had time to process, and shortly after the daily agency reporting cycle publishes. Everything in between is GOES filling gaps at 2-kilometre resolution.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>When it is worth looking at a live fire tracker, and why</caption>
+    <thead>
+      <tr><th scope="col">Moment</th><th scope="col">What has just refreshed</th><th scope="col">Why it matters</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Early morning, after the pre-dawn polar pass</th><td>Nighttime VIIRS 375 m detections</td><td>Cleanest measure of the fire's overnight footprint</td></tr>
+      <tr><th scope="row">Mid-morning</th><td>NOAA HMS initial fire detections, typically published by 8:00 a.m. Eastern</td><td>Analyst-reviewed fire points for the previous period</td></tr>
+      <tr><th scope="row">Around 0730 MDT weekdays</th><td>NIFC Incident Management Situation Report</td><td>National preparedness level, large fire counts, personnel</td></tr>
+      <tr><th scope="row">Late morning</th><td>HMS smoke classification, usually 11:00 a.m. to noon Eastern</td><td>Smoke plume polygons for air-quality planning</td></tr>
+      <tr><th scope="row">Early afternoon</th><td>Daytime VIIRS and MODIS passes</td><td>Peak burning period; fastest fire growth of the day</td></tr>
+      <tr><th scope="row">Evening, 7:00 to 8:00 p.m. Eastern</th><td>HMS second smoke classification</td><td>Updated smoke picture before overnight</td></tr>
+      <tr><th scope="row">Continuously during a wind event</th><td>GOES CONUS every 5 minutes</td><td>Only signal fast enough to track a running fire</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Battery, bandwidth and the side panel</h3>
+
+<p>Keeping a live fire tracker open all day is reasonable during an active event and wasteful otherwise. Running it in a browser side panel rather than a foreground tab is a good compromise: the map keeps refreshing on its own cycle while you work, and it stays one click from full view.</p>
+
+<p>The <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">US Wildfire Tracker Chrome extension</a> opens the same map in the Chrome side panel or a full tab, on Chromium browsers that support Chrome extensions. It is free, requires no account, and carries no ads or third-party ad trackers.</p>
+
+<p>For setup details — pinning the extension, granting location, choosing a state view, handling the case where location is denied — the <a href="/blog/fire-tracker-app/">Chrome fire tracker app setup guide</a> covers the whole process step by step.</p>
+
+<h3>When a refresh fails</h3>
+
+<p>Network failures during a fire event are common, especially when cell sites are congested or power is out. A well-behaved live fire map should degrade to its last saved results rather than showing an empty screen, and it should make clear that is what it is doing.</p>
+
+<p>If you suspect you are looking at cached data, the per-fire timestamps will tell you: if every fire's "Last GOES heat" is more than 20 minutes old across the whole map, the problem is your connection, not the satellites.</p>
+
+<p>Plan for that case in advance. Note the fire's name and the nearest official incident page before conditions degrade, so you have a fallback that does not depend on the map loading.</p>
+
+<h2 id="false-positives">Which satellite fire detection signals are false?</h2>
+
+<p>Satellite fire detection finds heat, not wildfire. Any surface hot enough to stand out in the mid-infrared can trigger a detection: flares at oil and gas facilities, steel mills, refinery stacks, landfill fires, agricultural burning, prescribed burns and controlled pile burns all appear the same way a wildfire does.</p>
+
+<p>Sun glint is a second source of error. Specular reflection off water, wet surfaces or certain roofs can raise mid-infrared brightness enough to look like a weak anomaly, which is precisely why VIIRS assigns low confidence to daytime detections associated with sun glint.</p>
+
+<p>Prescribed fire is the most common benign explanation in the United States, and it is not an error at all — the IRWIN system explicitly categorises prescribed fire records alongside wildfires, so a legitimate managed burn can carry a full official record. It is a real fire that nobody needs to worry about.</p>
+
+<p>US Wildfire Tracker states this limitation directly in the app: hotspots can reflect prescribed burns or industrial heat. That warning is not boilerplate. On any given afternoon over the Gulf Coast or the northern Plains, a meaningful share of low-confidence detections are industrial.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>Common non-wildfire heat sources on a live fire tracker</caption>
+    <thead>
+      <tr><th scope="col">Source</th><th scope="col">Typical signature</th><th scope="col">How to tell it apart</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Gas flares and refineries</th><td>Single pixel, same coordinates day after day</td><td>Persistence at a fixed point with no growth and no smoke plume</td></tr>
+      <tr><th scope="row">Prescribed burns</th><td>Cluster during daytime, gone by the next morning</td><td>Often has an IRWIN record categorised as prescribed fire</td></tr>
+      <tr><th scope="row">Agricultural burning</th><td>Many small detections in a field pattern, seasonal</td><td>Geometry follows field boundaries; low fire radiative power</td></tr>
+      <tr><th scope="row">Industrial plants and landfills</th><td>Fixed location, often nighttime</td><td>Cross-check against a basemap; an official perimeter never follows</td></tr>
+      <tr><th scope="row">Sun glint artefacts</th><td>Low-confidence daytime pixels near water</td><td>Confidence class is low; disappears on the next pass</td></tr>
+      <tr><th scope="row">Hot bare ground</th><td>Sparse low-confidence pixels in desert terrain</td><td>Very low fire radiative power; no repeat detection</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>How the probability score filters the noise</h3>
+
+<p>The fire probability score is the practical answer to false positives. By fusing whether an official NIFC record exists, how fresh that record's perimeter is, and how recent the satellite heat is, it separates a corroborated wildfire from an isolated thermal pixel.</p>
+
+<p>Weak signals below 25 percent probability are hidden by default in US Wildfire Tracker and can be shown on demand. Hiding them by default is the right default for a public map, because an unfiltered hotspot feed over an industrial region looks alarming and means very little.</p>
+
+<p>Showing them on demand is equally important. During the first 30 minutes of a genuine new start, the fire is by definition a weak signal — no record, one detection, no perimeter. Being able to switch weak signals on is what makes early detection usable rather than merely available.</p>
+
+<h3>The corroboration test</h3>
+
+<p>The most reliable manual filter is independence. Ask whether the same location produced detections from two different sources: a different satellite, a different overpass time, or a geostationary flag alongside a polar-orbit pixel. Independent agreement is much stronger evidence than a single high-confidence pixel.</p>
+
+<p>Ask second whether the detection cluster is growing. Wildfires expand; flares do not. Two passes four hours apart showing three pixels then eleven pixels is a fire. Two passes showing one pixel then one pixel in the same spot is infrastructure.</p>
+
+<p>Ask third whether anything downwind shows smoke. NOAA's Hazard Mapping System publishes analyst-drawn smoke polygons with light, medium and heavy density categories, a scheme adopted on July 19, 2022 to replace the earlier numeric values. A heat detection with a matching plume is a real fire. The <a href="/blog/forest-fire-smoke-tracker/">smoke and air quality tracking guide</a> covers how to read those polygons.</p>
+
+<h2 id="night-cloud-terrain">What can a live wildfire tracker miss at night?</h2>
+
+<p>A live wildfire tracker misses fires that are too small, too cool, too obscured or too briefly visible. Night removes some of these problems and adds others, which is why nighttime performance is one of the strongest arguments for the 375-metre VIIRS product over coarser alternatives.</p>
+
+<p>Cloud is the biggest single obstacle. Mid-infrared radiation does not pass through thick cloud, so a fire under an overcast deck can be effectively invisible to both polar and geostationary sensors. Smoke is thinner in the infrared than in visible light, so a smoke pall alone rarely blocks detection.</p>
+
+<p>Size and intensity are the second obstacle. A smouldering fire in duff or a creeping ground fire may emit too little energy to raise a 375-metre pixel above threshold, let alone a 2-kilometre GOES pixel. Fires that survive for days as low-intensity smoulder can go undetected the whole time.</p>
+
+<p>Terrain is the third. Steep, narrow drainages shield fire from slant viewing angles, which affects geostationary detection more than polar-orbit detection because GOES always views the continental interior at an angle from over the equator.</p>
+
+<h3>What night gives back</h3>
+
+<p>Night removes solar contamination entirely. Without reflected sunlight, the mid-infrared signal is almost purely thermal, so the algorithm's job is easier and its confidence higher. VIIRS also carries a Day-Night Band that measures very low levels of visible light, adding an independent nighttime detection channel.</p>
+
+<p>The result is a well-known asymmetry: nighttime satellite fire detection is more sensitive than daytime detection at the same resolution. The pre-dawn pass frequently reveals fires whose daytime detections were marginal.</p>
+
+<p>Fire behaviour cooperates too. Overnight humidity recovery slows spread on most fires most of the time, so the pre-dawn footprint is usually close to the fire's overnight maximum rather than a snapshot mid-run.</p>
+
+<div class="stats-grid">
+  <div class="stat-card"><span class="stat-number">375 m</span><span class="stat-label">VIIRS imagery-band active fire pixel size</span></div>
+  <div class="stat-card"><span class="stat-number">3,000 km</span><span class="stat-label">Approximate VIIRS swath width</span></div>
+  <div class="stat-card"><span class="stat-number">0.4 to 0.8 km</span><span class="stat-label">VIIRS resolution from nadir to edge of scan</span></div>
+  <div class="stat-card"><span class="stat-number">14</span><span class="stat-label">JPSS orbits per day, giving twice-daily global coverage</span></div>
+</div>
+
+<h3>Fires a tracker will systematically under-report</h3>
+
+<p>Some categories are chronically under-represented on any satellite-driven live fire tracker, and it is worth knowing which. Structure fires in urban areas rarely generate enough sustained open-air heat to be detected. Vehicle fires almost never do. Neither belongs on a wildland fire map anyway.</p>
+
+<p>Small grass fires that are caught quickly are the more consequential omission. A quarter-acre roadside ignition suppressed in 20 minutes may produce no polar-orbit detection at all, and may or may not trip a geostationary alert depending on scan timing.</p>
+
+<p>Fires in the eastern United States are also systematically less visible than western ones, because they are typically smaller, shorter-lived and burning under denser canopy. NIFC's own statistics show why this matters: across the ten years from 2016 to 2025, the United States averaged roughly 63,200 wildfires and about 7.05 million acres burned annually, and the vast majority of those fires were small.</p>
+
+<p>That distribution is the reason a live fire tracker is a wildland fire tool, not a universal fire tool. For the fires it is designed to see — the ones large enough to threaten communities — its coverage is good. For the tens of thousands of small ignitions each year, official dispatch channels remain the only complete record. The <a href="/blog/wildfire-map/">wildfire map guide</a> puts those annual numbers in context.</p>
+<h2 id="worked-timeline">What does a live fire tracker timeline look like?</h2>
+
+<p>A worked timeline makes the abstract latencies concrete. The sequence below traces a plausible afternoon ignition in the interior West through every layer of a live fire tracker, using the documented cadences of each feed rather than invented numbers.</p>
+
+<p>Assume a fire starts at 2:07 p.m. local time on a ridge in a Red Flag Warning area, 14 miles from a small town. Sustained winds are 20 mph. No one is present to report it. Here is what each system does, and when.</p>
+
+<div class="table-wrap">
+  <table>
+    <caption>A worked live fire tracker timeline from ignition to first perimeter</caption>
+    <thead>
+      <tr><th scope="col">Elapsed time</th><th scope="col">What happens in the system</th><th scope="col">What you would see on the map</th></tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">0 minutes</th><td>Ignition. No sensor has scanned since the last CONUS sweep.</td><td>Nothing. The area looks clear.</td></tr>
+      <tr><th scope="row">Up to 5 minutes</th><td>Next GOES ABI CONUS scan covers the location.</td><td>Still nothing; processing has not completed.</td></tr>
+      <tr><th scope="row">6 to 20 minutes</th><td>Automated geostationary detection flags a thermal anomaly and geolocates it.</td><td>First GOES heat appears as a coarse marker; no incident record.</td></tr>
+      <tr><th scope="row">15 to 45 minutes</th><td>Someone reports smoke; dispatch creates an incident. IRWIN record is generated.</td><td>Named incident appears within one or two five-minute WFIGS pulls.</td></tr>
+      <tr><th scope="row">1 to 3 hours</th><td>Initial attack resources arrive; ICS size-up produces an initial acreage estimate.</td><td>"Last NIFC update" refreshes; acreage populates.</td></tr>
+      <tr><th scope="row">Next polar overpass</th><td>VIIRS or MODIS crosses the area; direct-broadcast processing runs.</td><td>375 m hotspot cluster appears, giving real geometry for the first time.</td></tr>
+      <tr><th scope="row">Overpass plus up to 3 hours</th><td>Near-real-time LANCE product publishes for areas outside direct readout.</td><td>Additional hotspots fill in; older ultra-real-time points are replaced.</td></tr>
+      <tr><th scope="row">Evening</th><td>Fire continues to run; only GOES observes it continuously.</td><td>GOES heat updates every five minutes; polar geometry stays fixed.</td></tr>
+      <tr><th scope="row">Pre-dawn</th><td>Nighttime VIIRS pass with no sun glint and Day-Night Band support.</td><td>Cleanest hotspot cluster of the event; overnight footprint becomes clear.</td></tr>
+      <tr><th scope="row">Next morning, 0730 MDT</th><td>NIFC Incident Management Situation Report publishes for the day.</td><td>Fire appears in national counts if it qualifies as a large fire.</td></tr>
+      <tr><th scope="row">Morning to midday, day 2</th><td>Infrared mapping flight or GPS track produces the first perimeter polygon.</td><td>The official polygon is drawn, up to 15 minutes after the source is updated.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>What the timeline teaches</h3>
+
+<p>The first useful geometry on a live fire tracker arrives from satellites, not from agencies. In the window between ignition and the first perimeter — often 18 to 24 hours — the only spatial information available to the public is a cluster of hotspots and a point marker.</p>
+
+<p>The second lesson is that the fastest layer is also the least precise. GOES heat is what tells you the fire is still going at 8:40 p.m., but it will not tell you which side of the drainage the flame front is on. That answer waits for the next polar pass.</p>
+
+<p>The third lesson is that official acreage lags physical acreage by an operational period. A fire reported at 400 acres in the morning situation report may have been 1,200 acres by the time you read it, because the number came from an ICS-209 covering the previous period.</p>
+
+<h3>How the same timeline looks in Alaska or the Southeast</h3>
+
+<p>Regional geography changes the shape of the timeline substantially. In Alaska, polar-orbit coverage is far denser because orbital swaths converge near the poles, so hotspot updates arrive more often than in the lower 48. Geostationary coverage is worse, because GOES views high latitudes at an extreme slant.</p>
+
+<p>In the Southeast, the opposite applies. GOES-East views the region nearly head-on, so geostationary detection is at its best, while polar coverage matches the standard mid-latitude pattern. Fires there are also smaller and shorter-lived, so many never register at all.</p>
+
+<p>Along the Pacific coast, marine layer cloud is the dominant variable. A coastal fire under a persistent stratus deck can be invisible to infrared detection for most of a morning, then appear abruptly as the deck burns off. A quiet map in coastal California before noon deserves scepticism. Regional fire-weather patterns like that one are worth learning for wherever you actually live.</p>
+
+<h2 id="latency-glossary">Which live fire tracker terms should you know?</h2>
+
+<p>The vocabulary behind a live fire tracker comes from three different worlds: satellite remote sensing, interagency fire management and weather forecasting. These are the terms that appear most often on the map and in agency documents, defined precisely enough to act on.</p>
+
+<dl class="spec-list">
+  <dt>Active fire product</dt><dd>A satellite dataset listing pixels classified as containing fire at the moment of observation. MODIS produces a 1-kilometre version; VIIRS produces a 375-metre version.</dd>
+  <dt>ABI</dt><dd>Advanced Baseline Imager, the primary instrument on the GOES-R series. Sixteen spectral bands at 0.5, 1 and 2 kilometre resolution depending on wavelength.</dd>
+  <dt>Ascending node</dt><dd>The point where a satellite crosses the equator moving north. Aqua historically used a 1:30 p.m. ascending node.</dd>
+  <dt>Confidence class</dt><dd>Low, nominal or high, assigned to each VIIRS 375-metre detection based on sun glint and the size of the mid-infrared brightness temperature anomaly.</dd>
+  <dt>Containment percentage</dt><dd>The share of the incident area that is no longer active, as defined in IRWIN. It measures control line, not the absence of heat.</dd>
+  <dt>Descending node</dt><dd>The point where a satellite crosses the equator moving south. Terra uses a 10:30 a.m. descending node.</dd>
+  <dt>Direct broadcast</dt><dd>Continuous transmission of satellite data to any receiving antenna in line of sight, which is what makes sub-minute fire detection possible.</dd>
+  <dt>Fall-off rules</dt><dd>NIFC logic that removes stale incident records from the current services after 3, 8 or 14 days depending on fire size. Enforced hourly.</dd>
+  <dt>FIRMS</dt><dd>Fire Information for Resource Management System, NASA's public distribution of MODIS and VIIRS active fire data in ultra-real-time, real-time and near-real-time tiers.</dd>
+  <dt>Fire radiative power</dt><dd>The energy a fire pixel emits, in megawatts. Useful for small and low-intensity fires; the mid-infrared channel saturates on the most intense ones.</dd>
+  <dt>Free drift</dt><dd>The state of a satellite that has exhausted its manoeuvring fuel. Aqua entered free drift after final drag makeup manoeuvres in December 2021.</dd>
+  <dt>Geostationary orbit</dt><dd>An orbit 22,236 miles above the equator where a satellite's period matches Earth's rotation, so it appears fixed over one longitude.</dd>
+  <dt>HMS</dt><dd>NOAA's Hazard Mapping System, which publishes analyst-reviewed fire points and smoke plume polygons in light, medium and heavy density categories.</dd>
+  <dt>ICS-209</dt><dd>The incident status summary submitted by an incident management team, typically once per operational period. The origin of most official acreage and personnel figures.</dd>
+  <dt>IRWIN</dt><dd>Integrated Reporting of Wildland Fire Information, the interagency service that holds the authoritative incident record for every US wildland fire.</dd>
+  <dt>LANCE</dt><dd>NASA's Land, Atmosphere Near real-time Capability for Earth observation. Most of its products publish about three hours after observation.</dd>
+  <dt>MODIS</dt><dd>Moderate Resolution Imaging Spectroradiometer, flying on Terra and Aqua at 705 kilometres with a 2,330-kilometre swath.</dd>
+  <dt>NGFS</dt><dd>NOAA's Next Generation Fire System, which runs automated detection algorithms continuously over GOES ABI imagery.</dd>
+  <dt>Operational period</dt><dd>The planning block an incident management team works to, commonly 12 or 24 hours. Official figures usually change once per period.</dd>
+  <dt>Preparedness level</dt><dd>NIFC's national scale from 1 to 5 describing how committed national firefighting resources are. It stood at level 3 on September 9, 2026.</dd>
+  <dt>Red Flag Warning</dt><dd>A National Weather Service product issued when critical fire weather conditions are occurring or expected within the next 24 hours.</dd>
+  <dt>Sun-synchronous orbit</dt><dd>A near-polar orbit arranged so the satellite crosses the equator at the same local solar time each pass. JPSS satellites fly at about 833 kilometres and 98.75 degrees inclination.</dd>
+  <dt>Swath</dt><dd>The strip of ground a scanning instrument images on one pass. MODIS covers 2,330 kilometres; VIIRS covers about 3,000 kilometres.</dd>
+  <dt>Thermal anomaly</dt><dd>A pixel significantly hotter than its neighbours in mid-infrared wavelengths. The formal name for what a fire tracker draws as a hotspot.</dd>
+  <dt>VIIRS</dt><dd>Visible Infrared Imaging Radiometer Suite, flying on Suomi NPP, NOAA-20 and NOAA-21, with a 375-metre active fire product and a Day-Night Band.</dd>
+  <dt>WFIGS</dt><dd>Wildland Fire Interagency Geospatial Services, the NIFC group publishing the public incident location and perimeter services that refresh every five minutes.</dd>
+</dl>
+
+<h3>Terms that sound interchangeable but are not</h3>
+
+<p>"Hotspot" and "fire" are not synonyms. A hotspot is a pixel classification; a fire is an incident with a record, a jurisdiction and a management strategy. Every wildfire produces hotspots, but not every hotspot is a wildfire.</p>
+
+<p>"Perimeter" and "burned area" are not synonyms either. A perimeter is the outer boundary of the fire at the time it was mapped, and it typically encloses unburned and unburnable islands. The acreage inside a perimeter is not the acreage that actually burned.</p>
+
+<p>"Contained" and "out" are the pair most often confused in public discussion. Contained means a control line encircles the fire. Out means no burning material remains. Weeks can separate the two, and a live fire tracker will keep showing heat inside a contained perimeter throughout.</p>
+<h2 id="faq">Frequently Asked Questions About Live Fire Trackers</h2>
+
+<div class="faq-item"><p class="faq-q">How live is a live fire tracker, really?</p><p class="faq-a">It depends on the layer. Geostationary heat detections refresh roughly every five minutes because GOES images the contiguous United States on that cadence. Official NIFC incident and perimeter services pull from IRWIN every five minutes. Polar-orbit hotspots from MODIS and VIIRS are much less frequent, typically arriving within about three hours of an overpass and sometimes under 60 seconds where direct-broadcast processing is available.</p></div>
+
+<div class="faq-item"><p class="faq-q">What is the fastest wildfire detection available to the public?</p><p class="faq-a">NASA's ultra-real-time FIRMS tier delivers detections in under 60 seconds from Earth observation to wildfire detection, using direct-broadcast reception at a small set of ground stations in the United States and Canada. Separately, NOAA's Next Generation Fire System can flag geostationary detections in as little as one minute from the moment the fire's energy reaches the satellite, according to its programme manager.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why does a fire show on a live fire map with no name or acreage?</p><p class="faq-a">Because satellite detection precedes the paperwork. A thermal anomaly can appear minutes after ignition, while the incident name, acreage and containment figures only exist once dispatch creates an IRWIN record and a crew performs a size-up. In remote country that gap can run for hours. Treat an unnamed hotspot cluster as a probable fire awaiting confirmation, not as an error.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why is the perimeter smaller than the hotspots on the map?</p><p class="faq-a">The perimeter is older. Official perimeters are drawn from infrared mapping flights or GPS tracks, usually once per operational period, so a polygon captured at dawn describes the fire at dawn. Hotspots detected that afternoon reflect where heat is now. When detections sit outside the polygon, the standard interpretation is that the fire grew after the perimeter was mapped.</p></div>
+
+<div class="faq-item"><p class="faq-q">Which timestamp should I check first on a fire?</p><p class="faq-a">Check "Last satellite heat" first if you want to know where the fire is, and "Last GOES heat" first if you want to know whether it is still burning. "Last NIFC update" tells you only when the administrative record changed, which can lag the fire's physical behaviour by many hours. The page refresh time tells you nothing about data age at all.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why does a fire stay on the map after it is out?</p><p class="faq-a">Records remain in the NIFC current services until the fire is declared contained, controlled or out, or until fall-off rules remove them. Those rules drop fires under 10 acres after three days without an update, fires of 10 to 100 acres after eight days, and larger fires after 14 days. Between real extinguishment and record removal there is often a multi-day gap.</p></div>
+
+<div class="faq-item"><p class="faq-q">Can a live fire tracker miss a fire entirely?</p><p class="faq-a">Yes. Small, cool or smouldering fires may not emit enough energy to exceed detection thresholds, thick cloud blocks mid-infrared radiation from reaching the sensor, and steep terrain can shield a fire from slant viewing angles. Fires suppressed within the first half hour frequently produce no polar-orbit detection at all. Absence of a hotspot is never proof of absence of fire.</p></div>
+
+<div class="faq-item"><p class="faq-q">What is the difference between MODIS and VIIRS detections?</p><p class="faq-a">MODIS flies on Terra and Aqua and produces a 1-kilometre active fire product from 4- and 11-micrometer radiances. VIIRS flies on Suomi NPP, NOAA-20 and NOAA-21 and produces a 375-metre product with markedly better nighttime performance and a better response to small fires. On a live fire tracker, VIIRS gives you the sharper geometry and MODIS gives you the longer historical record.</p></div>
+
+<div class="faq-item"><p class="faq-q">How often does NIFC data actually update?</p><p class="faq-a">The WFIGS current incident and perimeter services refresh from IRWIN every five minutes, and changes at a perimeter source can take up to 15 minutes to display. Fall-off rules run hourly. The human-authored summaries move far slower: the National Fire News page states it is updated Monday to Friday, and the Incident Management Situation Report publishes once each morning.</p></div>
+
+<div class="faq-item"><p class="faq-q">Are all the hotspots on a live wildfire tracker real wildfires?</p><p class="faq-a">No. Satellite instruments detect heat, not wildfire specifically. Gas flares, refineries, steel mills, landfills, agricultural burning and prescribed fires all produce thermal anomalies. Sun glint can also raise weak daytime signals. This is why detections carry confidence classes and why a probability score that checks for a linked official record is more useful than a raw hotspot feed.</p></div>
+
+<div class="faq-item"><p class="faq-q">Should I refresh a real-time fire tracker constantly?</p><p class="faq-a">There is little value in refreshing faster than every five minutes, because that matches both the GOES CONUS scan cadence and the WFIGS pull interval. US Wildfire Tracker refreshes automatically every few minutes while open. During a wind event, checking every 15 minutes and reading the timestamps carefully beats staring at a map that has not changed.</p></div>
+
+<div class="faq-item"><p class="faq-q">What should I do in the first 30 minutes after seeing a new detection?</p><p class="faq-a">Measure the distance from the detection to your address, identify the wind direction from the active fire-weather alert, and check whether an official incident record is linked. Then set a specific trigger that will make you leave, and confirm two exit routes. Under five miles, prepare to go immediately. Follow any evacuation order from local authorities without waiting for the map to catch up.</p></div>
+
+<div class="faq-item"><p class="faq-q">Does a live fire tracker replace official emergency alerts?</p><p class="faq-a">No. A live fire tracker is an informational map built from public agency data, and US Wildfire Tracker states plainly that it is not an official emergency service. Evacuation orders and warnings come from county sheriffs, city officials and state emergency agencies. Use the map to gain lead time and situational awareness, and follow official direction when it arrives.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why do fire-weather alerts appear faster than fire detections?</p><p class="faq-a">Because they are published directly by a human forecaster rather than derived from a physical measurement. The National Weather Service issues Red Flag Warnings and Fire Weather Watches through api.weather.gov as soon as a forecast office signs them, so they reach a live fire map within one refresh cycle. Satellite detections must be observed, downlinked, processed and published first.</p></div>
+
+<div class="faq-item"><p class="faq-q">Is US Wildfire Tracker free, and does it need an account?</p><p class="faq-a">It is free and no account is required. The live map runs in any browser at wildfire-map.org, and the Chrome extension listed as Fire Tracker opens the same map in the Chrome side panel or a full tab on Chromium browsers. There are no ads and no third-party ad trackers inside the extension. Location, when granted, is used only to find nearby fires and is never stored, sold or shared.</p></div>
+
+<div class="cta-block">
+  <div class="cta-text">
+    <p class="cta-title">Track fires near you in real time</p>
+    <p class="cta-body">See every active US wildfire with its own three timestamps — last NIFC update, last satellite heat and last GOES heat — so you always know how old the data in front of you is.</p>
+  </div>
+  <div class="cta-buttons">
+    <a href="https://wildfire-map.org/" class="cta-btn">Open the live fire map →</a>
+    <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" class="cta-btn" rel="noopener">Add to Chrome — free →</a>
+    <a href="/blog/" class="cta-btn">More wildfire guides →</a>
+  </div>
+</div>
+
+<footer class="article-footer">Published September 2026 by the US Wildfire Tracker team. Sources: NIFC, NASA FIRMS, NOAA, National Weather Service and the agencies linked in the text. This guide is informational; always follow evacuation orders from local authorities.</footer>
+</div>
+</main>
+<aside class="related" aria-label="Related guides"><h2>Related wildfire guides</h2><ul><li><a href="/blog/fire-tracker/"><span class="rel-title">Fire Tracker Guide 2026: How to Track Wildfires in Real Time</span><span class="rel-desc">A fire tracker fuses NIFC incident records, satellite heat, perimeters and NWS alerts into one live map. Learn to read every layer and act on what it shows.</span></a></li><li><a href="/blog/wildfire-tracking/"><span class="rel-title">Wildfire Tracking Explained: Satellites, Perimeters and Alerts (2026)</span><span class="rel-desc">How wildfire tracking works in 2026: detection by 911 calls, cameras and satellites, IRWIN records, perimeter mapping and containment terms, explained end to end.</span></a></li><li><a href="/blog/current-wildfires/"><span class="rel-title">Current Wildfires in the US: How to Follow Active Wildfires (2026)</span><span class="rel-desc">Current wildfires explained: how to read NIFC&#x27;s daily report, preparedness levels, containment status and year-to-date US wildfires data without being misled.</span></a></li><li><a href="/blog/fire-tracker-map/"><span class="rel-title">Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026)</span><span class="rel-desc">A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.</span></a></li></ul></aside>
+<footer class="site-footer"><div class="inner">
+<div>&copy; 2026 US Wildfire Tracker &middot; Data: NIFC, NASA FIRMS, NOAA, NWS. Not an official emergency service; always follow local evacuation orders.</div>
+<div><a href="/">Live map</a><a href="/blog/">Guides</a><a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Chrome extension</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/privacy.html" rel="noopener">Privacy</a><a href="https://nikogdanekupluslona-svg.github.io/cawildfire-site/terms.html" rel="noopener">Terms</a></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# US Wildfire Tracker
+
+> US Wildfire Tracker (wildfire-map.org) is a free live wildfire map for the United States and a Chrome side-panel extension. It fuses official NIFC incident records and perimeters with NASA MODIS/VIIRS and NOAA GOES satellite fire detections and NWS fire-weather alerts. No account, no ads, location used only for nearby-fire alerts.
+
+## Product
+
+- [Live US wildfire map](https://wildfire-map.org/): active fires, official perimeters, satellite hotspots, fire probability score, NWS Red Flag Warnings.
+- [Chrome extension](https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm): the same map in a Chrome side panel with nearby-fire alerts. Rated 5 stars in the Chrome Web Store.
+
+## Wildfire tracking guides
+
+- [Fire Tracker Guide 2026: How to Track Wildfires in Real Time](https://wildfire-map.org/blog/fire-tracker/): A fire tracker fuses NIFC incident records, satellite heat, perimeters and NWS alerts into one live map. Learn to read every layer and act on what it shows.
+- [Best Fire Tracking App Options in 2026: Extension vs Mobile vs Web](https://wildfire-map.org/blog/fire-tracking-app/): Compare every fire tracking app approach for 2026: browser extension, mobile app, web map, agency pages, satellite viewers and phone alerts. See which one fits 
+- [Fire Tracker Map: How to Read a Live Fire Map Like a Pro (2026)](https://wildfire-map.org/blog/fire-tracker-map/): A fire tracker map layers NIFC perimeters, NASA MODIS and VIIRS heat, NOAA GOES and NWS alerts. Learn to read every layer and the six misreadings to avoid.
+- [Live Fire Tracker: How Real-Time Wildfire Data Works in 2026](https://wildfire-map.org/blog/live-fire-tracker/): A live fire tracker mixes 5-minute GOES scans, polar-orbit hotspots and 5-minute NIFC updates. Learn every latency and which timestamps you can trust.
+- [Wildfire Tracker: The Complete Guide to Tracking Wild Fires (2026)](https://wildfire-map.org/blog/wildfire-tracker/): How to use a wildfire tracker in all 50 states: fire seasons, agencies and satellite data by region, plus setup for homeowners, hikers, ranchers and travelers.
+- [Fire Tracker Near Me: Find Fires Near You in Under a Minute](https://wildfire-map.org/blog/fire-tracker-near-me/): Fire tracker near me: the 60-second check that tells you if fires near me are real, how close matters, and what to do next. Verified NIFC, NASA and NWS data.
+- [Forest Fire Smoke Tracker: Track Smoke and Air Quality (2026)](https://wildfire-map.org/blog/forest-fire-smoke-tracker/): A forest fire smoke tracker shows NOAA plume analysis, HRRR-Smoke forecasts and live AQI. Learn PM2.5 thresholds, N95 facts and indoor filtration steps.
+- [Wildfire Map: How to Use a Live US Wildfire Map in 2026](https://wildfire-map.org/blog/wildfire-map/): A wildfire map fuses NIFC records, NASA and NOAA satellite heat and NWS alerts. Learn every layer, its real latency and how to act on it in 2026.
+- [California Fire Map: Track California Wildfires Live (2026 Guide)](https://wildfire-map.org/blog/california-fire-map/): A California fire map explained layer by layer: CAL FIRE and federal data, Santa Ana and Diablo winds, largest fires, evacuation terms and a 60-second check.
+- [LA Fires Map: Track Los Angeles Wildfires Live (2026 Guide)](https://wildfire-map.org/blog/la-fires-map/): An LA fires map in plain English: Santa Ana wind mechanics, Red Flag thresholds, evacuation zones, road closures and January 2025 figures. See what to check fir
+- [South Carolina Fires: How to Track SC Wildfires Live (2026)](https://wildfire-map.org/blog/south-carolina-fires/): South Carolina fires peak from January to April. Track every SC wildfire live with official NIFC records, satellite heat and NWS alerts on one free map.
+- [Fire Tracker App for Chrome: Setup, Alerts and Map Guide (2026)](https://wildfire-map.org/blog/fire-tracker-app/): A complete fire tracker app manual: install and pin the Chrome extension, grant location, read probability tiers and timestamps, and fix the three common faults
+- [Wildfire Tracking Explained: Satellites, Perimeters and Alerts (2026)](https://wildfire-map.org/blog/wildfire-tracking/): How wildfire tracking works in 2026: detection by 911 calls, cameras and satellites, IRWIN records, perimeter mapping and containment terms, explained end to en
+- [Current Wildfires in the US: How to Follow Active Wildfires (2026)](https://wildfire-map.org/blog/current-wildfires/): Current wildfires explained: how to read NIFC's daily report, preparedness levels, containment status and year-to-date US wildfires data without being misled.
+
+## Data sources
+
+- NIFC / WFIGS interagency incident and perimeter feeds (official)
+- NASA FIRMS MODIS and VIIRS thermal detections
+- NOAA Hazard Mapping System (GOES) fire and smoke detections
+- National Weather Service fire-weather alerts (api.weather.gov)
+
+## Contact
+
+- Website: https://wildfire-map.org/
+- Chrome Web Store listing: https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm
+
+## Restrictions
+
+- Not an official emergency service. Always follow evacuation orders from local authorities.
