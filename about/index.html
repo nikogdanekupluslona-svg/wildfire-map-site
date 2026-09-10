@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How US Wildfire Tracker Is Built: Data Sources and Method | US Wildfire Tracker</title>
+<meta name="description" content="Which feeds US Wildfire Tracker uses, how often each one updates, how the fire probability score is calculated, and what satellite fire detection cannot see.">
+<meta name="keywords" content="wildfire data sources, NIFC data, NASA FIRMS, NOAA GOES, fire detection accuracy, wildfire map methodology">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://wildfire-map.org/about/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="US Wildfire Tracker">
+<meta property="og:title" content="How US Wildfire Tracker Is Built | US Wildfire Tracker">
+<meta property="og:description" content="Data sources, refresh cadence, how the fire probability score works, and the known limits of satellite fire detection.">
+<meta property="og:url" content="https://wildfire-map.org/about/">
+<meta property="og:image" content="https://wildfire-map.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How US Wildfire Tracker Is Built">
+<meta name="twitter:description" content="Data sources, refresh cadence, how the fire probability score works, and the known limits of satellite fire detection.">
+<meta name="twitter:image" content="https://wildfire-map.org/og-image.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
+<link rel="stylesheet" href="/blog/assets/blog.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://wildfire-map.org/#organization",
+   "name": "US Wildfire Tracker",
+   "url": "https://wildfire-map.org/",
+   "logo": {"@type": "ImageObject", "url": "https://wildfire-map.org/logo512.png", "width": 512, "height": 512},
+   "sameAs": ["https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm"]
+  },
+  {
+   "@type": "AboutPage",
+   "@id": "https://wildfire-map.org/about/#about",
+   "url": "https://wildfire-map.org/about/",
+   "name": "How US Wildfire Tracker Is Built",
+   "description": "Which feeds US Wildfire Tracker uses, how often each one updates, how the fire probability score is calculated, and what satellite fire detection cannot see.",
+   "inLanguage": "en-US",
+   "datePublished": "2026-09-10",
+   "dateModified": "2026-09-10",
+   "publisher": {"@id": "https://wildfire-map.org/#organization"},
+   "about": {"@id": "https://wildfire-map.org/#organization"}
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wildfire-map.org/"},
+    {"@type": "ListItem", "position": 2, "name": "How this map is built", "item": "https://wildfire-map.org/about/"}
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://wildfire-map.org/about/#faq",
+   "mainEntity": [
+    {"@type": "Question", "name": "Who runs US Wildfire Tracker?",
+     "acceptedAnswer": {"@type": "Answer", "text": "A small independent team that builds and maintains the map and the Chrome extension. We are not a government agency and we are not affiliated with one. All incident data belongs to the agencies that publish it."}},
+    {"@type": "Question", "name": "Do you produce any of the fire data yourselves?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Every fire on the map comes from a public agency feed. We fetch those feeds, match satellite detections to official incident records where we can, and present the result on one map. We do not create incidents, edit acreage, or adjust containment figures."}},
+    {"@type": "Question", "name": "How accurate is the fire probability score?",
+     "acceptedAnswer": {"@type": "Answer", "text": "It is a confidence indicator, not a measurement. It weighs whether an official incident record is linked to a detection, how recent the mapped perimeter is, and how fresh the satellite heat is. A high score means several independent sources agree. A low score usually means a single satellite pixel with nothing corroborating it."}},
+    {"@type": "Question", "name": "Why does a fire sometimes appear on the map after it is out?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Incident records stay in the agency feeds until the agency closes them, and a mapped perimeter does not disappear when a fire stops growing. The map labels stale records and hides them by default, but the underlying delay is in the source data, not in the map."}},
+    {"@type": "Question", "name": "Can this map miss a fire?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Satellites cannot see through thick cloud or smoke, small and smouldering fires can fall below the detection threshold, and a new fire may not appear in an incident feed for some time after it starts. Never treat an empty map as proof that nothing is burning near you."}},
+    {"@type": "Question", "name": "How do I report an error on the map?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Leave a review or support message on the Chrome Web Store listing with the fire name and what looks wrong. If the error is in an agency feed we will say so, because we cannot correct another organisation's data. If the error is ours, we fix it and note it here."}}
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="inner">
+<a class="site-brand" href="/"><img src="/icon48.png" width="32" height="32" alt="US Wildfire Tracker logo">US Wildfire Tracker</a>
+<nav class="site-nav" aria-label="Site"><a href="/">Live fire map</a><a href="/blog/">Wildfire guides</a><a class="primary" href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Add to Chrome</a></nav>
+</div></header>
+<main class="wmt-article">
+<div class="container">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; How this map is built</nav>
+
+<header class="article-header">
+  <span class="article-tag">Methodology</span>
+  <h1>How US Wildfire Tracker is built: every data source, its refresh rate, and what it cannot see</h1>
+  <div class="article-meta">
+    <span>📅 <time datetime="2026-09">September 2026</time></span>
+    <span>⏱ 6 min read</span>
+    <span>✍ <a href="/">US Wildfire Tracker team</a></span>
+  </div>
+</header>
+
+<p class="lead">US Wildfire Tracker produces no fire data of its own. It fetches four public agency feeds, matches satellite heat detections against official incident records, and shows the result on one map. This page states exactly which feeds those are, how current each one is, and where the method breaks down.</p>
+
+<div class="trust-badge">
+  <span class="trust-badge-icon" aria-hidden="true">🏆</span>
+  <div class="trust-badge-text">
+    <div class="trust-badge-title">US Wildfire Tracker — <span>rated 5 stars in the Chrome Web Store</span></div>
+    <div class="trust-badge-sub">2026 — free live wildfire map built on official NIFC, NASA and NOAA data</div>
+  </div>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#sources">Which data sources does the map use?</a></li>
+    <li><a href="#fusion">How are satellite detections matched to fires?</a></li>
+    <li><a href="#probability">How is the fire probability score calculated?</a></li>
+    <li><a href="#limits">What can this wildfire map not see?</a></li>
+    <li><a href="#privacy">What happens to your location data?</a></li>
+    <li><a href="#corrections">How are errors corrected?</a></li>
+    <li><a href="#faq">Frequently asked questions about our method</a></li>
+  </ol>
+</nav>
+
+<h2 id="sources">Which data sources does the map use?</h2>
+<p>Four feeds, each published by a US federal agency and each free to access. Nothing on the map comes from a private data broker, a crowdsourced report or a scraped web page.</p>
+
+<div class="table-wrap">
+<table>
+<caption>Feeds behind the live map and how current each one is</caption>
+<thead><tr><th scope="col">Feed</th><th scope="col">Published by</th><th scope="col">What it provides</th><th scope="col">Typical freshness</th></tr></thead>
+<tbody>
+<tr><th scope="row">Interagency incident records and perimeters</th><td>National Interagency Fire Center, through the interagency WFIGS services</td><td>Fire name, acreage, containment percentage, incident type, managing organisation, personnel counts, mapped perimeter polygons</td><td>Agency reporting schedules; commonly updated once or twice a day per incident, sometimes less often</td></tr>
+<tr><th scope="row">MODIS thermal detections</th><td>NASA, sensors aboard Terra and Aqua</td><td>Thermal anomaly points at roughly 1 km resolution</td><td>Several passes a day over a given location</td></tr>
+<tr><th scope="row">VIIRS thermal detections</th><td>NASA and NOAA, sensors aboard Suomi NPP, NOAA-20 and NOAA-21</td><td>Thermal anomaly points at 375 m resolution</td><td>Several passes a day, finer detail than MODIS</td></tr>
+<tr><th scope="row">GOES heat detections</th><td>NOAA, geostationary GOES East and GOES West</td><td>Heat signals from a fixed vantage point over the Americas</td><td>Minutes, because the satellite stares at the same area continuously</td></tr>
+<tr><th scope="row">Fire-weather alerts</th><td>National Weather Service</td><td>Red Flag Warnings and Fire Weather Watches, as forecast-zone shapes</td><td>Issued and cancelled by local forecast offices as conditions change</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Two consequences follow from that table and they explain most of what confuses people about live fire maps. Satellite heat is almost always fresher than the official record beside it. And a mapped perimeter describes where a fire had reached when someone last mapped it, not where its edge is now.</p>
+
+<div class="callout callout-tip"><strong>Why we show three timestamps per fire</strong>Every fire panel labels its last incident update, its last satellite heat and its last geostationary heat separately. A fire whose perimeter is two days old but whose satellite heat is twenty minutes old is behaving very differently from one where both are stale.</div>
+
+<h2 id="fusion">How are satellite detections matched to fires?</h2>
+<p>A satellite detection is a point of heat, not a fire with a name. Turning one into the other is a matching problem, and it is where a fused map either earns its keep or misleads.</p>
+<p>When a detection falls inside or near a current official perimeter, or near a reported incident point, it is attached to that incident and inherits its name, acreage and containment. When no official record is nearby, the detection stands alone as an unnamed heat detection. We do not name it, guess its size or estimate its containment.</p>
+<p>Clusters of detections in the same place across successive passes are grouped so that one fire does not appear as fifty separate dots. The grouping is spatial and temporal; it does not assert that the grouped points are a single incident when the agencies have not said so.</p>
+
+<h2 id="probability">How is the fire probability score calculated?</h2>
+<p>The score is a confidence indicator, not a physical measurement, and it exists because raw satellite heat produces false positives that alarm people unnecessarily. It combines three signals.</p>
+
+<dl class="spec-list">
+  <dt>Official corroboration</dt><dd>Whether a current interagency incident record is linked to the detection. This is the strongest signal.</dd>
+  <dt>Perimeter freshness</dt><dd>How recently the mapped perimeter for the linked incident was updated. A perimeter refreshed today weighs more than one from last week.</dd>
+  <dt>Heat recency</dt><dd>How recently VIIRS, MODIS or GOES saw heat at that location. Heat from the last hour weighs more than heat from yesterday.</dd>
+</dl>
+
+<p>Detections scoring below 25 percent are hidden by default and can be shown with the weak-signals toggle. Records whose perimeter and heat are both stale are labelled outdated and are also hidden by default. Both filters are yours to switch off; nothing is deleted, only de-emphasised.</p>
+
+<div class="callout callout-warn"><strong>What a low score usually means</strong>A single hot pixel with nothing corroborating it is more often a prescribed burn, an agricultural fire, a flare stack, a steel mill or a solar array than a wildfire. That is why weak signals are hidden rather than shown as fires.</div>
+
+<h2 id="limits">What can this wildfire map not see?</h2>
+<p>Stating the limits plainly matters more than the feature list, because acting on a map that seems to show nothing is the dangerous case.</p>
+
+<ul>
+  <li><strong>Cloud and thick smoke block satellites.</strong> Both MODIS and VIIRS look down through the atmosphere. Heavy cloud cover can hide an active fire for an entire pass.</li>
+  <li><strong>Small and smouldering fires fall below the threshold.</strong> A fire has to be hot enough and large enough within a pixel to register. Early-stage fires and creeping ground fires often do not.</li>
+  <li><strong>Polar-orbiting satellites have gaps.</strong> Between passes there are hours when only the geostationary GOES view is available, at coarser resolution.</li>
+  <li><strong>Official records lag ignition.</strong> A fire can burn for a considerable time before it appears in an interagency feed with a name and an acreage.</li>
+  <li><strong>Perimeters are snapshots.</strong> They are mapped by aircraft, ground crews or satellite analysis at a point in time, not continuously.</li>
+  <li><strong>Alert shapes are zones, not fire shapes.</strong> A Red Flag Warning covers a forecast zone. Its boundary says nothing about where a fire is.</li>
+</ul>
+
+<div class="callout callout-warn"><strong>This is not an emergency service</strong>US Wildfire Tracker is an informational map built on public data. It has no role in dispatch, evacuation or official notification. If your local authorities issue an evacuation order, follow it immediately regardless of what any map shows.</div>
+
+<p>The guides go into this in far more depth: <a href="/blog/live-fire-tracker/">what real time actually means for wildfire data</a> covers satellite timing in detail, <a href="/blog/fire-tracker-map/">how to read every layer on a live fire map</a> covers the common misreadings, and <a href="/blog/wildfire-tracking/">how wildfire tracking works</a> covers detection and perimeter mapping from ignition to containment.</p>
+
+<h2 id="privacy">What happens to your location data?</h2>
+<p>Location is requested only when you ask to see fires near you, and it is used only to sort fires by distance from you. It is never stored on a server, never sold and never shared with a third party. Declining location access costs you only the proximity ranking; the state filter and the national view work exactly the same.</p>
+<p>The Chrome extension carries no third-party advertising trackers, and no account is needed for any feature of the map.</p>
+
+<h2 id="corrections">How are errors corrected?</h2>
+<p>Errors come in two kinds and they are fixed differently. If the mistake is ours, in how a detection was matched, labelled or displayed, we correct it and note the change here. If the mistake is in an agency feed, in an acreage or a containment figure, we cannot alter it, because rewriting an official record would make the map less trustworthy rather than more.</p>
+<p>Report anything that looks wrong through the Chrome Web Store listing, naming the fire and what you expected to see. Include the timestamps shown on the fire panel; they tell us which feed the problem came from.</p>
+
+<div class="expert-quote">
+  <blockquote>We built this map because the public data is excellent and almost nobody explains it. Our job is not to have an opinion about a fire, it is to put the agencies' own records and the satellites' own detections side by side, timestamp both honestly, and get out of the way. When the data is thin, we would rather show you that it is thin than dress it up.</blockquote>
+  <cite><strong>The US Wildfire Tracker team</strong> — builders of the wildfire-map.org live map and Chrome extension</cite>
+</div>
+
+<h2 id="faq">Frequently asked questions about our method</h2>
+
+<div class="faq-item"><p class="faq-q">Who runs US Wildfire Tracker?</p><p class="faq-a">A small independent team that builds and maintains the map and the Chrome extension. We are not a government agency and we are not affiliated with one. All incident data belongs to the agencies that publish it.</p></div>
+
+<div class="faq-item"><p class="faq-q">Do you produce any of the fire data yourselves?</p><p class="faq-a">No. Every fire on the map comes from a public agency feed. We fetch those feeds, match satellite detections to official incident records where we can, and present the result on one map. We do not create incidents, edit acreage, or adjust containment figures.</p></div>
+
+<div class="faq-item"><p class="faq-q">How accurate is the fire probability score?</p><p class="faq-a">It is a confidence indicator, not a measurement. It weighs whether an official incident record is linked to a detection, how recent the mapped perimeter is, and how fresh the satellite heat is. A high score means several independent sources agree. A low score usually means a single satellite pixel with nothing corroborating it.</p></div>
+
+<div class="faq-item"><p class="faq-q">Why does a fire sometimes appear on the map after it is out?</p><p class="faq-a">Incident records stay in the agency feeds until the agency closes them, and a mapped perimeter does not disappear when a fire stops growing. The map labels stale records and hides them by default, but the underlying delay is in the source data, not in the map.</p></div>
+
+<div class="faq-item"><p class="faq-q">Can this map miss a fire?</p><p class="faq-a">Yes. Satellites cannot see through thick cloud or smoke, small and smouldering fires can fall below the detection threshold, and a new fire may not appear in an incident feed for some time after it starts. Never treat an empty map as proof that nothing is burning near you.</p></div>
+
+<div class="faq-item"><p class="faq-q">How do I report an error on the map?</p><p class="faq-a">Leave a review or support message on the Chrome Web Store listing with the fire name and what looks wrong. If the error is in an agency feed we will say so, because we cannot correct another organisation's data. If the error is ours, we fix it and note it here.</p></div>
+
+<div class="cta-block">
+  <div class="cta-text">
+    <p class="cta-title">See the method in action</p>
+    <p class="cta-body">Open the map, pick any active fire, and read its three timestamps. That single habit tells you more than any headline acreage figure.</p>
+  </div>
+  <div class="cta-buttons">
+    <a href="/" class="cta-btn">Open the live fire map →</a>
+    <a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" class="cta-btn" rel="noopener">Add to Chrome — free →</a>
+    <a href="/blog/" class="cta-btn">Read the guides →</a>
+  </div>
+</div>
+
+<footer class="article-footer">Published September 2026 by the US Wildfire Tracker team. Data belongs to the National Interagency Fire Center, NASA, NOAA and the National Weather Service. This page describes an informational product, not an emergency service; always follow evacuation orders from local authorities.</footer>
+
+</div>
+</main>
+<footer class="site-footer"><div class="inner">
+<div>&copy; 2026 US Wildfire Tracker &middot; Data: NIFC, NASA FIRMS, NOAA, NWS. Not an official emergency service; always follow local evacuation orders.</div>
+<div><a href="/">Live map</a><a href="/blog/">Guides</a><a href="/about/">How this map is built</a><a href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Chrome extension</a></div>
+</div></footer>
+</body>
+</html>

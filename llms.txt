@@ -24,6 +24,10 @@
 - [Wildfire Tracking Explained: Satellites, Perimeters and Alerts (2026)](https://wildfire-map.org/blog/wildfire-tracking/): How wildfire tracking works in 2026: detection by 911 calls, cameras and satellites, IRWIN records, perimeter mapping and containment terms, explained end to en
 - [Current Wildfires in the US: How to Follow Active Wildfires (2026)](https://wildfire-map.org/blog/current-wildfires/): Current wildfires explained: how to read NIFC's daily report, preparedness levels, containment status and year-to-date US wildfires data without being misled.
 
+## About
+
+- [How this map is built](https://wildfire-map.org/about/): data sources, refresh cadence, how the fire probability score works, and the known limits of satellite fire detection.
+
 ## Data sources
 
 - NIFC / WFIGS interagency incident and perimeter feeds (official)
