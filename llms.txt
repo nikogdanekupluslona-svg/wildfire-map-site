@@ -27,16 +27,21 @@
 ## Wildfires by state
 
 - [US wildfires by state](https://wildfire-map.org/fires/): index of every state page.
+- [Alabama fires](https://wildfire-map.org/fires/alabama/): Alabama fire map guide: spring and fall fire seasons, the Alabama Forestry Commission, drought-driven Fire Alerts, burn permits and how to follow fires live.
 - [Alaska fires](https://wildfire-map.org/fires/alaska/): Alaska fire map guide: when Alaska's wildfire season peaks, which agencies respond, the biggest seasons on record, and how to follow active fires live now.
 - [Arizona fires](https://wildfire-map.org/fires/arizona/): Arizona fire map guide: live wildfire tracking, Arizona fire season and the monsoon, DFFM and NIFC data, largest fires on record and Ready Set Go evacuation lev
 - [Arkansas fires](https://wildfire-map.org/fires/arkansas/): See live wildfires on an Arkansas fire map built on NIFC, NASA and NOAA data, plus the burn bans, Red Flag Warnings and debris-burn causes behind the 2026 fire 
 - [Colorado fires](https://wildfire-map.org/fires/colorado/): Live Colorado fire map guide: current wildfires, fire season months, largest fires on record, Red Flag criteria, evacuation wording and smoke advisories.
+- [Connecticut fires](https://wildfire-map.org/fires/connecticut/): Connecticut fire map guide: spring and fall fire seasons, DEEP's fire danger rating system, the 2024 Hawthorne Fire, burn permits and how to track fires live.
 - [Florida fires](https://wildfire-map.org/fires/florida/): Florida fire map guide: peak wildfire season, the Florida Forest Service, largest fires on record, KBDI, muck fires and how to follow active fires live now.
 - [Georgia fires](https://wildfire-map.org/fires/georgia/): Georgia fire map guide: spring wildfire season, the Georgia Forestry Commission, Okefenokee peat fires, burn permits, burn bans and how to follow fires live.
+- [Hawaii fires](https://wildfire-map.org/fires/hawaii/): Live Hawaii fire map guide: current wildfires, invasive grass fire risk, the Lahaina fire, largest fires on record, Red Flag criteria and evacuation rules.
 - [Idaho fires](https://wildfire-map.org/fires/idaho/): Idaho fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus closed fire season rules, agencies and smoke.
 - [Illinois fires](https://wildfire-map.org/fires/illinois/): Live Illinois fire map guide: grass and prairie fire season, agencies, prescribed burns on Illinois prairies, Red Flag criteria, burn ban rules and smoke adviso
 - [Kansas fires](https://wildfire-map.org/fires/kansas/): Live Kansas fire map guide: active wildfires, grass fire season, the Starbuck and Anderson Creek fires, Flint Hills prescribed burning, Red Flag criteria and ev
+- [Kentucky fires](https://wildfire-map.org/fires/kentucky/): Kentucky fire map guide: the Appalachian fall fire season, the November 2016 outbreak, the state's outdoor burning law, Red Flag criteria and live tracking.
 - [Louisiana fires](https://wildfire-map.org/fires/louisiana/): Louisiana fire map guide: the 2023 drought fire season, marsh fires, the LDAF Office of Forestry, burn bans and how to track wildfires live in 2026.
+- [Maine fires](https://wildfire-map.org/fires/maine/): Maine fire map guide: short spring fire season, the Maine Forest Service, the 1947 Bar Harbor fires, statewide burn permits and how to track fires live.
 - [Michigan fires](https://wildfire-map.org/fires/michigan/): Live Michigan fire map guide: spring fire season, burn permits, largest fires on record, jack pine barrens ecology, Red Flag criteria and smoke advisories.
 - [Minnesota fires](https://wildfire-map.org/fires/minnesota/): Live Minnesota fire map guide: spring wildfire season, burning permit rules, largest fires on record, Boundary Waters and peat fires, evacuations and smoke.
 - [Mississippi fires](https://wildfire-map.org/fires/mississippi/): Mississippi fire map guide: wildfire season, the Mississippi Forestry Commission, burn permits and bans, largest fires on record and how to track fires live.
@@ -44,13 +49,21 @@
 - [Montana fires](https://wildfire-map.org/fires/montana/): Montana fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus DNRC protection, evacuations and smoke.
 - [Nebraska fires](https://wildfire-map.org/fires/nebraska/): Live Nebraska fire map guide: active wildfires, the record 2026 Morrill Fire, the 2022 Road 702 Fire, grass fire season, Red Flag criteria and evacuations.
 - [Nevada fires](https://wildfire-map.org/fires/nevada/): Live Nevada fire map guide: current wildfires, rangeland fire season, the Martin Fire record, cheatgrass and the Great Basin fire cycle, evacuations, smoke.
+- [New Hampshire fires](https://wildfire-map.org/fires/new-hampshire/): New Hampshire fire map guide: spring and fall fire season, the NH Forest Protection Bureau, the 1941 and 1947 fires, statewide burn permits and live tracking.
 - [New Mexico fires](https://wildfire-map.org/fires/new-mexico/): New Mexico fire map guide: live wildfire tracking, NM fire season months, State Forestry and NIFC data, largest fires on record, fire restrictions and evacuatio
 - [North Carolina fires](https://wildfire-map.org/fires/north-carolina/): North Carolina fire map guide: spring fire season, the N.C. Forest Service, coastal peat fires, Helene fuel loads, burn permits and how to follow fires live.
+- [North Dakota fires](https://wildfire-map.org/fires/north-dakota/): Live North Dakota fire map guide: active wildfires, the historic October 2024 outbreak, Bakken flare fires, grass fire season, Red Flag criteria and evacuations
 - [Oklahoma fires](https://wildfire-map.org/fires/oklahoma/): Oklahoma fire map guide: live wildfire tracking, Oklahoma fire season months, Oklahoma Forestry Services data, largest fires on record and Red Flag Warning crit
 - [Oregon fires](https://wildfire-map.org/fires/oregon/): Oregon fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus Level 1-2-3 evacuations, ODF districts and smoke.
+- [Pennsylvania fires](https://wildfire-map.org/fires/pennsylvania/): Pennsylvania fire map guide: spring and fall fire seasons, the DCNR Bureau of Forestry, the largest PA wildfires, burn bans and how to track PA fires live.
+- [Rhode Island fires](https://wildfire-map.org/fires/rhode-island/): Rhode Island fire map guide: fall and spring fire seasons, the 2023 Exeter fire, DEM burn permits, wildfire danger ratings and how to track fires live.
+- [South Dakota fires](https://wildfire-map.org/fires/south-dakota/): Live South Dakota fire map guide: active wildfires, the 2000 Jasper Fire, Black Hills and plains fire season, Legion Lake Fire, Red Flag criteria and evacuation
+- [Tennessee fires](https://wildfire-map.org/fires/tennessee/): Tennessee fire map guide: spring and fall fire seasons, the 2016 Chimney Tops 2 fire, burn permits, Red Flag criteria and how to follow active fires live.
 - [Texas fires](https://wildfire-map.org/fires/texas/): Texas fire map guide: live wildfire tracking for Texas, fire season months, Texas A&M Forest Service data, largest fires on record and Red Flag Warning criteria
 - [Utah fires](https://wildfire-map.org/fires/utah/): Live Utah fire map guide: active wildfires, the closed fire season dates, largest fires on record, cheatgrass fire behavior, Red Flag criteria and smoke.
+- [Virginia fires](https://wildfire-map.org/fires/virginia/): Virginia fire map guide: spring and fall fire seasons, the 4 PM Burning Law, the Matts Creek Fire, Red Flag criteria and how to follow active fires live.
 - [Washington fires](https://wildfire-map.org/fires/washington/): Washington fire map guide: track active WA wildfires, perimeters, satellite heat and Red Flag Warnings, plus Level 1-2-3 evacuations and smoke.
+- [West Virginia fires](https://wildfire-map.org/fires/west-virginia/): West Virginia fire map guide: statutory spring and fall burn seasons, the 5pm-7am burning law, the Division of Forestry, largest fires and how to track WV wildf
 - [Wisconsin fires](https://wildfire-map.org/fires/wisconsin/): Live Wisconsin fire map guide: spring fire season, burning permits, largest fires on record, Red Flag criteria, evacuation rules and smoke advisories explained.
 - [Wyoming fires](https://wildfire-map.org/fires/wyoming/): Live Wyoming fire map guide: active wildfires, fire season timing, the record 2024 season, 1988 Yellowstone fires, Red Flag criteria, evacuations and smoke.
 
