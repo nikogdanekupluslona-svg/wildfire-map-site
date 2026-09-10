@@ -69,6 +69,11 @@ Every generated page and `about/index.html` carry the same header and footer, bo
 | Chrome Web Store | `Add to Chrome` button | `Add to Chrome` button |
 | App Store | Apple's badge, plus a 40px QR code | Apple's badge, plus a 140px QR code |
 
+The header's QR code opens a 260px copy of itself in a lightbox — closed by the cross, Escape or a
+click on the backdrop — rather than jumping straight to the App Store, since a code you cannot read
+is no use on a desktop screen. The lightbox is the only JavaScript on these pages, inlined by
+`site_header()`; with scripting off the code stays a plain link to the App Store listing.
+
 Only Apple gets a badge image: two badges side by side crowded the header and read as clutter, so the
 live map and the extension are plain buttons, the red one carrying the primary action.
 

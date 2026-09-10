@@ -25,7 +25,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/icon32.png">
 <link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
-<link rel="stylesheet" href="/blog/assets/blog.css?v=332e8019">
+<link rel="stylesheet" href="/blog/assets/blog.css?v=d793a8e7">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -328,9 +328,19 @@
 <a class="btn btn-primary" href="/">Live map</a>
 <a class="btn" href="https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm" rel="noopener">Add to Chrome</a>
 <a class="store-badge" href="https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&amp;ct=Header&amp;mt=8" rel="noopener"><img src="/blog/assets/badge-app-store.svg" width="120" height="40" alt="Download US Wildfire Tracker on the App Store" loading="lazy" decoding="async"></a>
-<a class="qr-mini" href="https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&amp;ct=Header_QR&amp;mt=8" rel="noopener" title="Scan to install the US Wildfire Tracker iPhone app" aria-label="Scan or open to install the US Wildfire Tracker iPhone app"><img src="/blog/assets/qr-app-store-header.svg" width="40" height="40" alt="QR code linking to the US Wildfire Tracker app on the App Store"></a>
+<a class="qr-mini" href="https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&amp;ct=Header_QR&amp;mt=8" rel="noopener" title="Show the QR code to install on iPhone" aria-haspopup="dialog" aria-label="Show a large QR code to install the US Wildfire Tracker iPhone app"><img src="/blog/assets/qr-app-store-header.svg" width="40" height="40" alt="QR code linking to the US Wildfire Tracker app on the App Store"></a>
 </div>
-</div></header>
+</div>
+<div class="qr-modal" id="qr-modal" hidden>
+<div class="qr-modal-card" role="dialog" aria-modal="true" aria-label="Install US Wildfire Tracker on iPhone">
+<button type="button" class="qr-modal-close" aria-label="Close">&times;</button>
+<img src="/blog/assets/qr-app-store-header.svg" width="260" height="260" alt="QR code linking to the US Wildfire Tracker app on the App Store">
+<b>Scan to install on iPhone</b>
+<a href="https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&amp;ct=Header_QR&amp;mt=8" rel="noopener">Open the App Store instead</a>
+</div>
+</div>
+<script>(function(){var t=document.querySelector('.qr-mini'),m=document.getElementById('qr-modal');if(!t||!m)return;var c=m.querySelector('.qr-modal-close');function show(e){e.preventDefault();m.hidden=false;c.focus();}function hide(){if(m.hidden)return;m.hidden=true;t.focus();}t.addEventListener('click',show);c.addEventListener('click',hide);m.addEventListener('click',function(e){if(e.target===m)hide();});document.addEventListener('keydown',function(e){if(e.key==='Escape')hide();});})();</script>
+</header>
 <main class="wmt-article">
 <div class="container">
 <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Wildfire guides</a> &rsaquo; Fire Maps</nav>
