@@ -94,7 +94,13 @@ cached copy of the old CSS sees the new header markup unstyled — which is exac
 first time this shipped. Changing the CSS changes the hash, so the two can never fall out of step.
 
 The header and footer are **not** on the three pages the app build owns: the home page, `welcome.html`
-and `404.html`. Adding them there means a change in the app source repository.
+and `404.html`. The home page instead carries a smaller block — an `Add to Chrome` button, Apple's
+badge and a QR code — in the free red space on the right of the app's own header, so it covers no part
+of the map. It is `seo-workspace/homepage-patch/app-cta.html`, applied by hand to `index.html`, and
+**the next app republish will wipe it**: the lasting fix is to move that block into the app's header
+component in the app source repository. It hides itself when the app header is collapsed, drops the QR
+code below 1300px, the badge below 1200px and itself below 1000px, so it can never collide with the
+status text the header centres. `welcome.html` and `404.html` are still untouched.
 
 ## The outstanding SEO change
 
