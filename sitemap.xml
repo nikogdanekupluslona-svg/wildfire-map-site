@@ -24,15 +24,20 @@
   <url><loc>https://wildfire-map.org/fires/arkansas/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/colorado/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/connecticut/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/delaware/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/florida/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/georgia/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/hawaii/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/idaho/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/illinois/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/indiana/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/iowa/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/kansas/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/kentucky/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/louisiana/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/maine/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/maryland/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/massachusetts/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/michigan/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/minnesota/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/mississippi/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -41,9 +46,12 @@
   <url><loc>https://wildfire-map.org/fires/nebraska/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/nevada/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/new-hampshire/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/new-jersey/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/new-mexico/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/new-york/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/north-carolina/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/north-dakota/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/ohio/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/oklahoma/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/oregon/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/pennsylvania/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -52,6 +60,7 @@
   <url><loc>https://wildfire-map.org/fires/tennessee/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/texas/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/utah/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wildfire-map.org/fires/vermont/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/virginia/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/washington/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wildfire-map.org/fires/west-virginia/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
