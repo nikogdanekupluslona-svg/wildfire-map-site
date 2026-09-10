@@ -14,8 +14,9 @@ Files owned by this repository, not by the app build:
 
 ```
 blog/                 generated guide pages, blog index and the shared CSS
+blog/assets/          blog.css, the two store badges and the App Store QR codes
 fires/                generated state pages and the by-state hub
-about/                hand-written methodology page
+about/                hand-written methodology page (its header and footer are synced by build)
 sitemap.xml           generated — the home page and every content page
 llms.txt              generated — markdown site map for AI crawlers
 robots.txt            hand-maintained — allows AI crawlers
@@ -38,6 +39,7 @@ seo-workspace/
   articles/<slug>/     body.html, meta.json, sources.json per guide
   states/<slug>/       the same three files per state
   homepage-patch/      the home page SEO change, to apply in the app repository
+  make-qr.py           regenerates the App Store QR codes (needs `pip install segno`)
 ```
 
 Commands, run from the repository root:
@@ -55,6 +57,32 @@ python3 seo-workspace/build.py build                 # regenerate blog/, fires/,
 Each generated page carries a JSON-LD graph. Guides use Organization, WebSite, Article, BreadcrumbList, FAQPage and SoftwareApplication, plus HowTo where the page documents a procedure. State pages use Article, State, BreadcrumbList and FAQPage, and carry a `geo.region` meta tag.
 
 A state that already has a full-length guide, California and South Carolina, gets no state page. The hub links to the guide instead, so the two never compete for the same query.
+
+## The app header and footer
+
+Every generated page and `about/index.html` carry the same header and footer, both emitted by
+`site_header()` and `site_footer()` in `build.py`. They hold the three ways to get the app:
+
+| Destination | Header | Footer |
+| --- | --- | --- |
+| Live map at wildfire-map.org | `Open the live map` button | `Open the live map` button |
+| Chrome Web Store | official badge | official badge |
+| App Store | official badge, plus a QR code that opens the large one on hover | official badge, plus a 140px QR code |
+
+App Store links carry Apple's `ct` campaign token, so each placement is measurable in App Store
+Connect: `Header`, `Header_QR`, `Footer`, `Footer_QR`, `Footer_Link`, `llms`, `Schema`. The token is
+set in one place, `appstore()` in `build.py`.
+
+The QR codes are committed as SVG in `blog/assets/`. They encode the App Store link and were checked
+by decoding them back at the size the page actually renders — keep the footer code at 140px (116px on
+narrow screens) or it stops scanning reliably. Regenerate with `python3 seo-workspace/make-qr.py`
+after changing the App Store URL.
+
+`build` also rewrites the header and footer inside `about/index.html`, so the hand-written page can
+never drift from the generated ones.
+
+The header and footer are **not** on the three pages the app build owns: the home page, `welcome.html`
+and `404.html`. Adding them there means a change in the app source repository.
 
 ## The outstanding SEO change
 

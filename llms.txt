@@ -6,6 +6,7 @@
 
 - [Live US wildfire map](https://wildfire-map.org/): active fires, official perimeters, satellite hotspots, fire probability score, NWS Red Flag Warnings.
 - [Chrome extension](https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm): the same map in a Chrome side panel with nearby-fire alerts. Rated 5 stars in the Chrome Web Store.
+- [iPhone app](https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&ct=llms&mt=8): the live fire map on iOS, from the App Store.
 
 ## Wildfire tracking guides
 
@@ -91,6 +92,7 @@
 
 - Website: https://wildfire-map.org/
 - Chrome Web Store listing: https://chromewebstore.google.com/detail/fire-tracker/ahhgbhaajphpekcekgfbbeoekdfliafm
+- App Store listing: https://apps.apple.com/app/apple-store/id6785946092?pt=118858502&ct=llms&mt=8
 
 ## Restrictions
 
