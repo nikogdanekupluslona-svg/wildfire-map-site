@@ -24,6 +24,26 @@
 - [Wildfire Tracking Explained: Satellites, Perimeters and Alerts (2026)](https://wildfire-map.org/blog/wildfire-tracking/): How wildfire tracking works in 2026: detection by 911 calls, cameras and satellites, IRWIN records, perimeter mapping and containment terms, explained end to en
 - [Current Wildfires in the US: How to Follow Active Wildfires (2026)](https://wildfire-map.org/blog/current-wildfires/): Current wildfires explained: how to read NIFC's daily report, preparedness levels, containment status and year-to-date US wildfires data without being misled.
 
+## Wildfires by state
+
+- [US wildfires by state](https://wildfire-map.org/fires/): index of every state page.
+- [Alaska fires](https://wildfire-map.org/fires/alaska/): Alaska fire map guide: when Alaska's wildfire season peaks, which agencies respond, the biggest seasons on record, and how to follow active fires live now.
+- [Arizona fires](https://wildfire-map.org/fires/arizona/): Arizona fire map guide: live wildfire tracking, Arizona fire season and the monsoon, DFFM and NIFC data, largest fires on record and Ready Set Go evacuation lev
+- [Colorado fires](https://wildfire-map.org/fires/colorado/): Live Colorado fire map guide: current wildfires, fire season months, largest fires on record, Red Flag criteria, evacuation wording and smoke advisories.
+- [Florida fires](https://wildfire-map.org/fires/florida/): Florida fire map guide: peak wildfire season, the Florida Forest Service, largest fires on record, KBDI, muck fires and how to follow active fires live now.
+- [Georgia fires](https://wildfire-map.org/fires/georgia/): Georgia fire map guide: spring wildfire season, the Georgia Forestry Commission, Okefenokee peat fires, burn permits, burn bans and how to follow fires live.
+- [Idaho fires](https://wildfire-map.org/fires/idaho/): Idaho fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus closed fire season rules, agencies and smoke.
+- [Montana fires](https://wildfire-map.org/fires/montana/): Montana fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus DNRC protection, evacuations and smoke.
+- [Nevada fires](https://wildfire-map.org/fires/nevada/): Live Nevada fire map guide: current wildfires, rangeland fire season, the Martin Fire record, cheatgrass and the Great Basin fire cycle, evacuations, smoke.
+- [New Mexico fires](https://wildfire-map.org/fires/new-mexico/): New Mexico fire map guide: live wildfire tracking, NM fire season months, State Forestry and NIFC data, largest fires on record, fire restrictions and evacuatio
+- [North Carolina fires](https://wildfire-map.org/fires/north-carolina/): North Carolina fire map guide: spring fire season, the N.C. Forest Service, coastal peat fires, Helene fuel loads, burn permits and how to follow fires live.
+- [Oklahoma fires](https://wildfire-map.org/fires/oklahoma/): Oklahoma fire map guide: live wildfire tracking, Oklahoma fire season months, Oklahoma Forestry Services data, largest fires on record and Red Flag Warning crit
+- [Oregon fires](https://wildfire-map.org/fires/oregon/): Oregon fire map guide: track active wildfires, perimeters, satellite heat and Red Flag Warnings, plus Level 1-2-3 evacuations, ODF districts and smoke.
+- [Texas fires](https://wildfire-map.org/fires/texas/): Texas fire map guide: live wildfire tracking for Texas, fire season months, Texas A&M Forest Service data, largest fires on record and Red Flag Warning criteria
+- [Utah fires](https://wildfire-map.org/fires/utah/): Live Utah fire map guide: active wildfires, the closed fire season dates, largest fires on record, cheatgrass fire behavior, Red Flag criteria and smoke.
+- [Washington fires](https://wildfire-map.org/fires/washington/): Washington fire map guide: track active WA wildfires, perimeters, satellite heat and Red Flag Warnings, plus Level 1-2-3 evacuations and smoke.
+- [Wyoming fires](https://wildfire-map.org/fires/wyoming/): Live Wyoming fire map guide: active wildfires, fire season timing, the record 2024 season, 1988 Yellowstone fires, Red Flag criteria, evacuations and smoke.
+
 ## About
 
 - [How this map is built](https://wildfire-map.org/about/): data sources, refresh cadence, how the fire probability score works, and the known limits of satellite fire detection.
