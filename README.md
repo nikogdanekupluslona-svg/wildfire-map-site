@@ -14,7 +14,7 @@ Files owned by this repository, not by the app build:
 
 ```
 blog/                 generated guide pages, blog index and the shared CSS
-blog/assets/          blog.css, the two store badges and the App Store QR codes
+blog/assets/          blog.css, the App Store badge and the App Store QR codes
 fires/                generated state pages and the by-state hub
 about/                hand-written methodology page (its header and footer are synced by build)
 sitemap.xml           generated — the home page and every content page
@@ -65,9 +65,12 @@ Every generated page and `about/index.html` carry the same header and footer, bo
 
 | Destination | Header | Footer |
 | --- | --- | --- |
-| Live map at wildfire-map.org | `Open the live map` button | `Open the live map` button |
-| Chrome Web Store | official badge | official badge |
-| App Store | official badge, plus a QR code that opens the large one on hover | official badge, plus a 140px QR code |
+| Live map at wildfire-map.org | `Live map` button | `Open the live map` button |
+| Chrome Web Store | `Add to Chrome` button | `Add to Chrome` button |
+| App Store | Apple's badge, plus a 40px QR code | Apple's badge, plus a 140px QR code |
+
+Only Apple gets a badge image: two badges side by side crowded the header and read as clutter, so the
+live map and the extension are plain buttons, the red one carrying the primary action.
 
 App Store links carry Apple's `ct` campaign token, so each placement is measurable in App Store
 Connect: `Header`, `Header_QR`, `Footer`, `Footer_QR`, `Footer_Link`, `llms`, `Schema`. The token is
@@ -80,6 +83,10 @@ after changing the App Store URL.
 
 `build` also rewrites the header and footer inside `about/index.html`, so the hand-written page can
 never drift from the generated ones.
+
+Every page links the stylesheet as `blog.css?v=<hash of the file>`. Without it a visitor holding a
+cached copy of the old CSS sees the new header markup unstyled — which is exactly what happened the
+first time this shipped. Changing the CSS changes the hash, so the two can never fall out of step.
 
 The header and footer are **not** on the three pages the app build owns: the home page, `welcome.html`
 and `404.html`. Adding them there means a change in the app source repository.
