@@ -98,9 +98,14 @@ and `404.html`. The home page instead carries a smaller block — an `Add to Chr
 badge and a QR code — in the free red space on the right of the app's own header, so it covers no part
 of the map. It is `seo-workspace/homepage-patch/app-cta.html`, applied by hand to `index.html`, and
 **the next app republish will wipe it**: the lasting fix is to move that block into the app's header
-component in the app source repository. It hides itself when the app header is collapsed, drops the QR
-code below 1300px, the badge below 1200px and itself below 1000px, so it can never collide with the
-status text the header centres. `welcome.html` and `404.html` are still untouched.
+component in the app source repository. It hides itself when the app header is collapsed and drops the QR
+code below 1300px and the badge below 1200px, so it can never collide with the status text the header
+centres. Below 1000px there is no free width at all, so the block becomes the App Store badge alone,
+centred under the header text: it grows both the header and the space the app reserves above the map
+by the same 66px, which keeps the badge inside the red and clear of the collapse tab. It anchors to
+that reservation rather than to the header's own height, because the header reflows on the length of
+its status line — which changes with the fire count — while the reservation only moves at the app's
+own 720px breakpoint. `welcome.html` and `404.html` are still untouched.
 
 ## The outstanding SEO change
 

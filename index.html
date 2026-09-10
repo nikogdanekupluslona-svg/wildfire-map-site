@@ -53,7 +53,20 @@
     .app-cta a:focus-visible{outline:2px solid #fff;outline-offset:2px}
     @media (max-width:1299px){.app-cta__qr{display:none}}
     @media (max-width:1199px){.app-cta__badge{display:none}}
-    @media (max-width:999px){.app-cta{display:none}}
+    @media (max-width:999px){
+      /* The app reserves var(--header-height) above the map for its fixed header. Give both the
+         header and that reservation the same extra 66px, and the badge's band is exactly the strip
+         between the old map top and the new one. Anchoring to the reservation rather than to the
+         header's own height matters: the header reflows on the length of its status line, which
+         changes with the fire count, while the reservation only changes at the app's 720px breakpoint. */
+      .app-shell:not(.app-shell--header-collapsed){padding-top:calc(var(--header-height) + 66px)}
+      .header:not(.header--collapsed){min-height:calc(var(--header-height) + 66px);box-sizing:border-box}
+      .app-cta{display:flex;top:114px;left:0;right:0;height:66px;padding:0 12px;gap:0;align-items:center;justify-content:center}
+      .app-cta__btn,.app-cta__qr{display:none}
+      .app-cta__badge{display:inline-flex}
+      .app-cta__badge img{height:38px}
+    }
+    @media (max-width:719px){.app-cta{top:128px}}
     body:has(.header--collapsed) .app-cta{display:none}
     </style>
   </head>
